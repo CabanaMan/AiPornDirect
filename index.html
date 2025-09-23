@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noai" />
+  <title>AI Porn Direct</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>AI Porn Direct</h1>
+    <p class="subtitle">Directory of AI image/video/voice/chat tools</p>
+  </header>
+
+  <div id="age-gate" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="age-gate-title">
+    <div class="modal-content">
+      <h2 id="age-gate-title">18+ confirmation</h2>
+      <p>You must be 18 years or older to enter this site.</p>
+      <div class="modal-actions">
+        <button id="age-enter">Enter</button>
+        <button id="age-leave">Leave</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="controls">
+    <input type="search" id="q" placeholder="Search tools..." aria-label="Search" data-testid="search-input" />
+    <select id="category" aria-label="Category" data-testid="select-category">
+      <option value="">All categories</option>
+      <option value="image">Image</option>
+      <option value="video">Video</option>
+      <option value="voice">Voice</option>
+      <option value="chat">Chat</option>
+    </select>
+    <select id="pricing" aria-label="Pricing" data-testid="select-pricing">
+      <option value="">All pricing</option>
+      <option value="free">Free</option>
+      <option value="freemium">Freemium</option>
+      <option value="paid">Paid</option>
+    </select>
+    <select id="sort" aria-label="Sort" data-testid="select-sort">
+      <option value="score-desc">Top rated</option>
+      <option value="pop-desc">Most popular</option>
+      <option value="alpha-asc">A to Z</option>
+      <option value="alpha-desc">Z to A</option>
+      <option value="newest">Newest</option>
+    </select>
+  </section>
+
+  <section id="featured" class="featured-section" aria-label="Featured tools"></section>
+
+  <main id="grid" data-testid="grid"></main>
+
+  <script type="application/ld+json" id="ld-itemlist"></script>
+
+  <footer>
+    <p>18+ disclaimer. No illegal content. No minors. We link to third-party tools only.</p>
+    <p>We may earn commissions from links.</p>
+    <nav>
+      <a href="privacy.txt">Privacy</a>
+      <a href="terms.txt">Terms</a>
+    </nav>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,116 @@
+/*
+Paste your affiliate IDs in place of YOURID for each URL when ready.
+Each URL includes a ?aff=YOURID parameter—replace YOURID with your real partner ID.
+*/
+[
+  {
+    "id": "deepswap-ai",
+    "name": "DeepSwap AI",
+    "url": "https://www.deepswap.ai/?aff=YOURID",
+    "category": "video",
+    "pricing": "paid",
+    "tags": ["deepfake", "face-swap"],
+    "score": 4.6,
+    "popularity": 9100,
+    "createdAt": "2022-11-15"
+  },
+  {
+    "id": "pornpen-ai",
+    "name": "Pornpen AI",
+    "url": "https://www.pornpen.ai/?aff=YOURID",
+    "category": "image",
+    "pricing": "freemium",
+    "tags": ["generator", "nsfw"],
+    "score": 4.3,
+    "popularity": 8500,
+    "createdAt": "2023-04-12"
+  },
+  {
+    "id": "candy-ai",
+    "name": "Candy.ai",
+    "url": "https://www.candy.ai/?aff=YOURID",
+    "category": "chat",
+    "pricing": "paid",
+    "tags": ["ai-girlfriend", "chat"],
+    "score": 4.4,
+    "popularity": 7800,
+    "createdAt": "2023-01-28"
+  },
+  {
+    "id": "dreamgf-ai",
+    "name": "DreamGF.ai",
+    "url": "https://www.dreamgf.ai/?aff=YOURID",
+    "category": "chat",
+    "pricing": "paid",
+    "tags": ["ai-cam", "chat"],
+    "score": 4.2,
+    "popularity": 6200,
+    "createdAt": "2023-07-05"
+  },
+  {
+    "id": "moan-ai",
+    "name": "Moan.ai",
+    "url": "https://www.moan.ai/?aff=YOURID",
+    "category": "voice",
+    "pricing": "paid",
+    "tags": ["voice", "audio"],
+    "score": 4.1,
+    "popularity": 5400,
+    "createdAt": "2022-09-19"
+  },
+  {
+    "id": "realistic-ai-generator",
+    "name": "Realistic AI Generator",
+    "url": "https://www.realisticai.example/?aff=YOURID",
+    "category": "image",
+    "pricing": "freemium",
+    "tags": ["photoreal", "sd"],
+    "score": 4.5,
+    "popularity": 8000,
+    "createdAt": "2023-06-18"
+  },
+  {
+    "id": "promptbase-nsfw",
+    "name": "PromptBase NSFW",
+    "url": "https://www.promptbase.com/nsfw?aff=YOURID",
+    "category": "image",
+    "pricing": "paid",
+    "tags": ["prompts", "marketplace"],
+    "score": 4.0,
+    "popularity": 7000,
+    "createdAt": "2021-12-02"
+  },
+  {
+    "id": "porngpt-io",
+    "name": "PornGPT.io",
+    "url": "https://www.porngpt.io/?aff=YOURID",
+    "category": "chat",
+    "pricing": "paid",
+    "tags": ["chatbot", "tokens"],
+    "score": 4.3,
+    "popularity": 7600,
+    "createdAt": "2023-02-20"
+  },
+  {
+    "id": "ai-cam-studio",
+    "name": "AI Cam Studio",
+    "url": "https://www.aicamstudio.com/?aff=YOURID",
+    "category": "video",
+    "pricing": "freemium",
+    "tags": ["live", "virtual"],
+    "score": 4.1,
+    "popularity": 6800,
+    "createdAt": "2023-05-09"
+  },
+  {
+    "id": "synth-nudes-lab",
+    "name": "Synth Nudes Lab",
+    "url": "https://www.synthnudeslab.com/?aff=YOURID",
+    "category": "image",
+    "pricing": "paid",
+    "tags": ["inpainting", "hires"],
+    "score": 4.7,
+    "popularity": 8300,
+    "createdAt": "2023-08-21"
+  }
+]
