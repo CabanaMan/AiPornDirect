@@ -1,67 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noai" />
-  <title>AI Porn Direct</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="script.js"></script>
-</head>
-<body>
-  <header>
-    <h1>AI Porn Direct</h1>
-    <p class="subtitle">Directory of AI image/video/voice/chat tools</p>
-  </header>
-
-  <div id="age-gate" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="age-gate-title">
-    <div class="modal-content">
-      <h2 id="age-gate-title">18+ confirmation</h2>
-      <p>You must be 18 years or older to enter this site.</p>
-      <div class="modal-actions">
-        <button id="age-enter">Enter</button>
-        <button id="age-leave">Leave</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noai" />
+    <title>AI Porn Direct</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div
+      id="age-gate"
+      class="modal hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="age-gate-title"
+    >
+      <div class="modal-content">
+        <h2 id="age-gate-title">18+ confirmation</h2>
+        <p>You must be 18 years or older to enter this site.</p>
+        <div class="modal-actions">
+          <button id="age-enter">Enter</button>
+          <button id="age-leave">Leave</button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <section class="controls">
-    <input type="search" id="q" placeholder="Search tools..." aria-label="Search" data-testid="search-input" />
-    <select id="category" aria-label="Category" data-testid="select-category">
-      <option value="">All categories</option>
-      <option value="image">Image</option>
-      <option value="video">Video</option>
-      <option value="voice">Voice</option>
-      <option value="chat">Chat</option>
-    </select>
-    <select id="pricing" aria-label="Pricing" data-testid="select-pricing">
-      <option value="">All pricing</option>
-      <option value="free">Free</option>
-      <option value="freemium">Freemium</option>
-      <option value="paid">Paid</option>
-    </select>
-    <select id="sort" aria-label="Sort" data-testid="select-sort">
-      <option value="score-desc">Top rated</option>
-      <option value="pop-desc">Most popular</option>
-      <option value="alpha-asc">A to Z</option>
-      <option value="alpha-desc">Z to A</option>
-      <option value="newest">Newest</option>
-    </select>
-  </section>
+    <header class="hero">
+      <div class="hero-inner">
+        <span class="hero-badge">18+ Verified Directory</span>
+        <h1>AI Porn Direct</h1>
+        <p class="subtitle">
+          Discover trusted AI image, video, voice, chat, and automation tools
+          for adult creators.
+        </p>
+        <div class="hero-stats" role="list">
+          <article class="stat-card" role="listitem">
+            <span class="stat-value" id="stat-total">0</span>
+            <span class="stat-label">Tools listed</span>
+          </article>
+          <article class="stat-card" role="listitem">
+            <span class="stat-value" id="stat-free">0</span>
+            <span class="stat-label">Free & freemium</span>
+          </article>
+          <article class="stat-card" role="listitem">
+            <span class="stat-value" id="stat-updated">—</span>
+            <span class="stat-label">Last update</span>
+          </article>
+        </div>
+        <div class="hero-actions">
+          <button class="btn" id="browse-all" type="button">
+            Browse the directory
+          </button>
+          <a class="btn ghost" href="#newsletter">Get updates</a>
+        </div>
+      </div>
+    </header>
 
-  <section id="featured" class="featured-section" aria-label="Featured tools"></section>
+    <section
+      class="category-board"
+      id="category-board"
+      aria-label="Browse by category"
+    ></section>
 
-  <main id="grid" data-testid="grid"></main>
+    <section class="controls" aria-label="Directory filters">
+      <input
+        type="search"
+        id="q"
+        placeholder="Search tools..."
+        aria-label="Search"
+        data-testid="search-input"
+      />
+      <select
+        id="category"
+        aria-label="Category"
+        data-testid="select-category"
+      ></select>
+      <select id="pricing" aria-label="Pricing" data-testid="select-pricing">
+        <option value="">All pricing</option>
+        <option value="free">Free</option>
+        <option value="freemium">Freemium</option>
+        <option value="paid">Paid</option>
+      </select>
+      <select id="sort" aria-label="Sort" data-testid="select-sort">
+        <option value="score-desc">Top rated</option>
+        <option value="pop-desc">Most popular</option>
+        <option value="alpha-asc">A to Z</option>
+        <option value="alpha-desc">Z to A</option>
+        <option value="newest">Newest</option>
+      </select>
+    </section>
 
-  <script type="application/ld+json" id="ld-itemlist"></script>
+    <section
+      id="featured"
+      class="featured-section"
+      aria-label="Featured tools"
+    ></section>
+    <section
+      id="trending"
+      class="trending-section"
+      aria-label="Trending now"
+    ></section>
 
-  <footer>
-    <p>18+ disclaimer. No illegal content. No minors. We link to third-party tools only.</p>
-    <p>We may earn commissions from links.</p>
-    <nav>
-      <a href="privacy.txt">Privacy</a>
-      <a href="terms.txt">Terms</a>
-    </nav>
-  </footer>
-</body>
+    <main id="grid" data-testid="grid" aria-live="polite"></main>
+
+    <section id="newsletter" class="newsletter">
+      <div class="newsletter-inner">
+        <h2>Stay in the loop</h2>
+        <p>
+          Get monthly roundups of new AI adult tools, no spam, unsubscribe
+          anytime.
+        </p>
+        <form
+          class="newsletter-form"
+          action="https://example.com"
+          method="post"
+        >
+          <label class="sr-only" for="email">Email address</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+            required
+          />
+          <button type="submit" class="btn">Notify me</button>
+        </form>
+        <small
+          >No explicit content. Just product updates and launch alerts.</small
+        >
+      </div>
+    </section>
+
+    <script type="application/ld+json" id="ld-itemlist"></script>
+
+    <footer>
+      <p>
+        18+ disclaimer. No illegal content. No minors. We link to third-party
+        tools only.
+      </p>
+      <p>We may earn commissions from links.</p>
+      <nav>
+        <a href="privacy.txt">Privacy</a>
+        <a href="terms.txt">Terms</a>
+      </nav>
+    </footer>
+  </body>
 </html>
