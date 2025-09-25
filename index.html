@@ -6,7 +6,7 @@
     <meta name="robots" content="noai" />
     <meta
       name="description"
-      content="AI Porn Direct is a monetization-ready HTML directory of the best AI adult apps, generators, and creator tools."
+      content="AI Porn Direct is a beautiful, mobile-first directory of the best AI adult apps, generators, and creator tools."
     />
     <title>AI Porn Direct</title>
     <link rel="stylesheet" href="styles.css" />
@@ -24,320 +24,181 @@
         <h2 id="age-gate-title">18+ confirmation</h2>
         <p>You must be 18 years or older to enter this site.</p>
         <div class="modal-actions">
-          <button id="age-enter">Enter</button>
-          <button id="age-leave">Leave</button>
+          <button id="age-enter" class="btn">Enter</button>
+          <button id="age-leave" class="btn ghost">Leave</button>
         </div>
       </div>
     </div>
 
-    <header class="site-header" role="banner">
-      <div class="site-header-inner">
-        <a class="logo" href="#top">AI Porn Direct</a>
-        <nav class="main-nav" aria-label="Primary">
+    <header class="topbar" role="banner">
+      <div class="container topbar__inner">
+        <a class="brand" href="#top">AI Porn Direct</a>
+        <nav class="topbar__nav" aria-label="Primary">
           <a href="#directory">Directory</a>
-          <a href="#categories">Categories</a>
-          <a href="#guides">Resources</a>
-          <a href="#newsletter">Newsletter</a>
-          <a href="#advertise">Advertise</a>
+          <a href="#newsletter">Updates</a>
+          <a href="mailto:ads@aiporndirect.com">Advertise</a>
         </nav>
       </div>
     </header>
 
-    <div class="ad-slot leaderboard" aria-label="Leaderboard advertising slot">
-      <span>Leaderboard 970×250 — Reserve premium inventory</span>
-    </div>
-
-    <header class="hero" id="top">
-      <div class="hero-inner">
-        <span class="hero-badge">18+ Verified Directory</span>
-        <h1>AI Porn Direct</h1>
-        <p class="subtitle">
-          Monetize adult audiences with the most trusted catalog of AI porn
-          generators, chat companions, voice clones, and creator automations.
-          Every link is optimized for affiliate tracking and high-intent ad
-          revenue.
-        </p>
-        <div class="hero-stats" role="list">
-          <article class="stat-card" role="listitem">
-            <span class="stat-value" id="stat-total">0</span>
-            <span class="stat-label">Tools listed</span>
-          </article>
-          <article class="stat-card" role="listitem">
-            <span class="stat-value" id="stat-free">0</span>
-            <span class="stat-label">Free &amp; freemium</span>
-          </article>
-          <article class="stat-card" role="listitem">
-            <span class="stat-value" id="stat-updated">—</span>
-            <span class="stat-label">Last update</span>
-          </article>
-        </div>
-        <div class="hero-actions">
-          <button class="btn" id="browse-all" type="button">
-            Browse the directory
-          </button>
-          <a class="btn ghost" href="#advertise">Media kit</a>
-          <a class="btn ghost" href="#newsletter">Get updates</a>
-        </div>
-        <ul class="hero-highlights">
-          <li>Affiliate-ready links, payouts, and promo notes in every profile.</li>
-          <li>SEO-focused, static HTML architecture built for fast ad delivery.</li>
-          <li>Weekly curations across image, video, chat, voice, and automation.</li>
-        </ul>
-        <p class="hero-note">We may earn commissions from partners we list.</p>
-      </div>
-    </header>
-
-    <section class="intro">
-      <div class="intro-inner">
-        <div class="intro-copy">
-          <h2>HTML-first, monetization-focused directory</h2>
-          <p>
-            AI Porn Direct is intentionally lightweight: pure HTML, CSS, and a
-            single script to hydrate the listings. That keeps Core Web Vitals in
-            the green, lets ad networks approve faster, and delivers affiliate
-            clicks with minimal friction.
+    <main>
+      <section class="hero" id="top">
+        <div class="container hero__inner">
+          <span class="hero-badge">Curated AI adult tools</span>
+          <h1>Discover the top AI porn apps</h1>
+          <p class="subtitle">
+            A hand-picked, mobile-ready index for adult creators, affiliates, and media buyers. Fast loads, clear rankings, and links that actually convert.
           </p>
-        </div>
-        <div class="intro-grid" role="list">
-          <article class="info-card" role="listitem">
-            <h3>Ad inventory ready</h3>
-            <p>
-              Drop in leaderboard, rectangle, or skyscraper creative without
-              redesigning the layout.
-            </p>
-          </article>
-          <article class="info-card" role="listitem">
-            <h3>Affiliate friendly</h3>
-            <p>
-              Every outbound link can include tracking IDs and disclosure text to
-              keep compliance tight.
-            </p>
-          </article>
-          <article class="info-card" role="listitem">
-            <h3>Always updated</h3>
-            <p>
-              A structured JSON database powers filters, featured picks, and
-              search without heavy infrastructure.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="directory" class="directory">
-      <div class="directory-inner">
-        <div class="directory-heading">
-          <h2>Browse the best AI adult products</h2>
-          <p>
-            Use the filters to surface high-performing partners for your traffic
-            niches, from creator marketplaces to voiceover SaaS.
-          </p>
-        </div>
-        <div class="directory-layout">
-          <div class="directory-main">
-            <section id="categories" class="directory-section">
-              <div
-                id="category-board"
-                class="category-board"
-                aria-label="Browse by category"
-              ></div>
-            </section>
-
-            <section class="directory-controls" aria-label="Directory filters">
-              <div class="section-header">
-                <h3>Filter the database</h3>
-                <p>Search, refine by category or pricing, and sort by intent.</p>
-              </div>
-              <div class="controls">
-                <input
-                  type="search"
-                  id="q"
-                  placeholder="Search tools..."
-                  aria-label="Search"
-                  data-testid="search-input"
-                />
-                <select
-                  id="category"
-                  aria-label="Category"
-                  data-testid="select-category"
-                ></select>
-                <select
-                  id="pricing"
-                  aria-label="Pricing"
-                  data-testid="select-pricing"
-                >
-                  <option value="">All pricing</option>
-                  <option value="free">Free</option>
-                  <option value="freemium">Freemium</option>
-                  <option value="paid">Paid</option>
-                </select>
-                <select id="sort" aria-label="Sort" data-testid="select-sort">
-                  <option value="score-desc">Top rated</option>
-                  <option value="pop-desc">Most popular</option>
-                  <option value="alpha-asc">A to Z</option>
-                  <option value="alpha-desc">Z to A</option>
-                  <option value="newest">Newest</option>
-                </select>
-              </div>
-            </section>
-
-            <div class="ad-slot inline-ad" aria-label="Inline advertising slot">
-              <span>Feature your launch — 728×90 banner placement available</span>
-            </div>
-
-            <section
-              id="featured"
-              class="featured-section"
-              aria-label="Featured tools"
-            ></section>
-            <section
-              id="trending"
-              class="trending-section"
-              aria-label="Trending now"
-            ></section>
-
-            <main id="grid" data-testid="grid" aria-live="polite"></main>
-            <script type="application/ld+json" id="ld-itemlist"></script>
+          <div class="hero-actions">
+            <button class="btn" id="browse-all" type="button">Browse directory</button>
+            <a class="btn ghost" href="#advertise">Media kit</a>
+            <a class="btn ghost" href="#newsletter">Get updates</a>
           </div>
-
-          <aside class="directory-sidebar" aria-label="Monetization options">
-            <div class="ad-slot skyscraper">
-              <span>Skyscraper 300×600 — Own the prime sidebar real estate</span>
-            </div>
-            <div class="sidebar-card">
-              <h3>Submit a tool</h3>
-              <p>
-                Have an AI adult product to feature? Pitch it and include your
-                affiliate program details.
-              </p>
-              <a class="btn ghost" href="mailto:listings@aiporndirect.com"
-                >List your product</a
-              >
-            </div>
-            <div class="sidebar-card">
-              <h3>Advertise with us</h3>
-              <p>
-                Unlock featured placement, newsletter shoutouts, and sponsored
-                reviews tailored to adult traffic.
-              </p>
-              <a class="btn" href="mailto:ads@aiporndirect.com"
-                >Request media kit</a
-              >
-            </div>
-            <div class="ad-slot rectangle">
-              <span>Medium rectangle 300×250 — Affiliate spotlight</span>
-            </div>
-          </aside>
+          <div class="hero-stats" role="list">
+            <article class="stat-card" role="listitem">
+              <span class="stat-value" id="stat-total">0</span>
+              <span class="stat-label">Tools listed</span>
+            </article>
+            <article class="stat-card" role="listitem">
+              <span class="stat-value" id="stat-free">0</span>
+              <span class="stat-label">Free &amp; freemium</span>
+            </article>
+            <article class="stat-card" role="listitem">
+              <span class="stat-value" id="stat-updated">—</span>
+              <span class="stat-label">Last update</span>
+            </article>
+          </div>
+          <ul class="hero-highlights">
+            <li>Ranked listings with pricing, traffic estimates, and must-know perks.</li>
+            <li>Optimized for phones with thumb-friendly filters and sticky CTAs.</li>
+            <li>Affiliate-ready copy, compliance notes, and promo tips on every card.</li>
+          </ul>
+          <p class="hero-note">We may earn commissions from partners we list.</p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="guides" class="content-block">
-      <div class="content-inner">
-        <div class="section-header">
-          <h2>What makes the cut</h2>
-          <p>
-            We vet every listing for real payouts, community feedback, and clear
-            compliance policies before it hits the directory.
-          </p>
+      <section class="section intro">
+        <div class="container intro__inner">
+          <div class="section-header">
+            <h2>Built for scrolling, not bloated landing pages</h2>
+            <p>
+              AI Porn Direct is a single, responsive page tuned for speed. Static HTML, progressive enhancement, and one JSON feed keep Core Web Vitals in the green while your ad stack stays fast.
+            </p>
+          </div>
+          <div class="intro-grid" role="list">
+            <article class="info-card" role="listitem">
+              <h3>Made for mobile</h3>
+              <p>Cards snap into a clean vertical feed with generous tap targets and big typography.</p>
+            </article>
+            <article class="info-card" role="listitem">
+              <h3>Affiliate friendly</h3>
+              <p>Drop in tracking IDs, disclosure labels, and promo notes without touching the layout.</p>
+            </article>
+            <article class="info-card" role="listitem">
+              <h3>Ad inventory ready</h3>
+              <p>Leaderboard, rectangle, and native placements are mapped with flexible house slots.</p>
+            </article>
+          </div>
         </div>
-        <div class="content-grid">
-          <article class="content-card">
-            <h3>Signals we monitor</h3>
-            <ul>
-              <li>Conversion data and EPC benchmarks from creator affiliates.</li>
-              <li>Feature velocity and roadmap transparency from product teams.</li>
-              <li>Community sentiment across Reddit, Twitter, and creator forums.</li>
-            </ul>
-          </article>
-          <article class="content-card">
-            <h3>Listing enhancements</h3>
-            <ul>
-              <li>Custom copy tuned for adult SEO keywords and fan intent.</li>
-              <li>Structured data and filters to keep traffic engaged longer.</li>
-              <li>Optional promo codes, assets, and creatives from partners.</li>
-            </ul>
-          </article>
-          <article class="content-card">
-            <h3>Future roadmap</h3>
-            <ul>
-              <li>Regional landing pages for UK, EU, LATAM, and APAC audiences.</li>
-              <li>Programmatic featured slots with transparent pricing.</li>
-              <li>Quarterly deep dives into retention, ARPU, and churn trends.</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="advertise" class="cta-banner">
-      <div class="cta-inner">
-        <div class="cta-copy">
-          <h2>Partner with AI Porn Direct</h2>
-          <p>
-            Run ads, sponsor content, or syndicate your affiliate program across
-            a curated network of adult traffic partners.
-          </p>
-        </div>
-        <div class="cta-actions">
-          <a class="btn" href="mailto:ads@aiporndirect.com">Book a campaign</a>
-          <a class="btn ghost" href="mailto:tips@aiporndirect.com"
-            >Submit news</a
-          >
-        </div>
-      </div>
-    </section>
+      <section class="section">
+        <div class="container" id="featured" aria-live="polite"></div>
+      </section>
 
-    <section id="newsletter" class="newsletter">
-      <div class="newsletter-inner">
-        <h2>Stay in the loop</h2>
-        <p>
-          Get monthly roundups of new AI adult tools, no spam, unsubscribe
-          anytime.
-        </p>
-        <form
-          class="newsletter-form"
-          action="https://example.com"
-          method="post"
-        >
-          <label class="sr-only" for="email">Email address</label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            placeholder="you@example.com"
-            required
-          />
-          <button type="submit" class="btn">Notify me</button>
-        </form>
-        <small
-          >No explicit content. Just product updates and launch alerts.</small
-        >
-      </div>
-    </section>
+      <section id="directory" class="section directory">
+        <div class="container directory__inner">
+          <div class="section-header">
+            <h2>Explore the directory</h2>
+            <p>Filter by keyword, pricing, or niche to surface the AI porn generators worth your traffic.</p>
+          </div>
+          <form class="filter-panel" role="search">
+            <label class="sr-only" for="q">Search listings</label>
+            <input id="q" name="q" type="search" placeholder="Search tools" />
+            <label class="sr-only" for="category">Filter by category</label>
+            <select id="category" name="category">
+              <option value="">All categories</option>
+            </select>
+            <label class="sr-only" for="pricing">Filter by pricing</label>
+            <select id="pricing" name="pricing">
+              <option value="">All pricing</option>
+              <option value="free">Free</option>
+              <option value="freemium">Freemium</option>
+              <option value="paid">Paid</option>
+            </select>
+            <label class="sr-only" for="sort">Sort results</label>
+            <select id="sort" name="sort">
+              <option value="score-desc">Editor score</option>
+              <option value="pop-desc">Most popular</option>
+              <option value="alpha-asc">A → Z</option>
+              <option value="alpha-desc">Z → A</option>
+              <option value="newest">Newest</option>
+            </select>
+          </form>
+          <div id="category-board" class="category-board" aria-live="polite"></div>
+          <div class="house-slot" role="complementary">
+            <span>Leaderboard 970×250 — Premium placement available</span>
+          </div>
+          <div id="grid" class="card-grid" aria-live="polite"></div>
+        </div>
+      </section>
 
-    <footer>
-      <div class="footer-inner">
+      <section class="section">
+        <div class="container" id="trending" aria-live="polite"></div>
+      </section>
+
+      <section id="advertise" class="section advertise">
+        <div class="container advertise__inner">
+          <div class="section-header">
+            <h2>Partner with AI Porn Direct</h2>
+            <p>Sponsored placements, newsletter drops, and native reviews built for adult traffic.</p>
+          </div>
+          <div class="advertise-actions">
+            <a class="btn" href="mailto:ads@aiporndirect.com">Request media kit</a>
+            <a class="btn ghost" href="mailto:listings@aiporndirect.com">Submit a tool</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="newsletter" class="section newsletter">
+        <div class="container newsletter__inner">
+          <h2>Stay in the loop</h2>
+          <p>Monthly roundups of new AI adult tools. No spam, unsubscribe anytime.</p>
+          <form class="newsletter-form" action="https://example.com" method="post">
+            <label class="sr-only" for="email">Email address</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              required
+            />
+            <button type="submit" class="btn">Notify me</button>
+          </form>
+          <small>No explicit content. Just product updates and launch alerts.</small>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
         <div class="footer-brand">
           <strong>AI Porn Direct</strong>
-          <p>
-            A fast, HTML-based index of the best AI adult tools. Curated for
-            affiliate marketers, creators, and media buyers.
-          </p>
+          <p>A fast, HTML-based index of the best AI adult tools for affiliates and creators.</p>
         </div>
-        <nav class="footer-nav" aria-label="Footer navigation">
+        <nav class="footer-nav" aria-label="Footer">
           <a href="#directory">Directory</a>
-          <a href="#guides">Resources</a>
           <a href="#advertise">Advertise</a>
-          <a href="mailto:listings@aiporndirect.com">Submit listing</a>
+          <a href="mailto:tips@aiporndirect.com">Submit news</a>
           <a href="privacy.txt">Privacy</a>
           <a href="terms.txt">Terms</a>
         </nav>
       </div>
       <p class="footer-disclaimer">
-        18+ disclaimer. No illegal content. No minors. We link to third-party
-        tools only and may receive affiliate compensation.
+        18+ disclaimer. No illegal content. No minors. We link to third-party tools only and may receive affiliate compensation.
       </p>
     </footer>
+
+    <script id="ld-itemlist" type="application/ld+json"></script>
   </body>
 </html>
