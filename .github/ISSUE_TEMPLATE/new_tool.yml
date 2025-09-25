@@ -1,0 +1,129 @@
+name: New tool submission
+description: Submit a new AI adult tool to the directory.
+title: "Add: <tool name>"
+labels: ["new-tool"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please provide complete information. Submissions missing compliance info will be rejected.
+  - type: input
+    id: name
+    attributes:
+      label: Tool name
+      placeholder: PornPen AI
+    validations:
+      required: true
+  - type: input
+    id: slug
+    attributes:
+      label: URL slug (lowercase, hyphenated)
+      placeholder: pornpen-ai
+    validations:
+      required: true
+  - type: input
+    id: vendor
+    attributes:
+      label: Vendor or creator name
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description (200+ words recommended)
+    validations:
+      required: true
+  - type: textarea
+    id: categories
+    attributes:
+      label: Categories (comma separated)
+      placeholder: image,automation
+    validations:
+      required: true
+  - type: textarea
+    id: tags
+    attributes:
+      label: Tags (comma separated)
+  - type: textarea
+    id: features
+    attributes:
+      label: Standout features (one per line)
+  - type: dropdown
+    id: adultLevel
+    attributes:
+      label: Adult level
+      options:
+        - NSFW-text
+        - NSFW-image
+        - NSFW-video
+        - Hard-NSFW
+    validations:
+      required: true
+  - type: input
+    id: homepage
+    attributes:
+      label: Homepage URL
+      placeholder: https://example.com
+    validations:
+      required: true
+  - type: textarea
+    id: links
+    attributes:
+      label: Additional links (docs, pricing, twitter, discord, affiliate)
+      description: One per line in the format type=https://url
+  - type: dropdown
+    id: pricing
+    attributes:
+      label: Pricing model
+      options:
+        - free
+        - freemium
+        - paid
+        - subscription
+        - credits
+    validations:
+      required: true
+  - type: textarea
+    id: payment
+    attributes:
+      label: Payment methods (comma separated)
+  - type: textarea
+    id: regions
+    attributes:
+      label: Supported regions (comma separated)
+      placeholder: global,eu,us
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Current status
+      options:
+        - active
+        - invite
+        - dead
+        - unknown
+    validations:
+      required: true
+  - type: textarea
+    id: compliance
+    attributes:
+      label: Compliance controls (one per line)
+      placeholder: 18+ gate
+    validations:
+      required: true
+  - type: textarea
+    id: safetyNotes
+    attributes:
+      label: Safety notes (one per line)
+  - type: textarea
+    id: affiliate
+    attributes:
+      label: Affiliate details (program, terms, payout, cookieDays)
+      description: Provide if the tool has an affiliate program.
+  - type: input
+    id: updatedAt
+    attributes:
+      label: Last updated (YYYY-MM-DD)
+    validations:
+      required: true

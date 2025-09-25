@@ -1,0 +1,32 @@
+name: Bug report
+description: Flag incorrect data, broken links, or build failures.
+title: "Bug: <summary>"
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the issue clearly.
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: URL or tool slug
+      placeholder: https://aiporndirect.com/tool/example/
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or logs
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I confirm this issue does not expose or request illegal content.
+          required: true

@@ -1,0 +1,25 @@
+{
+  "name": "aiporndirect",
+  "version": "0.1.0",
+  "description": "Static directory of AI adult tools with validation and SEO tooling.",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/build.mjs --watch",
+    "build": "node scripts/build.mjs && node scripts/gen-sitemap.mjs && node scripts/gen-ldjson.mjs",
+    "validate": "node scripts/validate.mjs",
+    "check": "npm run validate && npm run build"
+  },
+  "keywords": [
+    "ai",
+    "directory",
+    "nsfw"
+  ],
+  "license": "MIT",
+  "author": "AiPornDirect",
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "flexsearch": "^0.7.43",
+    "nunjucks": "^3.2.4"
+  }
+}
