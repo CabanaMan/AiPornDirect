@@ -1,231 +1,1771 @@
 {
   "tools": [
     {
-      "id": "pornpen-ai",
-      "slug": "pornpen-ai",
-      "name": "PornPen AI",
-      "vendor": "PornPen",
-      "description": "NSFW image generator with finely curated diffusion models, adjustable prompt weights, and an embedded upscaler tuned for skin tones. Artists can mix LoRAs, run batch renders, and export layered PSDs to continue polish in their editor of choice. The dashboard highlights trending creators, prompt recipes that perform well with fans, and moderation tips that keep accounts compliant. Studios rely on the built-in rights management view to catalog releases, track pending takedown requests, and share private boards with affiliates who need ready-to-post content.",
-      "categories": ["image", "automation"],
-      "tags": ["stable-diffusion", "upscale", "lora"],
-      "features": ["prompt mixer", "LoRA", "batch", "rights management"],
+      "id": "media-io-nsfw",
+      "slug": "media-io-nsfw",
+      "name": "Media.io NSFW Image Generator",
+      "vendor": "Media.io",
+      "description": "Browser NSFW image generator with simple prompts and upscaler.",
+      "categories": [
+        "image"
+      ],
+      "tags": [
+        "stable-diffusion",
+        "web"
+      ],
+      "features": [
+        "upscale",
+        "prompt"
+      ],
       "adultLevel": "NSFW-image",
       "links": {
-        "homepage": "https://pornpen.ai",
-        "pricing": "https://pornpen.ai/pricing",
-        "affiliate": "https://partners.pornpen.ai/?ref=aiporndirect"
+        "homepage": "https://www.media.io/nsfw-ai-image-generator.html",
+        "pricing": "https://www.media.io/pricing"
+      },
+      "pricing": "freemium",
+      "payment": [
+        "card"
+      ],
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "no-real-person-deepfake"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "mage-space",
+      "slug": "mage-space",
+      "name": "Mage Space (Uncensored)",
+      "vendor": "Mage",
+      "description": "Text-to-image with uncensored toggle and community models.",
+      "categories": [
+        "image"
+      ],
+      "tags": [
+        "uncensored",
+        "community-models"
+      ],
+      "features": [
+        "prompt",
+        "negative-prompt",
+        "gallery"
+      ],
+      "adultLevel": "NSFW-image",
+      "links": {
+        "homepage": "https://www.mage.space/",
+        "pricing": "https://www.mage.space/pricing"
+      },
+      "pricing": "subscription",
+      "payment": [
+        "card",
+        "crypto"
+      ],
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "no-real-person-deepfake"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "herahaven",
+      "slug": "herahaven",
+      "name": "HeraHaven",
+      "vendor": "HeraHaven",
+      "description": "NSFW image creator with presets and LoRA-style controls.",
+      "categories": [
+        "image"
+      ],
+      "tags": [
+        "presets",
+        "lora"
+      ],
+      "features": [
+        "prompt",
+        "styles",
+        "seed"
+      ],
+      "adultLevel": "NSFW-image",
+      "links": {
+        "homepage": "https://herahaven.com/nsfw-ai-image-generator",
+        "pricing": "https://herahaven.com/pricing"
       },
       "pricing": "credits",
-      "payment": ["card", "crypto"],
-      "regions": ["global"],
+      "payment": [
+        "card",
+        "crypto"
+      ],
+      "regions": [
+        "global"
+      ],
       "status": "active",
-      "compliance": ["18+ gate", "no-CSAM", "no-real-person-deepfake"],
-      "affiliate": {
-        "program": "private",
-        "terms": "revshare 25%",
-        "payout": "NET30",
-        "cookieDays": 30
-      },
-      "updatedAt": "2025-01-15"
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "no-real-person-deepfake"
+      ],
+      "updatedAt": "2025-09-24"
     },
     {
-      "id": "afterdark-studio",
-      "slug": "afterdark-studio",
-      "name": "AfterDark Studio",
-      "vendor": "NightShift Labs",
-      "description": "AfterDark Studio wraps a cinematic NSFW video pipeline around open source motion models, color grading LUTs, and speech-to-lipsync control. Producers storyboard inside the browser, drop in AI generated actors, then stitch scenes with automated transitions. A compliance monitor runs in the background to flag minors, real people, or celebrity likenesses before renders publish. Cloud rendering nodes scale up to 4K60 without manual setup, while the review workspace lets distributed teams annotate each frame. Custom export presets integrate with FanVue, ManyVids, and self-hosted paywalls so a finished film lands in the right storefront with metadata already filled in.",
-      "categories": ["video", "automation"],
-      "tags": ["lipsync", "render farm", "storyboard"],
-      "features": ["cloud rendering", "compliance monitor", "storefront integrations"],
-      "adultLevel": "NSFW-video",
+      "id": "mydreams-studio",
+      "slug": "mydreams-studio",
+      "name": "MyDreams Studio",
+      "vendor": "MyDreams",
+      "description": "Premium NSFW nude image generator with photoreal focus.",
+      "categories": [
+        "image"
+      ],
+      "tags": [
+        "photoreal",
+        "upscale"
+      ],
+      "features": [
+        "prompt",
+        "batch",
+        "upscale"
+      ],
+      "adultLevel": "NSFW-image",
       "links": {
-        "homepage": "https://afterdark.studio",
-        "docs": "https://docs.afterdark.studio",
-        "pricing": "https://afterdark.studio/pricing"
+        "homepage": "https://mydreams.studio/nsfw-adult-ai-image-generator",
+        "pricing": "https://mydreams.studio/pricing"
       },
       "pricing": "subscription",
-      "payment": ["card", "paypal"],
-      "regions": ["north-america", "europe"],
+      "payment": [
+        "card"
+      ],
+      "regions": [
+        "global"
+      ],
       "status": "active",
-      "safetyNotes": ["Requires consent forms for custom performers."],
-      "compliance": ["18+ gate", "no-CSAM", "no-real-person-deepfake"],
-      "updatedAt": "2025-02-02"
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "no-real-person-deepfake"
+      ],
+      "updatedAt": "2025-09-24"
     },
     {
-      "id": "velvet-voice-labs",
-      "slug": "velvet-voice-labs",
-      "name": "Velvet Voice Labs",
-      "vendor": "Velvet Voice",
-      "description": "Velvet Voice Labs focuses on sensual AI voice cloning with legally sourced vocal talent and granular content filters. Creators upload scripts or connect their roleplay chats to synthesize unique moans, whispers, and narration that stay on brand. A library of ambient beds, transitions, and moody effects rounds out the soundscape. Teams appreciate the consent tracking dashboard: every voice has a contract, expiry date, and allowed phrases list so producers know where they can syndicate audio. Flexible APIs drop into Discord bots, JOI training apps, or custom phone lines, keeping revenue streams diversified across platforms that allow explicit calling experiences.",
-      "categories": ["audio", "automation"],
-      "tags": ["voice-clone", "api", "sound-design"],
-      "features": ["consent tracking", "ambient beds", "discord bot"],
-      "adultLevel": "NSFW-video",
+      "id": "infatuated-ai",
+      "slug": "infatuated-ai",
+      "name": "Infatuated AI",
+      "vendor": "Infatuated",
+      "description": "NSFW image generator with model presets and remix.",
+      "categories": [
+        "image"
+      ],
+      "tags": [
+        "presets",
+        "remix"
+      ],
+      "features": [
+        "prompt",
+        "styles",
+        "history"
+      ],
+      "adultLevel": "NSFW-image",
       "links": {
-        "homepage": "https://velvetvoicelabs.com",
-        "pricing": "https://velvetvoicelabs.com/pricing",
-        "twitter": "https://twitter.com/velvetvoiceai"
+        "homepage": "https://infatuated.ai/image-generation",
+        "pricing": "https://infatuated.ai/pricing"
+      },
+      "pricing": "subscription",
+      "payment": [
+        "card",
+        "crypto"
+      ],
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "no-real-person-deepfake"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "promeai-nsfw",
+      "slug": "promeai-nsfw",
+      "name": "PromeAI NSFW",
+      "vendor": "PromeAI",
+      "description": "NSFW girl image generation endpoints and styles.",
+      "categories": [
+        "image"
+      ],
+      "tags": [
+        "styles",
+        "web"
+      ],
+      "features": [
+        "prompt",
+        "style-packs"
+      ],
+      "adultLevel": "NSFW-image",
+      "links": {
+        "homepage": "https://www.promeai.pro/ai-image-generation/nsfw%20girl",
+        "pricing": "https://www.promeai.pro/pricing"
+      },
+      "pricing": "credits",
+      "payment": [
+        "card"
+      ],
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "no-real-person-deepfake"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "ourdream-ai",
+      "slug": "ourdream-ai",
+      "name": "OurDream AI",
+      "vendor": "OurDream",
+      "description": "NSFW capable image generator with prompt library.",
+      "categories": [
+        "image"
+      ],
+      "tags": [
+        "prompt-library"
+      ],
+      "features": [
+        "prompt",
+        "seed",
+        "history"
+      ],
+      "adultLevel": "NSFW-image",
+      "links": {
+        "homepage": "https://ourdream.ai/",
+        "pricing": "https://ourdream.ai/pricing"
+      },
+      "pricing": "credits",
+      "payment": [
+        "card",
+        "crypto"
+      ],
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "no-real-person-deepfake"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "promptchan",
+      "slug": "promptchan",
+      "name": "PromptChan",
+      "vendor": "PromptChan",
+      "description": "Community NSFW image prompts and in-browser generation.",
+      "categories": [
+        "image"
+      ],
+      "tags": [
+        "community",
+        "prompts"
+      ],
+      "features": [
+        "prompt",
+        "gallery"
+      ],
+      "adultLevel": "NSFW-image",
+      "links": {
+        "homepage": "https://promptchan.ai/",
+        "pricing": "https://promptchan.ai/premium"
       },
       "pricing": "freemium",
-      "payment": ["card", "crypto"],
-      "regions": ["global"],
+      "payment": [
+        "card",
+        "crypto"
+      ],
+      "regions": [
+        "global"
+      ],
       "status": "active",
-      "compliance": ["18+ gate", "KYC", "no-CSAM"],
-      "updatedAt": "2025-01-28"
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "no-real-person-deepfake"
+      ],
+      "updatedAt": "2025-09-24"
     },
     {
-      "id": "taboo-typewriter",
-      "slug": "taboo-typewriter",
-      "name": "Taboo Typewriter",
-      "vendor": "Crimson Quill",
-      "description": "Taboo Typewriter is a long-form NSFW story engine that understands canon, pacing, and multiple POVs. Writers select heat levels, character archetypes, and taboo toggles to steer the AI. A collaborative editor supports live sessions between authors and patrons, automatically redacting banned words while suggesting alternatives that keep the same kink energy. Built-in marketing workflows schedule episodic releases, generate teaser blurbs, and attach AI-narrated audio companions generated via partner studios. The analytics tab surfaces subscriber drop-off points so creators can revisit scenes and improve tension curves.",
-      "categories": ["text", "marketplaces"],
-      "tags": ["erotica", "editor", "analytics"],
-      "features": ["collaborative editor", "taboo toggles", "release scheduling"],
-      "adultLevel": "NSFW-text",
+      "id": "candy-ai-image",
+      "slug": "candy-ai-image",
+      "name": "Candy AI (Image)",
+      "vendor": "Candy AI",
+      "description": "NSFW companion platform with image generator add-ons.",
+      "categories": [
+        "image"
+      ],
+      "tags": [
+        "companion",
+        "nsfw"
+      ],
+      "features": [
+        "prompt",
+        "packs"
+      ],
+      "adultLevel": "NSFW-image",
       "links": {
-        "homepage": "https://tabootypewriter.com",
-        "pricing": "https://tabootypewriter.com/pricing"
+        "homepage": "https://candy.ai/",
+        "pricing": "https://candy.ai/pricing"
       },
       "pricing": "subscription",
-      "payment": ["card", "paypal"],
-      "regions": ["global"],
+      "payment": [
+        "card",
+        "crypto"
+      ],
+      "regions": [
+        "global"
+      ],
       "status": "active",
-      "compliance": ["18+ gate", "no-CSAM"],
-      "updatedAt": "2025-01-20"
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "no-real-person-deepfake"
+      ],
+      "updatedAt": "2025-09-24"
     },
     {
-      "id": "mirror-muse",
-      "slug": "mirror-muse",
-      "name": "Mirror Muse",
-      "vendor": "MuseWare",
-      "description": "Mirror Muse is an adaptive roleplay companion that merges chat, voice, and generated imagery in a single space. Subscribers train their muse with moodboards, real-time feedback, and safe word overrides that immediately pivot the experience. The service offers privacy-forward hosting in EU and US regions with optional self-hosted deployment for studios that need compliance assurances. Mirror Muse includes a scene switcher to jump between text adventures, comic-style panels, or audio fantasies without starting over, encouraging longer sessions and higher LTV.",
-      "categories": ["text", "image", "audio"],
-      "tags": ["roleplay", "companion", "privacy"],
-      "features": ["scene switcher", "safe word overrides", "self-hosting"],
+      "id": "nastia-ai",
+      "slug": "nastia-ai",
+      "name": "Nastia.ai",
+      "vendor": "Nastia",
+      "description": "Uncensored image and video generator endpoints.",
+      "categories": [
+        "image",
+        "video"
+      ],
+      "tags": [
+        "uncensored",
+        "api"
+      ],
+      "features": [
+        "prompt",
+        "api"
+      ],
       "adultLevel": "Hard-NSFW",
       "links": {
-        "homepage": "https://mirrormuse.ai",
-        "docs": "https://docs.mirrormuse.ai",
-        "pricing": "https://mirrormuse.ai/pricing",
-        "discord": "https://discord.gg/mirrormuse"
+        "homepage": "https://www.nastia.ai/tools/uncensored-ai-image-generator",
+        "pricing": "https://www.nastia.ai/pricing"
+      },
+      "pricing": "subscription",
+      "payment": [
+        "card",
+        "crypto"
+      ],
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "no-real-person-deepfake"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "dzine-ai",
+      "slug": "dzine-ai",
+      "name": "Dzine.AI",
+      "vendor": "Dzine",
+      "description": "Uncensored AI video generator with explicit output.",
+      "categories": [
+        "video"
+      ],
+      "tags": [
+        "uncensored",
+        "video"
+      ],
+      "features": [
+        "prompt",
+        "clips"
+      ],
+      "adultLevel": "Hard-NSFW",
+      "links": {
+        "homepage": "https://runtheprompts.com/resources/dzine-info/uncensored-nsfw-ai-video-generator/"
       },
       "pricing": "paid",
-      "payment": ["card", "crypto"],
-      "regions": ["global", "australia", "south-america"],
-      "status": "invite",
-      "safetyNotes": ["Explicit consent prompts required on onboarding."],
-      "compliance": ["18+ gate", "no-CSAM", "no-real-person-deepfake"],
-      "updatedAt": "2025-02-10"
-    },
-    {
-      "id": "guardian-screen",
-      "slug": "guardian-screen",
-      "name": "Guardian Screen",
-      "vendor": "ComplianceCraft",
-      "description": "Guardian Screen is a safety and moderation layer for adult communities. It ingests creator uploads, affiliate submissions, and ad buys, running them against a configurable policy library that is updated weekly with new regulatory guidance. Age verification modules integrate with Stripe Identity, Persona, and in-house KYC flows. Moderators see triaged queues by severity so harmful assets are paused automatically. The platform exports signed audit logs for legal counsel and provides transparency dashboards for partner platforms that need proof of enforcement. Teams love the Slack integration that notifies staff when the AI escalates an item requiring human review.",
-      "categories": ["moderation", "analytics"],
-      "tags": ["moderation", "age-verification", "policy"],
-      "features": ["policy library", "audit logs", "slack integration"],
-      "adultLevel": "NSFW-image",
-      "links": {
-        "homepage": "https://guardianscreen.com",
-        "docs": "https://docs.guardianscreen.com",
-        "pricing": "https://guardianscreen.com/pricing"
-      },
-      "pricing": "subscription",
-      "payment": ["card"],
-      "regions": ["north-america", "europe", "australia"],
+      "payment": [
+        "crypto"
+      ],
+      "regions": [
+        "global"
+      ],
       "status": "active",
-      "compliance": ["18+ gate", "KYC", "no-CSAM", "no-real-person-deepfake"],
-      "updatedAt": "2025-01-12"
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "no-real-person-deepfake"
+      ],
+      "updatedAt": "2025-09-24"
     },
     {
-      "id": "fanforge-market",
-      "slug": "fanforge-market",
-      "name": "FanForge Market",
-      "vendor": "FanForge",
-      "description": "FanForge Market is a curated marketplace for AI adult creators to sell image packs, video loops, and scripted fantasies. Listings include disclosure badges for synthetic performers, affiliate eligibility, and terms around exclusivity. A merchandising wizard bundles renders into promo calendars for social drops, automatically generating square, portrait, and landscape crops with watermarking applied. Buyers receive licensing guidance with each purchase so they understand what platforms allow reposting. The platform also tracks affiliate referrals, awarding extra placement for partners that drive verified customers without chargebacks.",
-      "categories": ["marketplaces", "analytics"],
-      "tags": ["marketplace", "affiliate", "merchandising"],
-      "features": ["promo calendars", "watermarking", "licensing guidance"],
-      "adultLevel": "NSFW-image",
+      "id": "pika-22",
+      "slug": "pika-22",
+      "name": "Pika 2.2",
+      "vendor": "Pika",
+      "description": "Popular text-to-video; NSFW depends on community forks.",
+      "categories": [
+        "video"
+      ],
+      "tags": [
+        "text-to-video"
+      ],
+      "features": [
+        "prompt",
+        "edit"
+      ],
+      "adultLevel": "NSFW-video",
       "links": {
-        "homepage": "https://fanforge.market",
-        "pricing": "https://fanforge.market/pricing",
-        "affiliate": "https://fanforge.market/affiliates?ref=aiporndirect"
+        "homepage": "https://pika.art/",
+        "pricing": "https://pika.art/pricing"
       },
       "pricing": "freemium",
-      "payment": ["card", "paypal"],
-      "regions": ["global"],
-      "status": "active",
-      "compliance": ["18+ gate", "no-CSAM", "no-real-person-deepfake"],
-      "updatedAt": "2025-01-05"
+      "payment": [
+        "card"
+      ],
+      "regions": [
+        "global"
+      ],
+      "status": "unknown",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "no-real-person-deepfake"
+      ],
+      "updatedAt": "2025-09-24"
     },
     {
-      "id": "loop-lantern",
-      "slug": "loop-lantern",
-      "name": "Loop Lantern",
-      "vendor": "LanternWare",
-      "description": "Loop Lantern automatically repurposes long-form explicit shoots into snackable clips optimized for loop platforms and banner ads. Editors mark keyframes, then the AI generates multiple aspect ratios, burnt-in subtitles, and color-matched thumbnails. A content score estimates shareability based on previous campaign data, while the compliance layer removes accidental minors or copyrighted logos. Loop Lantern syncs with Cloudflare Stream, AWS, and dedicated CDN partners so assets publish with the right caching headers. Marketing teams track clickthrough and retention, feeding results back into the recommendation engine to prioritize which scripts should get future promotion.",
-      "categories": ["video", "analytics", "automation"],
-      "tags": ["clip-maker", "marketing", "thumbnails"],
-      "features": ["aspect ratio automation", "subtitle generator", "cdn sync"],
+      "id": "runway-gen",
+      "slug": "runway-gen",
+      "name": "Runway Gen",
+      "vendor": "Runway",
+      "description": "Pro text-to-video. NSFW restricted on official; forks exist.",
+      "categories": [
+        "video"
+      ],
+      "tags": [
+        "pro",
+        "editor"
+      ],
+      "features": [
+        "prompt",
+        "inpaint",
+        "style"
+      ],
       "adultLevel": "NSFW-video",
       "links": {
-        "homepage": "https://looplantern.com",
-        "pricing": "https://looplantern.com/pricing"
+        "homepage": "https://runwayml.com/",
+        "pricing": "https://runwayml.com/pricing/"
       },
       "pricing": "subscription",
-      "payment": ["card"],
-      "regions": ["global", "japan"],
-      "status": "active",
-      "compliance": ["18+ gate", "no-CSAM", "no-real-person-deepfake"],
-      "updatedAt": "2025-01-18"
+      "payment": [
+        "card"
+      ],
+      "regions": [
+        "global"
+      ],
+      "status": "unknown",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "no-real-person-deepfake",
+        "no-real-person-deepfake"
+      ],
+      "updatedAt": "2025-09-24"
     },
     {
-      "id": "pulse-parlor",
-      "slug": "pulse-parlor",
-      "name": "Pulse Parlor",
-      "vendor": "Pulse Collective",
-      "description": "Pulse Parlor is a live analytics cockpit for NSFW streamers and cam networks. It consolidates fan tips, subscription churn, and real-time chat sentiment across popular adult platforms. AI-generated prompts encourage creators to run polls or flash sales when engagement dips. Studio operators configure KPI dashboards for each performer, while the compliance module monitors banned terms and legal disclaimers in overlays. Integrations push recaps to Slack and Google Sheets for finance reconciliation, saving teams hours after every broadcast night.",
-      "categories": ["analytics", "automation"],
-      "tags": ["streaming", "analytics", "engagement"],
-      "features": ["sentiment analysis", "kpi dashboards", "slack reports"],
+      "id": "luma-dream-machine",
+      "slug": "luma-dream-machine",
+      "name": "Luma Dream Machine",
+      "vendor": "Luma AI",
+      "description": "High-quality text-to-video; adult use via off-label forks.",
+      "categories": [
+        "video"
+      ],
+      "tags": [
+        "text-to-video"
+      ],
+      "features": [
+        "prompt",
+        "image-to-video"
+      ],
       "adultLevel": "NSFW-video",
       "links": {
-        "homepage": "https://pulseparlor.com",
-        "pricing": "https://pulseparlor.com/pricing"
+        "homepage": "https://lumalabs.ai/dream-machine",
+        "pricing": "https://lumalabs.ai/pricing"
       },
       "pricing": "subscription",
-      "payment": ["card", "paypal"],
-      "regions": ["global"],
-      "status": "active",
-      "safetyNotes": ["Requires streamer consent for data aggregation."],
-      "compliance": ["18+ gate", "no-CSAM"],
-      "updatedAt": "2025-01-23"
+      "payment": [
+        "card"
+      ],
+      "regions": [
+        "global"
+      ],
+      "status": "unknown",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "no-real-person-deepfake"
+      ],
+      "updatedAt": "2025-09-24"
     },
     {
-      "id": "kinklink-sdk",
-      "slug": "kinklink-sdk",
-      "name": "KinkLink SDK",
-      "vendor": "OpenKink",
-      "description": "KinkLink SDK offers developers a pre-built account system, paywall, and affiliate tracker tailored to adult AI products. Instead of stitching payment gateways and consent workflows manually, teams drop in the SDK, configure payout rules, and launch. Built-in fraud defenses inspect device fingerprints and monitor for friendly fraud. The analytics suite exposes lifetime value by campaign, affiliate, and creative asset. Legal templates cover privacy, DMCA, and performer consent, reducing setup time for lean founders. The toolkit exposes REST and GraphQL APIs along with React components for teams that want to move quickly while retaining control of the front end.",
-      "categories": ["automation", "marketplaces"],
-      "tags": ["sdk", "payments", "affiliate"],
-      "features": ["paywall", "fraud detection", "legal templates"],
+      "id": "kling-ai",
+      "slug": "kling-ai",
+      "name": "Kling AI",
+      "vendor": "Kuaishou",
+      "description": "Chinese text-to-video; NSFW depends on endpoints.",
+      "categories": [
+        "video"
+      ],
+      "tags": [
+        "text-to-video"
+      ],
+      "features": [
+        "prompt"
+      ],
+      "adultLevel": "NSFW-video",
+      "links": {
+        "homepage": "https://www.kuaishou.com/en/kling"
+      },
+      "pricing": "paid",
+      "regions": [
+        "global"
+      ],
+      "status": "unknown",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "no-real-person-deepfake"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "veo-video",
+      "slug": "veo-video",
+      "name": "Google Veo",
+      "vendor": "Google",
+      "description": "Advanced T2V; official endpoints restrict explicit content.",
+      "categories": [
+        "video"
+      ],
+      "tags": [
+        "text-to-video"
+      ],
+      "features": [
+        "prompt"
+      ],
+      "adultLevel": "NSFW-video",
+      "links": {
+        "homepage": "https://ai.google/veo/"
+      },
+      "pricing": "paid",
+      "regions": [
+        "global"
+      ],
+      "status": "unknown",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "no-real-person-deepfake"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "kaiber-video",
+      "slug": "kaiber-video",
+      "name": "Kaiber",
+      "vendor": "Kaiber",
+      "description": "Style-first video generator; adult usage via private models.",
+      "categories": [
+        "video"
+      ],
+      "tags": [
+        "stylized"
+      ],
+      "features": [
+        "prompt",
+        "image-to-video"
+      ],
+      "adultLevel": "NSFW-video",
+      "links": {
+        "homepage": "https://www.kaiber.ai/",
+        "pricing": "https://www.kaiber.ai/pricing"
+      },
+      "pricing": "subscription",
+      "payment": [
+        "card"
+      ],
+      "regions": [
+        "global"
+      ],
+      "status": "unknown",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "no-real-person-deepfake"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "animatediff-nsfw",
+      "slug": "animatediff-nsfw",
+      "name": "AnimateDiff NSFW forks",
+      "vendor": "Community",
+      "description": "Open-source pipelines for explicit short clips from SD frames.",
+      "categories": [
+        "video"
+      ],
+      "tags": [
+        "open-source",
+        "sd"
+      ],
+      "features": [
+        "prompt",
+        "frames",
+        "loops"
+      ],
+      "adultLevel": "Hard-NSFW",
+      "links": {
+        "homepage": "https://github.com/guoyww/AnimateDiff"
+      },
+      "pricing": "free",
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "no-real-person-deepfake",
+        "KYC"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "soulgen-video",
+      "slug": "soulgen-video",
+      "name": "SoulGen (Video Beta)",
+      "vendor": "SoulGen",
+      "description": "NSFW image platform experimenting with video output.",
+      "categories": [
+        "video",
+        "image"
+      ],
+      "tags": [
+        "nsfw",
+        "beta"
+      ],
+      "features": [
+        "prompt",
+        "image-to-video"
+      ],
+      "adultLevel": "NSFW-video",
+      "links": {
+        "homepage": "https://soulgen.net/",
+        "pricing": "https://soulgen.net/pricing"
+      },
+      "pricing": "credits",
+      "payment": [
+        "card",
+        "crypto"
+      ],
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "no-real-person-deepfake"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "pornpen-video",
+      "slug": "pornpen-video",
+      "name": "PornPen Video Beta",
+      "vendor": "PornPen",
+      "description": "NSFW generator adding short video beta for select users.",
+      "categories": [
+        "video",
+        "image"
+      ],
+      "tags": [
+        "beta",
+        "nsfw"
+      ],
+      "features": [
+        "prompt"
+      ],
+      "adultLevel": "NSFW-video",
+      "links": {
+        "homepage": "https://pornpen.ai/",
+        "pricing": "https://pornpen.ai/pricing"
+      },
+      "pricing": "credits",
+      "payment": [
+        "card",
+        "crypto"
+      ],
+      "regions": [
+        "global"
+      ],
+      "status": "invite",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "no-real-person-deepfake",
+        "KYC"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "spicychat",
+      "slug": "spicychat",
+      "name": "SpicyChat",
+      "vendor": "SpicyChat",
+      "description": "NSFW AI chatbot and roleplay with custom characters.",
+      "categories": [
+        "text"
+      ],
+      "tags": [
+        "nsfw",
+        "characters"
+      ],
+      "features": [
+        "memory",
+        "personas"
+      ],
       "adultLevel": "NSFW-text",
       "links": {
-        "homepage": "https://kinklink.dev",
-        "docs": "https://docs.kinklink.dev",
-        "pricing": "https://kinklink.dev/pricing"
+        "homepage": "https://spicychat.ai/",
+        "pricing": "https://spicychat.ai/pricing"
+      },
+      "pricing": "subscription",
+      "payment": [
+        "card",
+        "crypto"
+      ],
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "crushon",
+      "slug": "crushon",
+      "name": "CrushOn.AI",
+      "vendor": "CrushOn",
+      "description": "NSFW roleplay bots with image attachments and voices.",
+      "categories": [
+        "text"
+      ],
+      "tags": [
+        "roleplay",
+        "companion"
+      ],
+      "features": [
+        "custom-characters",
+        "image-input"
+      ],
+      "adultLevel": "NSFW-text",
+      "links": {
+        "homepage": "https://crushon.ai/",
+        "pricing": "https://crushon.ai/pricing"
+      },
+      "pricing": "subscription",
+      "payment": [
+        "card",
+        "crypto"
+      ],
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "janitorai",
+      "slug": "janitorai",
+      "name": "Janitor AI",
+      "vendor": "JanitorAI",
+      "description": "Large character library; NSFW toggles by community.",
+      "categories": [
+        "text"
+      ],
+      "tags": [
+        "characters",
+        "community"
+      ],
+      "features": [
+        "personas",
+        "memory"
+      ],
+      "adultLevel": "NSFW-text",
+      "links": {
+        "homepage": "https://janitorai.com/",
+        "pricing": "https://janitorai.com/pricing"
       },
       "pricing": "freemium",
-      "payment": ["card", "crypto", "paypal"],
-      "regions": ["global"],
+      "payment": [
+        "card"
+      ],
+      "regions": [
+        "global"
+      ],
       "status": "active",
-      "compliance": ["18+ gate", "KYC", "no-CSAM", "no-real-person-deepfake"],
-      "updatedAt": "2025-02-05"
+      "compliance": [
+        "18+ gate",
+        "no-CSAM"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "chub-ai",
+      "slug": "chub-ai",
+      "name": "Chub.ai",
+      "vendor": "Chub",
+      "description": "NSFW character hub for roleplay bots.",
+      "categories": [
+        "text"
+      ],
+      "tags": [
+        "characters",
+        "nsfw"
+      ],
+      "features": [
+        "gallery",
+        "tags"
+      ],
+      "adultLevel": "NSFW-text",
+      "links": {
+        "homepage": "https://chub.ai/"
+      },
+      "pricing": "free",
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "venusai",
+      "slug": "venusai",
+      "name": "VenusAI",
+      "vendor": "Venus",
+      "description": "NSFW chat companions with images and calls.",
+      "categories": [
+        "text"
+      ],
+      "tags": [
+        "companion",
+        "voice"
+      ],
+      "features": [
+        "calls",
+        "image",
+        "personas"
+      ],
+      "adultLevel": "NSFW-text",
+      "links": {
+        "homepage": "https://venus.chub.ai/"
+      },
+      "pricing": "freemium",
+      "payment": [
+        "card"
+      ],
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "replikansfw",
+      "slug": "replika-nsfw",
+      "name": "Replika (NSFW communities)",
+      "vendor": "Luka",
+      "description": "Companion app; NSFW varies by policy and community mods.",
+      "categories": [
+        "text"
+      ],
+      "tags": [
+        "companion"
+      ],
+      "features": [
+        "calls",
+        "memory"
+      ],
+      "adultLevel": "NSFW-text",
+      "links": {
+        "homepage": "https://replika.ai/",
+        "pricing": "https://replika.ai/pricing"
+      },
+      "pricing": "subscription",
+      "payment": [
+        "card"
+      ],
+      "regions": [
+        "global"
+      ],
+      "status": "unknown",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "spicysnap",
+      "slug": "spicysnap",
+      "name": "SpicySnap",
+      "vendor": "SpicySnap",
+      "description": "NSFW chat with image generation and sharing.",
+      "categories": [
+        "text",
+        "image"
+      ],
+      "tags": [
+        "image-gen",
+        "chat"
+      ],
+      "features": [
+        "image-gen",
+        "personas"
+      ],
+      "adultLevel": "NSFW-text",
+      "links": {
+        "homepage": "https://spicysnap.ai/"
+      },
+      "pricing": "subscription",
+      "payment": [
+        "card",
+        "crypto"
+      ],
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "botify-nsfw",
+      "slug": "botify-nsfw",
+      "name": "Botify NSFW",
+      "vendor": "Botify",
+      "description": "Roleplay bots with adult filters off by creator choice.",
+      "categories": [
+        "text"
+      ],
+      "tags": [
+        "nsfw",
+        "bots"
+      ],
+      "features": [
+        "characters",
+        "gallery"
+      ],
+      "adultLevel": "NSFW-text",
+      "links": {
+        "homepage": "https://botifyns.ai/"
+      },
+      "pricing": "freemium",
+      "payment": [
+        "card"
+      ],
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "inworld-nsfw",
+      "slug": "inworld-nsfw",
+      "name": "Inworld (NSFW forks)",
+      "vendor": "Inworld",
+      "description": "Character engine; some community forks enable NSFW.",
+      "categories": [
+        "text"
+      ],
+      "tags": [
+        "characters",
+        "engine"
+      ],
+      "features": [
+        "API",
+        "personas"
+      ],
+      "adultLevel": "NSFW-text",
+      "links": {
+        "homepage": "https://inworld.ai/",
+        "pricing": "https://inworld.ai/pricing"
+      },
+      "pricing": "subscription",
+      "payment": [
+        "card"
+      ],
+      "regions": [
+        "global"
+      ],
+      "status": "unknown",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "xeve-ai",
+      "slug": "xeve-ai",
+      "name": "XEVE AI",
+      "vendor": "XEVE",
+      "description": "AI girlfriend with video presence and adult chat.",
+      "categories": [
+        "video"
+      ],
+      "tags": [
+        "avatar",
+        "video",
+        "companion"
+      ],
+      "features": [
+        "video",
+        "chat",
+        "personas"
+      ],
+      "adultLevel": "NSFW-video",
+      "links": {
+        "homepage": "https://ai.xeve.ai/"
+      },
+      "pricing": "subscription",
+      "payment": [
+        "card",
+        "crypto"
+      ],
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "KYC",
+        "no-real-person-deepfake"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "sexlikereal-vr",
+      "slug": "sexlikereal-vr",
+      "name": "SexLikeReal",
+      "vendor": "SLS",
+      "description": "VR platform with cam/stream options and AI integrations.",
+      "categories": [
+        "video"
+      ],
+      "tags": [
+        "vr",
+        "cams"
+      ],
+      "features": [
+        "stream",
+        "vr",
+        "library"
+      ],
+      "adultLevel": "NSFW-video",
+      "links": {
+        "homepage": "https://www.sexlikereal.com/",
+        "pricing": "https://www.sexlikereal.com/pricing"
+      },
+      "pricing": "subscription",
+      "payment": [
+        "card",
+        "crypto"
+      ],
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "KYC",
+        "no-CSAM",
+        "no-real-person-deepfake"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "xpression-camera",
+      "slug": "xpression-camera",
+      "name": "xpression camera",
+      "vendor": "xpression",
+      "description": "Live face-swap virtual camera for avatar streaming.",
+      "categories": [
+        "video"
+      ],
+      "tags": [
+        "face-swap",
+        "virtualcam"
+      ],
+      "features": [
+        "real-time",
+        "OBS"
+      ],
+      "adultLevel": "NSFW-video",
+      "links": {
+        "homepage": "https://xpressioncamera.com/",
+        "pricing": "https://xpressioncamera.com/pricing"
+      },
+      "pricing": "subscription",
+      "payment": [
+        "card"
+      ],
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "no-real-person-deepfake",
+        "KYC"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "digime-avatar",
+      "slug": "digime-avatar",
+      "name": "DigiME",
+      "vendor": "MSI / Red Pill Lab",
+      "description": "Real-time AI avatar livestreaming stack for VTubing/cams.",
+      "categories": [
+        "video"
+      ],
+      "tags": [
+        "avatar",
+        "vtuber",
+        "rtx"
+      ],
+      "features": [
+        "tracking",
+        "lip-sync"
+      ],
+      "adultLevel": "NSFW-video",
+      "links": {
+        "homepage": "https://www.msi.com/Landing/digime-ai-virtual-avatar"
+      },
+      "pricing": "paid",
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "KYC"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "resemble-live",
+      "slug": "resemble-live",
+      "name": "Resemble Live (Voice)",
+      "vendor": "Resemble AI",
+      "description": "Real-time cloned voices for avatar/cam personas.",
+      "categories": [
+        "audio"
+      ],
+      "tags": [
+        "voice-clone",
+        "live"
+      ],
+      "features": [
+        "real-time",
+        "API"
+      ],
+      "adultLevel": "NSFW-text",
+      "links": {
+        "homepage": "https://www.resemble.ai/live/",
+        "pricing": "https://www.resemble.ai/pricing/"
+      },
+      "pricing": "subscription",
+      "payment": [
+        "card"
+      ],
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-real-person-deepfake",
+        "KYC",
+        "no-CSAM"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "kits-ai",
+      "slug": "kits-ai",
+      "name": "Kits.AI",
+      "vendor": "Kits",
+      "description": "Voice conversion and clones for virtual performers.",
+      "categories": [
+        "audio"
+      ],
+      "tags": [
+        "voice",
+        "conversion"
+      ],
+      "features": [
+        "live",
+        "library"
+      ],
+      "adultLevel": "NSFW-text",
+      "links": {
+        "homepage": "https://www.kits.ai/",
+        "pricing": "https://www.kits.ai/pricing"
+      },
+      "pricing": "subscription",
+      "payment": [
+        "card"
+      ],
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-real-person-deepfake",
+        "KYC",
+        "no-CSAM"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "manycams-ai",
+      "slug": "manycams-ai",
+      "name": "ManyCam + AI plugins",
+      "vendor": "ManyCam",
+      "description": "Virtual camera with effects; used for AI/VTuber cam stacks.",
+      "categories": [
+        "video"
+      ],
+      "tags": [
+        "virtualcam",
+        "studio"
+      ],
+      "features": [
+        "layers",
+        "chroma",
+        "obs"
+      ],
+      "adultLevel": "NSFW-video",
+      "links": {
+        "homepage": "https://manycam.com/",
+        "pricing": "https://manycam.com/buy/"
+      },
+      "pricing": "subscription",
+      "payment": [
+        "card",
+        "paypal"
+      ],
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-real-person-deepfake",
+        "KYC",
+        "no-CSAM"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "vtube-studio",
+      "slug": "vtube-studio",
+      "name": "VTube Studio",
+      "vendor": "Denchi",
+      "description": "VTuber tooling widely used for avatar cams; NSFW by content.",
+      "categories": [
+        "video"
+      ],
+      "tags": [
+        "vtuber",
+        "tracking"
+      ],
+      "features": [
+        "live2d",
+        "integrations"
+      ],
+      "adultLevel": "NSFW-video",
+      "links": {
+        "homepage": "https://denchisoft.com/",
+        "pricing": "https://store.steampowered.com/app/1325860/VTube_Studio/"
+      },
+      "pricing": "paid",
+      "payment": [
+        "card"
+      ],
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-real-person-deepfake",
+        "KYC",
+        "no-CSAM"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "obs-studio",
+      "slug": "obs-studio",
+      "name": "OBS Studio + AI plugins",
+      "vendor": "OBS Project",
+      "description": "Foundation for streaming AI avatars and cam personas.",
+      "categories": [
+        "video"
+      ],
+      "tags": [
+        "open-source",
+        "virtualcam"
+      ],
+      "features": [
+        "scenes",
+        "filters",
+        "plugins"
+      ],
+      "adultLevel": "NSFW-video",
+      "links": {
+        "homepage": "https://obsproject.com/"
+      },
+      "pricing": "free",
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-real-person-deepfake",
+        "KYC",
+        "no-CSAM"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "ev-real",
+      "slug": "ev-real",
+      "name": "EV Real",
+      "vendor": "EVMatter",
+      "description": "Real-time face re-enactment for livestream avatars.",
+      "categories": [
+        "video"
+      ],
+      "tags": [
+        "face-reenactment",
+        "rtx"
+      ],
+      "features": [
+        "real-time",
+        "SDK"
+      ],
+      "adultLevel": "NSFW-video",
+      "links": {
+        "homepage": "https://evreal.ai/",
+        "pricing": "https://evreal.ai/#pricing"
+      },
+      "pricing": "subscription",
+      "payment": [
+        "card"
+      ],
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-real-person-deepfake",
+        "KYC",
+        "no-CSAM"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "unfilteredai-nsfw-gen-v2",
+      "slug": "unfilteredai-nsfw-gen-v2",
+      "name": "NSFW-gen-v2",
+      "vendor": "UnfilteredAI",
+      "description": "NSFW diffusion checkpoint for explicit erotic imagery.",
+      "categories": [
+        "image"
+      ],
+      "tags": [
+        "checkpoint",
+        "huggingface"
+      ],
+      "features": [
+        "nsfw-train",
+        "sd15"
+      ],
+      "adultLevel": "Hard-NSFW",
+      "links": {
+        "homepage": "https://huggingface.co/UnfilteredAI/NSFW-gen-v2"
+      },
+      "pricing": "free",
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "no-real-person-deepfake",
+        "KYC"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "flux-uncensored-v2",
+      "slug": "flux-uncensored-v2",
+      "name": "Flux Uncensored V2 (LoRA)",
+      "vendor": "Nextusos",
+      "description": "LoRA that removes safety filters and biases to adult output.",
+      "categories": [
+        "image"
+      ],
+      "tags": [
+        "uncensored",
+        "lora"
+      ],
+      "features": [
+        "finetune",
+        "nsfw"
+      ],
+      "adultLevel": "Hard-NSFW",
+      "links": {
+        "homepage": "https://github.com/Nextusos/Flux-Uncensored-V2"
+      },
+      "pricing": "free",
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "no-real-person-deepfake",
+        "KYC"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "realistic-vision-nsfw",
+      "slug": "realistic-vision-nsfw",
+      "name": "Realistic Vision (NSFW)",
+      "vendor": "Community",
+      "description": "Photoreal diffusion checkpoint; NSFW forks common.",
+      "categories": [
+        "image"
+      ],
+      "tags": [
+        "checkpoint",
+        "photoreal"
+      ],
+      "features": [
+        "nsfw-train",
+        "hires-fix"
+      ],
+      "adultLevel": "NSFW-image",
+      "links": {
+        "homepage": "https://civitai.com/"
+      },
+      "pricing": "free",
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "KYC"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "anything-v5-nsfw",
+      "slug": "anything-v5-nsfw",
+      "name": "Anything V5 (NSFW forks)",
+      "vendor": "Community",
+      "description": "Anime/semi-real model with adult-tuned forks.",
+      "categories": [
+        "image"
+      ],
+      "tags": [
+        "anime",
+        "checkpoint"
+      ],
+      "features": [
+        "nsfw-train",
+        "styles"
+      ],
+      "adultLevel": "NSFW-image",
+      "links": {
+        "homepage": "https://civitai.com/"
+      },
+      "pricing": "free",
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "KYC"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "waifu-diffusion-uncensored",
+      "slug": "waifu-diffusion-uncensored",
+      "name": "Waifu Diffusion (Uncensored)",
+      "vendor": "WD",
+      "description": "Anime diffusion with explicit variants widely used.",
+      "categories": [
+        "image"
+      ],
+      "tags": [
+        "anime",
+        "wd15"
+      ],
+      "features": [
+        "nsfw-train"
+      ],
+      "adultLevel": "NSFW-image",
+      "links": {
+        "homepage": "https://huggingface.co/hakurei/waifu-diffusion"
+      },
+      "pricing": "free",
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "KYC"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "nai-diffusion-forks",
+      "slug": "nai-diffusion-forks",
+      "name": "NAI Diffusion (forks)",
+      "vendor": "Community",
+      "description": "NovelAI-derived models circulating with NSFW tuning.",
+      "categories": [
+        "image"
+      ],
+      "tags": [
+        "leak",
+        "checkpoint"
+      ],
+      "features": [
+        "nsfw-train"
+      ],
+      "adultLevel": "Hard-NSFW",
+      "links": {
+        "homepage": "https://civitai.com/"
+      },
+      "pricing": "free",
+      "regions": [
+        "global"
+      ],
+      "status": "unknown",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "KYC"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "hentai-diffusion",
+      "slug": "hentai-diffusion",
+      "name": "Hentai Diffusion",
+      "vendor": "Community",
+      "description": "Anime/hentai-tuned Stable Diffusion model.",
+      "categories": [
+        "image"
+      ],
+      "tags": [
+        "anime",
+        "checkpoint"
+      ],
+      "features": [
+        "nsfw-train"
+      ],
+      "adultLevel": "Hard-NSFW",
+      "links": {
+        "homepage": "https://huggingface.co/collections/n128/hd-hentai-diffusion-63e2d3a1f4f6c0f50a70fa9c"
+      },
+      "pricing": "free",
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "KYC"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "revanimated-nsfw",
+      "slug": "revanimated-nsfw",
+      "name": "RevAnimated (NSFW forks)",
+      "vendor": "Community",
+      "description": "Semi-realistic anime/3D checkpoint adapted for NSFW.",
+      "categories": [
+        "image"
+      ],
+      "tags": [
+        "semi-real",
+        "checkpoint"
+      ],
+      "features": [
+        "nsfw-train"
+      ],
+      "adultLevel": "NSFW-image",
+      "links": {
+        "homepage": "https://civitai.com/"
+      },
+      "pricing": "free",
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "KYC"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "sexy-loras-pack",
+      "slug": "sexy-loras-pack",
+      "name": "Sexy Girl LoRA Packs",
+      "vendor": "Community",
+      "description": "Large LoRA collections (poses, body types, outfits).",
+      "categories": [
+        "image"
+      ],
+      "tags": [
+        "lora",
+        "poses",
+        "styles"
+      ],
+      "features": [
+        "nsfw-train"
+      ],
+      "adultLevel": "NSFW-image",
+      "links": {
+        "homepage": "https://civitai.com/"
+      },
+      "pricing": "free",
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "KYC"
+      ],
+      "updatedAt": "2025-09-24"
+    },
+    {
+      "id": "pony-xl-nsfw",
+      "slug": "pony-xl-nsfw",
+      "name": "WAI-ANI-NSFW-PONYXL",
+      "vendor": "OpenArt",
+      "description": "OpenArt hosted NSFW PONYXL variant for anime girls.",
+      "categories": [
+        "image"
+      ],
+      "tags": [
+        "ponyxl",
+        "anime"
+      ],
+      "features": [
+        "nsfw-train"
+      ],
+      "adultLevel": "Hard-NSFW",
+      "links": {
+        "homepage": "https://openart.ai/image/create/WAI-ANI-NSFW-PONYXL"
+      },
+      "pricing": "free",
+      "regions": [
+        "global"
+      ],
+      "status": "active",
+      "compliance": [
+        "18+ gate",
+        "no-CSAM",
+        "KYC"
+      ],
+      "updatedAt": "2025-09-24"
     }
   ]
 }
