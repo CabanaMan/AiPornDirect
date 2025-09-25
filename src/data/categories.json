@@ -1,0 +1,42 @@
+[
+  {
+    "id": "image",
+    "name": "Image Generators",
+    "description": "AI models that create or transform adult imagery including still renders, styles, and upscales."
+  },
+  {
+    "id": "video",
+    "name": "Video Tools",
+    "description": "Video-focused generators, enhancers, and deepfake studios designed for explicit productions."
+  },
+  {
+    "id": "text",
+    "name": "Text & Story",
+    "description": "Erotic chatbots, roleplay companions, and NSFW story writers for adult creators."
+  },
+  {
+    "id": "moderation",
+    "name": "Safety & Moderation",
+    "description": "Tools that help adult teams enforce policies, verify age, and avoid prohibited content."
+  },
+  {
+    "id": "automation",
+    "name": "Automation",
+    "description": "Workflow helpers that schedule, localize, or repurpose explicit creative assets."
+  },
+  {
+    "id": "marketplaces",
+    "name": "Marketplaces",
+    "description": "Directories and storefronts that connect NSFW AI creators with paying fans."
+  },
+  {
+    "id": "audio",
+    "name": "Audio & Voice",
+    "description": "Voice cloning and sound design services tuned for adult entertainment projects."
+  },
+  {
+    "id": "analytics",
+    "name": "Analytics",
+    "description": "Insight platforms that track campaigns, affiliate performance, and viewer behavior."
+  }
+]

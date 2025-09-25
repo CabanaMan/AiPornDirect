@@ -1,0 +1,31 @@
+{% extends "_layout.njk" %}
+{% block head %}
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ description }}">
+{% endblock %}
+{% block content %}
+<header class="page-header">
+  <p class="breadcrumb"><a href="/">Home</a> / {{ category.name }}</p>
+  <h1>{{ category.name }}</h1>
+  <p>{{ category.description }}</p>
+</header>
+
+<section>
+  <div class="tool-grid">
+    {% for tool in tools %}
+    <article class="tool-card">
+      <h2><a href="/tool/{{ tool.slug }}/">{{ tool.name }}</a></h2>
+      <p class="tool-card__meta">By {{ tool.vendor }} &middot; {{ tool.pricing | capitalize }} &middot; {{ tool.status | capitalize }}</p>
+      <p class="tool-card__description">{{ tool.description | truncate(220, true, '…') }}</p>
+      <ul class="pill-list">
+        {% for tag in tool.tags %}
+        <li class="pill">{{ tag }}</li>
+        {% endfor %}
+      </ul>
+    </article>
+    {% else %}
+    <p>No tools found for this category yet.</p>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

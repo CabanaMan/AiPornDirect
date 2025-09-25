@@ -1,0 +1,231 @@
+{
+  "tools": [
+    {
+      "id": "pornpen-ai",
+      "slug": "pornpen-ai",
+      "name": "PornPen AI",
+      "vendor": "PornPen",
+      "description": "NSFW image generator with finely curated diffusion models, adjustable prompt weights, and an embedded upscaler tuned for skin tones. Artists can mix LoRAs, run batch renders, and export layered PSDs to continue polish in their editor of choice. The dashboard highlights trending creators, prompt recipes that perform well with fans, and moderation tips that keep accounts compliant. Studios rely on the built-in rights management view to catalog releases, track pending takedown requests, and share private boards with affiliates who need ready-to-post content.",
+      "categories": ["image", "automation"],
+      "tags": ["stable-diffusion", "upscale", "lora"],
+      "features": ["prompt mixer", "LoRA", "batch", "rights management"],
+      "adultLevel": "NSFW-image",
+      "links": {
+        "homepage": "https://pornpen.ai",
+        "pricing": "https://pornpen.ai/pricing",
+        "affiliate": "https://partners.pornpen.ai/?ref=aiporndirect"
+      },
+      "pricing": "credits",
+      "payment": ["card", "crypto"],
+      "regions": ["global"],
+      "status": "active",
+      "compliance": ["18+ gate", "no-CSAM", "no-real-person-deepfake"],
+      "affiliate": {
+        "program": "private",
+        "terms": "revshare 25%",
+        "payout": "NET30",
+        "cookieDays": 30
+      },
+      "updatedAt": "2025-01-15"
+    },
+    {
+      "id": "afterdark-studio",
+      "slug": "afterdark-studio",
+      "name": "AfterDark Studio",
+      "vendor": "NightShift Labs",
+      "description": "AfterDark Studio wraps a cinematic NSFW video pipeline around open source motion models, color grading LUTs, and speech-to-lipsync control. Producers storyboard inside the browser, drop in AI generated actors, then stitch scenes with automated transitions. A compliance monitor runs in the background to flag minors, real people, or celebrity likenesses before renders publish. Cloud rendering nodes scale up to 4K60 without manual setup, while the review workspace lets distributed teams annotate each frame. Custom export presets integrate with FanVue, ManyVids, and self-hosted paywalls so a finished film lands in the right storefront with metadata already filled in.",
+      "categories": ["video", "automation"],
+      "tags": ["lipsync", "render farm", "storyboard"],
+      "features": ["cloud rendering", "compliance monitor", "storefront integrations"],
+      "adultLevel": "NSFW-video",
+      "links": {
+        "homepage": "https://afterdark.studio",
+        "docs": "https://docs.afterdark.studio",
+        "pricing": "https://afterdark.studio/pricing"
+      },
+      "pricing": "subscription",
+      "payment": ["card", "paypal"],
+      "regions": ["north-america", "europe"],
+      "status": "active",
+      "safetyNotes": ["Requires consent forms for custom performers."],
+      "compliance": ["18+ gate", "no-CSAM", "no-real-person-deepfake"],
+      "updatedAt": "2025-02-02"
+    },
+    {
+      "id": "velvet-voice-labs",
+      "slug": "velvet-voice-labs",
+      "name": "Velvet Voice Labs",
+      "vendor": "Velvet Voice",
+      "description": "Velvet Voice Labs focuses on sensual AI voice cloning with legally sourced vocal talent and granular content filters. Creators upload scripts or connect their roleplay chats to synthesize unique moans, whispers, and narration that stay on brand. A library of ambient beds, transitions, and moody effects rounds out the soundscape. Teams appreciate the consent tracking dashboard: every voice has a contract, expiry date, and allowed phrases list so producers know where they can syndicate audio. Flexible APIs drop into Discord bots, JOI training apps, or custom phone lines, keeping revenue streams diversified across platforms that allow explicit calling experiences.",
+      "categories": ["audio", "automation"],
+      "tags": ["voice-clone", "api", "sound-design"],
+      "features": ["consent tracking", "ambient beds", "discord bot"],
+      "adultLevel": "NSFW-video",
+      "links": {
+        "homepage": "https://velvetvoicelabs.com",
+        "pricing": "https://velvetvoicelabs.com/pricing",
+        "twitter": "https://twitter.com/velvetvoiceai"
+      },
+      "pricing": "freemium",
+      "payment": ["card", "crypto"],
+      "regions": ["global"],
+      "status": "active",
+      "compliance": ["18+ gate", "KYC", "no-CSAM"],
+      "updatedAt": "2025-01-28"
+    },
+    {
+      "id": "taboo-typewriter",
+      "slug": "taboo-typewriter",
+      "name": "Taboo Typewriter",
+      "vendor": "Crimson Quill",
+      "description": "Taboo Typewriter is a long-form NSFW story engine that understands canon, pacing, and multiple POVs. Writers select heat levels, character archetypes, and taboo toggles to steer the AI. A collaborative editor supports live sessions between authors and patrons, automatically redacting banned words while suggesting alternatives that keep the same kink energy. Built-in marketing workflows schedule episodic releases, generate teaser blurbs, and attach AI-narrated audio companions generated via partner studios. The analytics tab surfaces subscriber drop-off points so creators can revisit scenes and improve tension curves.",
+      "categories": ["text", "marketplaces"],
+      "tags": ["erotica", "editor", "analytics"],
+      "features": ["collaborative editor", "taboo toggles", "release scheduling"],
+      "adultLevel": "NSFW-text",
+      "links": {
+        "homepage": "https://tabootypewriter.com",
+        "pricing": "https://tabootypewriter.com/pricing"
+      },
+      "pricing": "subscription",
+      "payment": ["card", "paypal"],
+      "regions": ["global"],
+      "status": "active",
+      "compliance": ["18+ gate", "no-CSAM"],
+      "updatedAt": "2025-01-20"
+    },
+    {
+      "id": "mirror-muse",
+      "slug": "mirror-muse",
+      "name": "Mirror Muse",
+      "vendor": "MuseWare",
+      "description": "Mirror Muse is an adaptive roleplay companion that merges chat, voice, and generated imagery in a single space. Subscribers train their muse with moodboards, real-time feedback, and safe word overrides that immediately pivot the experience. The service offers privacy-forward hosting in EU and US regions with optional self-hosted deployment for studios that need compliance assurances. Mirror Muse includes a scene switcher to jump between text adventures, comic-style panels, or audio fantasies without starting over, encouraging longer sessions and higher LTV.",
+      "categories": ["text", "image", "audio"],
+      "tags": ["roleplay", "companion", "privacy"],
+      "features": ["scene switcher", "safe word overrides", "self-hosting"],
+      "adultLevel": "Hard-NSFW",
+      "links": {
+        "homepage": "https://mirrormuse.ai",
+        "docs": "https://docs.mirrormuse.ai",
+        "pricing": "https://mirrormuse.ai/pricing",
+        "discord": "https://discord.gg/mirrormuse"
+      },
+      "pricing": "paid",
+      "payment": ["card", "crypto"],
+      "regions": ["global", "australia", "south-america"],
+      "status": "invite",
+      "safetyNotes": ["Explicit consent prompts required on onboarding."],
+      "compliance": ["18+ gate", "no-CSAM", "no-real-person-deepfake"],
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "id": "guardian-screen",
+      "slug": "guardian-screen",
+      "name": "Guardian Screen",
+      "vendor": "ComplianceCraft",
+      "description": "Guardian Screen is a safety and moderation layer for adult communities. It ingests creator uploads, affiliate submissions, and ad buys, running them against a configurable policy library that is updated weekly with new regulatory guidance. Age verification modules integrate with Stripe Identity, Persona, and in-house KYC flows. Moderators see triaged queues by severity so harmful assets are paused automatically. The platform exports signed audit logs for legal counsel and provides transparency dashboards for partner platforms that need proof of enforcement. Teams love the Slack integration that notifies staff when the AI escalates an item requiring human review.",
+      "categories": ["moderation", "analytics"],
+      "tags": ["moderation", "age-verification", "policy"],
+      "features": ["policy library", "audit logs", "slack integration"],
+      "adultLevel": "NSFW-image",
+      "links": {
+        "homepage": "https://guardianscreen.com",
+        "docs": "https://docs.guardianscreen.com",
+        "pricing": "https://guardianscreen.com/pricing"
+      },
+      "pricing": "subscription",
+      "payment": ["card"],
+      "regions": ["north-america", "europe", "australia"],
+      "status": "active",
+      "compliance": ["18+ gate", "KYC", "no-CSAM", "no-real-person-deepfake"],
+      "updatedAt": "2025-01-12"
+    },
+    {
+      "id": "fanforge-market",
+      "slug": "fanforge-market",
+      "name": "FanForge Market",
+      "vendor": "FanForge",
+      "description": "FanForge Market is a curated marketplace for AI adult creators to sell image packs, video loops, and scripted fantasies. Listings include disclosure badges for synthetic performers, affiliate eligibility, and terms around exclusivity. A merchandising wizard bundles renders into promo calendars for social drops, automatically generating square, portrait, and landscape crops with watermarking applied. Buyers receive licensing guidance with each purchase so they understand what platforms allow reposting. The platform also tracks affiliate referrals, awarding extra placement for partners that drive verified customers without chargebacks.",
+      "categories": ["marketplaces", "analytics"],
+      "tags": ["marketplace", "affiliate", "merchandising"],
+      "features": ["promo calendars", "watermarking", "licensing guidance"],
+      "adultLevel": "NSFW-image",
+      "links": {
+        "homepage": "https://fanforge.market",
+        "pricing": "https://fanforge.market/pricing",
+        "affiliate": "https://fanforge.market/affiliates?ref=aiporndirect"
+      },
+      "pricing": "freemium",
+      "payment": ["card", "paypal"],
+      "regions": ["global"],
+      "status": "active",
+      "compliance": ["18+ gate", "no-CSAM", "no-real-person-deepfake"],
+      "updatedAt": "2025-01-05"
+    },
+    {
+      "id": "loop-lantern",
+      "slug": "loop-lantern",
+      "name": "Loop Lantern",
+      "vendor": "LanternWare",
+      "description": "Loop Lantern automatically repurposes long-form explicit shoots into snackable clips optimized for loop platforms and banner ads. Editors mark keyframes, then the AI generates multiple aspect ratios, burnt-in subtitles, and color-matched thumbnails. A content score estimates shareability based on previous campaign data, while the compliance layer removes accidental minors or copyrighted logos. Loop Lantern syncs with Cloudflare Stream, AWS, and dedicated CDN partners so assets publish with the right caching headers. Marketing teams track clickthrough and retention, feeding results back into the recommendation engine to prioritize which scripts should get future promotion.",
+      "categories": ["video", "analytics", "automation"],
+      "tags": ["clip-maker", "marketing", "thumbnails"],
+      "features": ["aspect ratio automation", "subtitle generator", "cdn sync"],
+      "adultLevel": "NSFW-video",
+      "links": {
+        "homepage": "https://looplantern.com",
+        "pricing": "https://looplantern.com/pricing"
+      },
+      "pricing": "subscription",
+      "payment": ["card"],
+      "regions": ["global", "japan"],
+      "status": "active",
+      "compliance": ["18+ gate", "no-CSAM", "no-real-person-deepfake"],
+      "updatedAt": "2025-01-18"
+    },
+    {
+      "id": "pulse-parlor",
+      "slug": "pulse-parlor",
+      "name": "Pulse Parlor",
+      "vendor": "Pulse Collective",
+      "description": "Pulse Parlor is a live analytics cockpit for NSFW streamers and cam networks. It consolidates fan tips, subscription churn, and real-time chat sentiment across popular adult platforms. AI-generated prompts encourage creators to run polls or flash sales when engagement dips. Studio operators configure KPI dashboards for each performer, while the compliance module monitors banned terms and legal disclaimers in overlays. Integrations push recaps to Slack and Google Sheets for finance reconciliation, saving teams hours after every broadcast night.",
+      "categories": ["analytics", "automation"],
+      "tags": ["streaming", "analytics", "engagement"],
+      "features": ["sentiment analysis", "kpi dashboards", "slack reports"],
+      "adultLevel": "NSFW-video",
+      "links": {
+        "homepage": "https://pulseparlor.com",
+        "pricing": "https://pulseparlor.com/pricing"
+      },
+      "pricing": "subscription",
+      "payment": ["card", "paypal"],
+      "regions": ["global"],
+      "status": "active",
+      "safetyNotes": ["Requires streamer consent for data aggregation."],
+      "compliance": ["18+ gate", "no-CSAM"],
+      "updatedAt": "2025-01-23"
+    },
+    {
+      "id": "kinklink-sdk",
+      "slug": "kinklink-sdk",
+      "name": "KinkLink SDK",
+      "vendor": "OpenKink",
+      "description": "KinkLink SDK offers developers a pre-built account system, paywall, and affiliate tracker tailored to adult AI products. Instead of stitching payment gateways and consent workflows manually, teams drop in the SDK, configure payout rules, and launch. Built-in fraud defenses inspect device fingerprints and monitor for friendly fraud. The analytics suite exposes lifetime value by campaign, affiliate, and creative asset. Legal templates cover privacy, DMCA, and performer consent, reducing setup time for lean founders. The toolkit exposes REST and GraphQL APIs along with React components for teams that want to move quickly while retaining control of the front end.",
+      "categories": ["automation", "marketplaces"],
+      "tags": ["sdk", "payments", "affiliate"],
+      "features": ["paywall", "fraud detection", "legal templates"],
+      "adultLevel": "NSFW-text",
+      "links": {
+        "homepage": "https://kinklink.dev",
+        "docs": "https://docs.kinklink.dev",
+        "pricing": "https://kinklink.dev/pricing"
+      },
+      "pricing": "freemium",
+      "payment": ["card", "crypto", "paypal"],
+      "regions": ["global"],
+      "status": "active",
+      "compliance": ["18+ gate", "KYC", "no-CSAM", "no-real-person-deepfake"],
+      "updatedAt": "2025-02-05"
+    }
+  ]
+}

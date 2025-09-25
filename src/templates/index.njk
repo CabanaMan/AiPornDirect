@@ -1,0 +1,37 @@
+{% extends "_layout.njk" %}
+{% set title = 'AiPornDirect — NSFW AI tools directory' %}
+{% set description = 'Explore verified NSFW AI generators, marketplaces, compliance tools, and automation platforms for adult creators.' %}
+{% block content %}
+<section class="hero">
+  <h1>Build adult AI products without guesswork</h1>
+  <p>AiPornDirect curates mature AI software with transparent safety practices, compliance notes, and monetization data so you can ship faster.</p>
+  <div class="search-bar">
+    <label for="search" class="visually-hidden">Search tools</label>
+    <input id="search" type="search" placeholder="Search by name, category, or tag" autocomplete="off">
+  </div>
+  <div class="filter-group" id="category-filter" data-categories='{{ categories | dump }}'>
+    <button class="filter-chip is-active" data-category="all">All</button>
+    {% for category in categories %}
+    <button class="filter-chip" data-category="{{ category.id }}">{{ category.name }}</button>
+    {% endfor %}
+  </div>
+</section>
+
+<section aria-live="polite">
+  <h2 class="section-title">Featured tools</h2>
+  <div id="tool-grid" class="tool-grid">
+    {% for tool in tools %}
+    <article class="tool-card" data-slug='{{ tool.slug }}' data-categories='{{ tool.categories | dump }}' data-tags='{{ tool.tags | dump }}' data-name='{{ tool.name | lower }}' data-vendor='{{ tool.vendor | lower }}'>
+      <h3><a href="/tool/{{ tool.slug }}/">{{ tool.name }}</a></h3>
+      <p class="tool-card__meta">By {{ tool.vendor }} &middot; {{ tool.categories | join(', ') }}</p>
+      <p class="tool-card__description">{{ tool.description | truncate(220, true, '…') }}</p>
+      <ul class="pill-list">
+        <li class="pill">{{ tool.pricing | capitalize }}</li>
+        <li class="pill">{{ tool.adultLevel }}</li>
+        <li class="pill">{{ tool.status | capitalize }}</li>
+      </ul>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

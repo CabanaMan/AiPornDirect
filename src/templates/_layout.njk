@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>{{ title | default('AiPornDirect') }}</title>
+  <meta name="description" content="{{ description | default('Curated directory of AI tools for adult creators, with compliance guidance and safety notes.') }}">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="/icons/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  {% if canonical %}<link rel="canonical" href="{{ canonical }}">{% endif %}
+  {% block head %}{% endblock %}
+</head>
+<body class="{{ bodyClass | default('') }}">
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/">AiPornDirect</a>
+      <nav aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="/">Directory</a></li>
+          <li><a href="/prohibited-content.html">Prohibited Content</a></li>
+          <li><a href="/privacy.html">Privacy</a></li>
+          <li><a href="/dmca.html">DMCA</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div id="age-gate" class="age-gate" hidden>
+    <div class="age-gate__dialog" role="dialog" aria-modal="true" aria-labelledby="age-gate-title">
+      <h2 id="age-gate-title">Adults only</h2>
+      <p>This resource is intended for audiences aged 18 years or older. By entering you confirm you are at least 18 and agree to view explicit AI content responsibly.</p>
+      <div class="age-gate__actions">
+        <button id="age-gate-enter" class="btn btn-primary">I am 18+</button>
+        <a class="btn btn-secondary" href="https://google.com" rel="nofollow">Take me away</a>
+      </div>
+      <p class="age-gate__legal">We use a cookie to remember your choice for 30 days.</p>
+    </div>
+  </div>
+
+  <main id="main" class="site-main container">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; {{ year }} AiPornDirect. All rights reserved.</p>
+      <p>AiPornDirect features adult-oriented AI software. We do not host illegal content and require partners to enforce <a href="/prohibited-content.html">strict safety standards</a>. Affiliate links may earn us a commission.</p>
+      <ul class="footer-links">
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="/dmca.html">DMCA</a></li>
+        <li><a href="/prohibited-content.html">Prohibited Content</a></li>
+        <li><a href="mailto:legal@aiporndirect.com">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
