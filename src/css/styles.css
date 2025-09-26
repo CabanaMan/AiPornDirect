@@ -573,33 +573,6 @@ a:focus {
   gap: 1.1rem;
 }
 
-.age-gate {
-  position: fixed;
-  inset: 0;
-  background: rgba(4, 4, 12, 0.92);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-}
-
-.age-gate__dialog {
-  background: rgba(8, 8, 18, 0.95);
-  border: 1px solid var(--accent);
-  padding: 2rem;
-  border-radius: 1rem;
-  max-width: 420px;
-  text-align: center;
-  box-shadow: 0 28px 60px rgba(4, 4, 16, 0.6);
-}
-
-.age-gate__actions {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  margin: 1.5rem 0;
-}
-
 .prose {
   max-width: 780px;
 }
