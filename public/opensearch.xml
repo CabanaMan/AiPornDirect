@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
   <ShortName>AiPornDirect</ShortName>
-  <Description>Search the AiPornDirect directory of NSFW AI tools.</Description>
+  <Description>Search the AiPornDirect directory of NSFW AI porn sites.</Description>
   <InputEncoding>UTF-8</InputEncoding>
   <Url type="text/html" template="https://aiporndirect.com/?q={searchTerms}"/>
 </OpenSearchDescription>

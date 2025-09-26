@@ -1,7 +1,7 @@
 {
   "name": "aiporndirect",
   "version": "0.1.0",
-  "description": "Static directory of AI adult tools with validation and SEO tooling.",
+  "description": "Static directory of AI porn sites with validation and SEO tooling.",
   "type": "module",
   "scripts": {
     "dev": "node scripts/build.mjs --watch",
