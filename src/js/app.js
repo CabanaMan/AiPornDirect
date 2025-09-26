@@ -23,10 +23,14 @@ function initAgeGate() {
   modal.hidden = false;
   const enterButton = document.getElementById('age-gate-enter');
   if (enterButton) {
-    enterButton.addEventListener('click', () => {
+    const confirmEntry = (event) => {
+      event.preventDefault();
       setCookie(AGE_COOKIE_NAME, '1', AGE_COOKIE_DAYS);
       modal.hidden = true;
-    });
+    };
+    enterButton.addEventListener('click', confirmEntry, { passive: false });
+    enterButton.addEventListener('touchend', confirmEntry, { passive: false });
+    enterButton.focus();
   }
 }
 
