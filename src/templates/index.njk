@@ -1,34 +1,34 @@
 {% extends "_layout.njk" %}
-{% set title = 'AiPornDirect — NSFW AI tools directory' %}
-{% set description = 'Explore verified NSFW AI generators, marketplaces, compliance tools, and automation platforms for adult creators.' %}
+{% set title = 'AiPornDirect — AI porn sites from The Porn Dude' %}
+{% set description = 'Browse the AI porn generators, deepfake apps, chatbots, and marketplaces that appear on The Porn Dude\'s AI porn sites list.' %}
 {% block content %}
-<section class="hero">
+<section class="hero hero--directory">
   <div class="container">
     <div class="hero__surface">
       <div class="hero__content">
-        <p class="hero__eyebrow">Responsible launches for mature AI founders</p>
-        <h1>Build adult AI products without guesswork</h1>
-        <p class="hero__lead">AiPornDirect curates NSFW AI software with transparent guardrails, compliance notes, and monetization data so you can move from idea to launch with confidence.</p>
-
+        <p class="hero__eyebrow">Mirrored from The Porn Dude</p>
+        <h1>The AI porn sites people actually use</h1>
+        <p class="hero__lead">
+          We track every AI porn site The Porn Dude highlights – generators, chatbots, deepfake studios, and more – and wrap them in filters, metadata, and safety notes so you can compare options quickly.
+        </p>
         <ul class="hero__stats">
           <li>
-            <span class="hero__stat-value">{{ tools | length }}</span>
-            <span class="hero__stat-label">Vetted tools</span>
+            <span class="hero__stat-value">{{ sites | length }}</span>
+            <span class="hero__stat-label">Sites indexed</span>
           </li>
           <li>
             <span class="hero__stat-value">{{ categories | length }}</span>
-            <span class="hero__stat-label">Niches covered</span>
+            <span class="hero__stat-label">Categories</span>
           </li>
           <li>
-            <span class="hero__stat-value">24/7</span>
-            <span class="hero__stat-label">Human review</span>
+            <span class="hero__stat-value">{{ lastUpdated or '—' }}</span>
+            <span class="hero__stat-label">Last verified</span>
           </li>
         </ul>
-
         <div class="hero__controls">
           <div class="search-bar">
-            <label for="search" class="visually-hidden">Search tools</label>
-            <input id="search" type="search" placeholder="Search by name, category, or tag" autocomplete="off">
+            <label for="search" class="visually-hidden">Search AI porn sites</label>
+            <input id="search" type="search" placeholder="Search by name, tag, or category" autocomplete="off">
           </div>
           <div class="filter-group" id="category-filter" data-categories='{{ categories | dump }}'>
             <button class="filter-chip is-active" data-category="all">All</button>
@@ -38,47 +38,76 @@
           </div>
         </div>
       </div>
-
-      <aside class="hero__aside" aria-label="Why teams use AiPornDirect">
-        <span class="hero__badge">What we evaluate</span>
+      <aside class="hero__aside" aria-label="What\'s new">
+        <span class="hero__badge">Directory notes</span>
         <ul class="hero__checklist">
-          <li>Safety and moderation playbooks</li>
-          <li>Revenue models &amp; payout transparency</li>
-          <li>International compliance coverage</li>
-          <li>Community reputation &amp; support</li>
+          <li>Ratings are mirrored from The Porn Dude where available.</li>
+          <li>Highlights summarise the selling points they call out.</li>
+          <li>Tags and categories help you filter between generators, chatbots, and deepfakes.</li>
         </ul>
-        <p class="hero__aside-note">Curators review each listing manually before it ships to the directory.</p>
+        <p class="hero__aside-note">Can\'t find something? <a href="mailto:submit@aiporndirect.com">Send us the missing site</a>.</p>
       </aside>
     </div>
   </div>
 </section>
-
-<section class="section" aria-live="polite">
+<section class="section section--directory" aria-live="polite">
   <div class="container">
     <div class="section-heading">
       <div>
-        <h2 class="section-title">Featured tools</h2>
-        <p class="section-subtitle">Discover trending launches and trusted operators from our community.</p>
+        <h2 class="section-title">All AI porn sites</h2>
+        <p class="section-subtitle">Filter the same list The Porn Dude curates with richer metadata and quick links.</p>
       </div>
-      <a class="section-link" href="mailto:submit@aiporndirect.com">Request a listing →</a>
+      <a class="section-link" href="mailto:submit@aiporndirect.com">Request an update →</a>
     </div>
-    <div id="tool-grid" class="tool-grid">
-      {% for tool in tools %}
-      <article class="tool-card" data-slug='{{ tool.slug }}' data-categories='{{ tool.categories | dump }}' data-tags='{{ tool.tags | dump }}' data-name='{{ tool.name | lower }}' data-vendor='{{ tool.vendor | lower }}'>
-        <div class="tool-card__heading">
-          <h3><a href="/tool/{{ tool.slug }}/">{{ tool.name }}</a></h3>
-          <span class="tool-card__category">{{ tool.categories | join(', ') }}</span>
-        </div>
-        <p class="tool-card__meta">By {{ tool.vendor }}</p>
-        <p class="tool-card__description">{{ tool.description | truncate(220, true, '…') }}</p>
-        <ul class="pill-list">
-          <li class="pill">{{ tool.pricing | capitalize }}</li>
-          <li class="pill">{{ tool.adultLevel }}</li>
-          <li class="pill">{{ tool.status | capitalize }}</li>
+    {% if sites | length %}
+    <div class="site-grid" id="site-grid">
+      {% for site in sites %}
+      <article class="site-card" data-slug="{{ site.slug }}" data-categories='{{ site.categories | dump }}' data-tags='{{ site.tags | dump }}' data-pricing="{{ site.pricing }}">
+        <header class="site-card__header">
+          <div class="site-card__meta">
+            <span class="site-card__rank">#{{ site.rank or loop.index }}</span>
+            <h3><a href="/site/{{ site.slug }}/">{{ site.name }}</a></h3>
+          </div>
+          <div class="site-card__rating" aria-label="Rating">
+            {% if site.rating %}
+            <span class="site-card__score">{{ site.rating }}<small>/100</small></span>
+            {% else %}
+            <span class="site-card__score is-na">N/A</span>
+            {% endif %}
+            {% if site.votes %}
+            <span class="site-card__votes">{{ site.votes }} votes</span>
+            {% endif %}
+          </div>
+        </header>
+        <p class="site-card__summary">{{ site.summary }}</p>
+        {% if site.highlights %}
+        <ul class="site-card__highlights">
+          {% for highlight in site.highlights %}
+          <li>{{ highlight }}</li>
+          {% endfor %}
         </ul>
+        {% endif %}
+        <div class="site-card__footer">
+          <ul class="pill-list">
+            <li class="pill">{{ site.pricing | capitalize }}</li>
+            {% for category in site.categories %}
+            <li class="pill pill--muted">{{ category | title }}</li>
+            {% endfor %}
+          </ul>
+          <div class="site-card__actions">
+            <a class="btn btn-secondary" href="/site/{{ site.slug }}/">Profile</a>
+            <a class="btn btn-primary" href="{{ site.website }}" rel="noopener" target="_blank">Visit →</a>
+          </div>
+        </div>
       </article>
       {% endfor %}
     </div>
+    {% else %}
+    <div class="empty-state">
+      <h3>No listings yet</h3>
+      <p>Populate <code>src/data/sites.json</code> with the AI porn sites from The Porn Dude and rebuild the project to see them here.</p>
+    </div>
+    {% endif %}
   </div>
 </section>
 {% endblock %}

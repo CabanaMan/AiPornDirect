@@ -1,0 +1,130 @@
+{
+  "sites": [
+    {
+      "id": "deepswap-ai",
+      "slug": "deepswap-ai",
+      "name": "DeepSwap",
+      "website": "https://www.deepswap.ai/",
+      "rank": 1,
+      "categories": ["deepfake"],
+      "pricing": "paid",
+      "rating": 92,
+      "votes": 1385,
+      "summary": "Browser-based face swap studio for adult creators with HD exports, queue management, and preset training that mirrors The Porn Dude description, helping studios deliver believable swaps without touching desktop software.",
+      "tags": ["video", "face-swap", "cloud"],
+      "highlights": [
+        "4K video and GIF rendering",
+        "Batch job queue with priority modes",
+        "Watermark-free downloads on paid tiers"
+      ],
+      "languages": ["en"],
+      "source": "theporndude",
+      "lastChecked": "2024-02-12"
+    },
+    {
+      "id": "pornpen-ai",
+      "slug": "pornpen-ai",
+      "name": "Pornpen AI",
+      "website": "https://pornpen.ai/",
+      "rank": 2,
+      "categories": ["generator"],
+      "pricing": "freemium",
+      "rating": 91,
+      "votes": 1674,
+      "summary": "Stable Diffusion image generator with uncensored community styles, curated prompt packs, and hires fix workflows exactly as The Porn Dude presents them, making it easy to scale spicy sets in bulk.",
+      "tags": ["image", "stable-diffusion", "upscale"],
+      "highlights": [
+        "Prompt marketplace with creator storefronts",
+        "One-click hires fix and upscaling",
+        "Style presets covering dozens of kinks"
+      ],
+      "languages": ["en"],
+      "source": "theporndude",
+      "lastChecked": "2024-02-12"
+    },
+    {
+      "id": "soulgen",
+      "slug": "soulgen",
+      "name": "SoulGen",
+      "website": "https://soulgen.net/",
+      "rank": 3,
+      "categories": ["generator"],
+      "pricing": "freemium",
+      "rating": 90,
+      "votes": 1542,
+      "summary": "Anime and photoreal character generator with body sliders, outfit controls, and LoRA marketplace that reflect the perks highlighted on The Porn Dude, giving artists plenty of knobs to dial in fantasy talent.",
+      "tags": ["image", "anime", "photoreal"],
+      "highlights": [
+        "Side-by-side anime and photoreal modes",
+        "Pose reference templates and negative prompt bank",
+        "Marketplace for community LoRAs"
+      ],
+      "languages": ["en", "ja", "zh"],
+      "source": "theporndude",
+      "lastChecked": "2024-02-12"
+    },
+    {
+      "id": "dreamgf-ai",
+      "slug": "dreamgf-ai",
+      "name": "DreamGF.ai",
+      "website": "https://dreamgf.ai/",
+      "rank": 4,
+      "categories": ["chatbot", "generator"],
+      "pricing": "paid",
+      "rating": 89,
+      "votes": 1210,
+      "summary": "Custom AI girlfriends with feed posts, PPV unlocks, and scripted sexting flows, matching The Porn Dude write-up for the product and letting creators monetise simulated performers just like a cam studio.",
+      "tags": ["chat", "ai-girlfriend", "feed"],
+      "highlights": [
+        "Timeline posts with automated drip campaigns",
+        "Voice notes and video replies on premium tiers",
+        "Unlockable photo packs and tip goals"
+      ],
+      "languages": ["en"],
+      "source": "theporndude",
+      "lastChecked": "2024-02-12"
+    },
+    {
+      "id": "candy-ai",
+      "slug": "candy-ai",
+      "name": "Candy AI",
+      "website": "https://candy.ai/",
+      "rank": 5,
+      "categories": ["chatbot"],
+      "pricing": "paid",
+      "rating": 88,
+      "votes": 1433,
+      "summary": "Memory-driven NSFW chat companions with sexting, voice replies, and explicit image drops that align with The Porn Dude scorecard, keeping conversations spicy and consistent across long roleplays.",
+      "tags": ["chat", "ai-girlfriend", "voice"],
+      "highlights": [
+        "Custom personalities with adjustable kinks",
+        "Audio notes and dirty talk generator",
+        "Shareable rooms for collaborative roleplay"
+      ],
+      "languages": ["en"],
+      "source": "theporndude",
+      "lastChecked": "2024-02-12"
+    },
+    {
+      "id": "crushon-ai",
+      "slug": "crushon-ai",
+      "name": "CrushOn.AI",
+      "website": "https://crushon.ai/",
+      "rank": 6,
+      "categories": ["chatbot"],
+      "pricing": "freemium",
+      "rating": 86,
+      "votes": 1984,
+      "summary": "Roleplay AI character hub with community-made bots, explicit filters, and a tipping system exactly as called out by The Porn Dude reviewers, giving fans a marketplace of fetishes to explore.",
+      "tags": ["chat", "roleplay", "community"],
+      "highlights": [
+        "Community bot marketplace with reviews",
+        "Advanced memory and lore books",
+        "Image replies and voice add-ons"
+      ],
+      "languages": ["en"],
+      "source": "theporndude",
+      "lastChecked": "2024-02-12"
+    }
+  ]
+}
