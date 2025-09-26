@@ -28,7 +28,7 @@ async function ensureIndex() {
       documentIndex = new FlexSearch.Document({
         document: {
           id: 'slug',
-          index: ['name', 'vendor', 'categories', 'tags', 'description']
+          index: ['name', 'categories', 'tags', 'description', 'website']
         }
       });
       documents.forEach((doc) => documentIndex.add(doc));
@@ -46,10 +46,10 @@ function fallbackSearch(query) {
   return documents
     .filter((doc) =>
       doc.name.toLowerCase().includes(normalized) ||
-      doc.vendor.toLowerCase().includes(normalized) ||
-      doc.description.toLowerCase().includes(normalized) ||
+      (doc.description || '').toLowerCase().includes(normalized) ||
       doc.categories.some((c) => c.toLowerCase().includes(normalized)) ||
-      doc.tags.some((t) => t.toLowerCase().includes(normalized))
+      doc.tags.some((t) => t.toLowerCase().includes(normalized)) ||
+      (doc.website || '').toLowerCase().includes(normalized)
     )
     .map((doc) => doc.slug);
 }

@@ -1,34 +1,33 @@
 {% extends "_layout.njk" %}
-{% set title = 'AiPornDirect — NSFW AI tools directory' %}
-{% set description = 'Explore verified NSFW AI generators, marketplaces, compliance tools, and automation platforms for adult creators.' %}
+{% set title = 'AiPornDirect — Complete AI porn site mirror' %}
+{% set description = 'Browse every AI porn generator, chatbot, and deepfake studio mirrored from the user-supplied ranking, with filters, highlights, and direct links.' %}
+{% set topSites = sites | slice(0, 5) %}
 {% block content %}
-<section class="hero">
+<section class="masthead">
   <div class="container">
-    <div class="hero__surface">
-      <div class="hero__content">
-        <p class="hero__eyebrow">Responsible launches for mature AI founders</p>
-        <h1>Build adult AI products without guesswork</h1>
-        <p class="hero__lead">AiPornDirect curates NSFW AI software with transparent guardrails, compliance notes, and monetization data so you can move from idea to launch with confidence.</p>
-
-        <ul class="hero__stats">
-          <li>
-            <span class="hero__stat-value">{{ tools | length }}</span>
-            <span class="hero__stat-label">Vetted tools</span>
-          </li>
-          <li>
-            <span class="hero__stat-value">{{ categories | length }}</span>
-            <span class="hero__stat-label">Niches covered</span>
-          </li>
-          <li>
-            <span class="hero__stat-value">24/7</span>
-            <span class="hero__stat-label">Human review</span>
-          </li>
-        </ul>
-
-        <div class="hero__controls">
+    <div class="masthead__surface">
+      <div class="masthead__copy">
+        <span class="masthead__tag">Full mirror</span>
+        <h1 class="masthead__title">Complete AI porn sites ranking</h1>
+        <p class="masthead__lead">AiPornDirect mirrors the entire AI porn list provided by the user. Every generator, chatbot, and swap studio keeps the original ranking order so you can compare quickly without the legacy clutter.</p>
+        <div class="stats-bar">
+          <div class="stats-card">
+            <span class="stats-card__value">{{ sites | length }}</span>
+            <span class="stats-card__label">Sites tracked</span>
+          </div>
+          <div class="stats-card">
+            <span class="stats-card__value">{{ categories | length }}</span>
+            <span class="stats-card__label">Categories</span>
+          </div>
+          <div class="stats-card">
+            <span class="stats-card__value">{{ lastUpdated or '—' }}</span>
+            <span class="stats-card__label">Last verified</span>
+          </div>
+        </div>
+        <div class="masthead__controls">
           <div class="search-bar">
-            <label for="search" class="visually-hidden">Search tools</label>
-            <input id="search" type="search" placeholder="Search by name, category, or tag" autocomplete="off">
+            <label for="search" class="visually-hidden">Search AI porn sites</label>
+            <input id="search" type="search" placeholder="Search by name, tag, or category" autocomplete="off">
           </div>
           <div class="filter-group" id="category-filter" data-categories='{{ categories | dump }}'>
             <button class="filter-chip is-active" data-category="all">All</button>
@@ -38,47 +37,95 @@
           </div>
         </div>
       </div>
-
-      <aside class="hero__aside" aria-label="Why teams use AiPornDirect">
-        <span class="hero__badge">What we evaluate</span>
-        <ul class="hero__checklist">
-          <li>Safety and moderation playbooks</li>
-          <li>Revenue models &amp; payout transparency</li>
-          <li>International compliance coverage</li>
-          <li>Community reputation &amp; support</li>
+      <aside class="masthead__aside" aria-label="Top ranked listings">
+        <span class="masthead__board-title">Current top ranks</span>
+        <ul class="masthead__board">
+          {% for entry in topSites %}
+          <li class="board-item">
+            <span class="board-rank">#{{ entry.rank or loop.index }}</span>
+            <div>
+              <a class="board-name" href="/site/{{ entry.slug }}/">{{ entry.name }}</a>
+              <span class="board-url">{{ entry.website | replace('https://', '') | replace('http://', '') }}</span>
+            </div>
+          </li>
+          {% endfor %}
         </ul>
-        <p class="hero__aside-note">Curators review each listing manually before it ships to the directory.</p>
+        <p class="masthead__lead">Missing something? <a href="mailto:submit@aiporndirect.com">Send us the site and we will mirror it.</a></p>
       </aside>
     </div>
   </div>
 </section>
-
-<section class="section" aria-live="polite">
+<section class="directory" aria-live="polite">
   <div class="container">
     <div class="section-heading">
       <div>
-        <h2 class="section-title">Featured tools</h2>
-        <p class="section-subtitle">Discover trending launches and trusted operators from our community.</p>
+        <h2 class="section-title">All AI porn sites</h2>
+        <p class="section-subtitle">Sorted exactly like the source list so you can scroll the complete mirror with richer metadata.</p>
       </div>
-      <a class="section-link" href="mailto:submit@aiporndirect.com">Request a listing →</a>
+      <a class="section-link" href="mailto:submit@aiporndirect.com">Request an update →</a>
     </div>
-    <div id="tool-grid" class="tool-grid">
-      {% for tool in tools %}
-      <article class="tool-card" data-slug='{{ tool.slug }}' data-categories='{{ tool.categories | dump }}' data-tags='{{ tool.tags | dump }}' data-name='{{ tool.name | lower }}' data-vendor='{{ tool.vendor | lower }}'>
-        <div class="tool-card__heading">
-          <h3><a href="/tool/{{ tool.slug }}/">{{ tool.name }}</a></h3>
-          <span class="tool-card__category">{{ tool.categories | join(', ') }}</span>
+    {% if sites | length %}
+    <div class="directory-controls">
+      <div class="filter-group" id="pricing-filter" aria-label="Filter by pricing">
+        <button class="filter-chip is-active" data-pricing="all">All pricing</button>
+        <button class="filter-chip" data-pricing="free">Free</button>
+        <button class="filter-chip" data-pricing="freemium">Freemium</button>
+        <button class="filter-chip" data-pricing="subscription">Subscription</button>
+        <button class="filter-chip" data-pricing="paid">Paid</button>
+      </div>
+    </div>
+    <div class="directory-list" id="site-grid">
+      {% for site in sites %}
+      <article class="listing" data-slug="{{ site.slug }}" data-categories='{{ site.categories | dump }}' data-tags='{{ site.tags | dump }}' data-pricing="{{ site.pricing }}">
+        <header class="listing__header">
+          <span class="listing__rank">#{{ site.rank or loop.index }}</span>
+          <div class="listing__identity">
+            <h3><a href="/site/{{ site.slug }}/">{{ site.name }}</a></h3>
+            <p class="listing__url">{{ site.website | replace('https://', '') | replace('http://', '') }}</p>
+          </div>
+          <div class="listing__meta" aria-label="Rating and pricing">
+            {% if site.rating %}
+            <span class="listing__score">{{ site.rating }}<small>/100</small></span>
+            {% else %}
+            <span class="listing__score">N/A</span>
+            {% endif %}
+            <span class="listing__pricing">{{ site.pricing | capitalize }}</span>
+          </div>
+        </header>
+        <div class="listing__body">
+          <p>{{ site.summary }}</p>
+          <ul class="listing__tags">
+            <li class="pill pill--accent">{{ site.pricing | capitalize }}</li>
+            {% for category in site.categories %}
+            <li class="pill">{{ category | replace('-', ' ') | title }}</li>
+            {% endfor %}
+            {% for tag in site.tags or [] %}
+            <li class="pill pill--muted">{{ tag }}</li>
+            {% endfor %}
+          </ul>
         </div>
-        <p class="tool-card__meta">By {{ tool.vendor }}</p>
-        <p class="tool-card__description">{{ tool.description | truncate(220, true, '…') }}</p>
-        <ul class="pill-list">
-          <li class="pill">{{ tool.pricing | capitalize }}</li>
-          <li class="pill">{{ tool.adultLevel }}</li>
-          <li class="pill">{{ tool.status | capitalize }}</li>
-        </ul>
+        <footer class="listing__footer">
+          {% if site.highlights %}
+          <ul class="listing__highlights">
+            {% for highlight in site.highlights %}
+            <li>{{ highlight }}</li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+          <div class="listing__actions">
+            <a class="btn btn-secondary" href="/site/{{ site.slug }}/">Profile</a>
+            <a class="btn btn-primary" href="{{ site.website }}" rel="noopener" target="_blank">Visit →</a>
+          </div>
+        </footer>
       </article>
       {% endfor %}
     </div>
+    {% else %}
+    <div class="empty-state">
+      <h3>No listings yet</h3>
+      <p>Populate <code>src/data/sites.json</code> with the mirrored AI porn sites and rebuild the project to see them here.</p>
+    </div>
+    {% endif %}
   </div>
 </section>
 {% endblock %}

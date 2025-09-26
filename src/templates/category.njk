@@ -9,28 +9,51 @@
     <p class="breadcrumb"><a href="/">Home</a> / {{ category.name }}</p>
     <h1>{{ category.name }}</h1>
     <p>{{ category.description }}</p>
+    {% if lastUpdated %}
+    <p class="page-header__meta">Last verified {{ lastUpdated }}</p>
+    {% endif %}
   </header>
-
-  <section class="section">
-    <div class="tool-grid">
-      {% for tool in tools %}
-      <article class="tool-card">
-        <div class="tool-card__heading">
-          <h2><a href="/tool/{{ tool.slug }}/">{{ tool.name }}</a></h2>
-          <span class="tool-card__category">{{ tool.pricing | capitalize }} &middot; {{ tool.status | capitalize }}</span>
+  <section class="section section--category">
+    {% if sites | length %}
+    <div class="directory-list">
+      {% for site in sites %}
+      <article class="listing listing--compact" data-slug="{{ site.slug }}">
+        <header class="listing__header">
+          <span class="listing__rank">#{{ site.rank or loop.index }}</span>
+          <div class="listing__identity">
+            <h2><a href="/site/{{ site.slug }}/">{{ site.name }}</a></h2>
+            <p class="listing__url">{{ site.website | replace('https://', '') | replace('http://', '') }}</p>
+          </div>
+          <div class="listing__meta" aria-label="Rating and pricing">
+            {% if site.rating %}
+            <span class="listing__score">{{ site.rating }}<small>/100</small></span>
+            {% else %}
+            <span class="listing__score">N/A</span>
+            {% endif %}
+            <span class="listing__pricing">{{ site.pricing | capitalize }}</span>
+          </div>
+        </header>
+        <div class="listing__body">
+          <p>{{ site.summary }}</p>
+          <ul class="listing__tags">
+            <li class="pill pill--accent">{{ site.pricing | capitalize }}</li>
+            {% for tag in site.tags or [] %}
+            <li class="pill pill--muted">{{ tag }}</li>
+            {% endfor %}
+          </ul>
         </div>
-        <p class="tool-card__meta">By {{ tool.vendor }}</p>
-        <p class="tool-card__description">{{ tool.description | truncate(220, true, '…') }}</p>
-        <ul class="pill-list">
-          {% for tag in tool.tags %}
-          <li class="pill">{{ tag }}</li>
-          {% endfor %}
-        </ul>
+        <footer class="listing__footer">
+          <div class="listing__actions">
+            <a class="btn btn-secondary" href="/site/{{ site.slug }}/">Profile</a>
+            <a class="btn btn-primary" href="{{ site.website }}" rel="noopener" target="_blank">Visit →</a>
+          </div>
+        </footer>
       </article>
-      {% else %}
-      <p>No tools found for this category yet.</p>
       {% endfor %}
     </div>
+    {% else %}
+    <p>No sites indexed for this category yet.</p>
+    {% endif %}
   </section>
 </div>
 {% endblock %}
