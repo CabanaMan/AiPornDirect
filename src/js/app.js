@@ -1,39 +1,5 @@
 import { createSearch } from './search.js';
 
-const AGE_COOKIE_NAME = 'aipd_age_verified';
-const AGE_COOKIE_DAYS = 30;
-
-function setCookie(name, value, days) {
-  const expires = new Date(Date.now() + days * 864e5).toUTCString();
-  document.cookie = `${name}=${value}; expires=${expires}; path=/; SameSite=Lax`;
-}
-
-function getCookie(name) {
-  return document.cookie.split('; ').find((row) => row.startsWith(name + '='))?.split('=')[1];
-}
-
-function initAgeGate() {
-  const isBot = /bot|crawl|spider|slurp|duckduck|bingpreview/i.test(navigator.userAgent);
-  if (isBot) return;
-  const modal = document.getElementById('age-gate');
-  if (!modal) return;
-  if (getCookie(AGE_COOKIE_NAME) === '1') {
-    return;
-  }
-  modal.hidden = false;
-  const enterButton = document.getElementById('age-gate-enter');
-  if (enterButton) {
-    const confirmEntry = (event) => {
-      event.preventDefault();
-      setCookie(AGE_COOKIE_NAME, '1', AGE_COOKIE_DAYS);
-      modal.hidden = true;
-    };
-    enterButton.addEventListener('click', confirmEntry, { passive: false });
-    enterButton.addEventListener('touchend', confirmEntry, { passive: false });
-    enterButton.focus();
-  }
-}
-
 function applyFilters({ cards, slugs, category }) {
   cards.forEach((card) => {
     const cardCategories = JSON.parse(card.dataset.categories || '[]');
@@ -82,6 +48,5 @@ async function initDirectoryUI() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  initAgeGate();
   initDirectoryUI();
 });
