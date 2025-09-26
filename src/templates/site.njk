@@ -17,7 +17,7 @@
     <h1>{{ site.name }}</h1>
     <p class="site-hero__summary">{{ site.summary }}</p>
     <div class="site-hero__meta">
-      {% if site.votes %}<span><strong>{{ site.votes }}</strong> community votes</span>{% endif %}
+
       {% if site.lastChecked %}<span>Last verified {{ site.lastChecked }}</span>{% endif %}
       {% if site.source %}<span>Source: {{ site.source | title }}</span>{% endif %}
     </div>
