@@ -34,16 +34,16 @@
     </div>
   </header>
 
-  <div id="age-gate" class="age-gate" hidden>
-    <div class="age-gate__dialog" role="dialog" aria-modal="true" aria-labelledby="age-gate-title">
+  <div id="age-gate" class="age-gate" hidden aria-hidden="true">
+    <form id="age-gate-form" class="age-gate__dialog" role="dialog" aria-modal="true" aria-labelledby="age-gate-title" novalidate>
       <h2 id="age-gate-title">Adults only</h2>
       <p>This resource is intended for audiences aged 18 years or older. By entering you confirm you are at least 18 and agree to view explicit AI content responsibly.</p>
       <div class="age-gate__actions">
-        <button id="age-gate-enter" class="btn btn-primary">I am 18+</button>
+        <button id="age-gate-enter" class="btn btn-primary" type="submit">I am 18+</button>
         <a class="btn btn-secondary" href="https://google.com" rel="nofollow">Take me away</a>
       </div>
       <p class="age-gate__legal">We use a cookie to remember your choice for 30 days.</p>
-    </div>
+    </form>
   </div>
 
   <main id="main" class="site-main">

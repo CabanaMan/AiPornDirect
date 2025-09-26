@@ -21,12 +21,51 @@ function initAgeGate() {
     return;
   }
   modal.hidden = false;
+  modal.setAttribute('aria-hidden', 'false');
   const enterButton = document.getElementById('age-gate-enter');
+  const form = document.getElementById('age-gate-form');
+  let hasConfirmed = false;
+
+  const confirmEntry = () => {
+    if (hasConfirmed) return;
+    hasConfirmed = true;
+    setCookie(AGE_COOKIE_NAME, '1', AGE_COOKIE_DAYS);
+    modal.hidden = true;
+    modal.setAttribute('aria-hidden', 'true');
+  };
+
+  const handleActivation = (event) => {
+    if (hasConfirmed) return;
+    if (event) {
+      event.preventDefault?.();
+      event.stopPropagation?.();
+    }
+    confirmEntry();
+  };
+
+  if (form) {
+    form.addEventListener('submit', handleActivation);
+  }
+
   if (enterButton) {
-    enterButton.addEventListener('click', () => {
-      setCookie(AGE_COOKIE_NAME, '1', AGE_COOKIE_DAYS);
-      modal.hidden = true;
+    enterButton.addEventListener('click', handleActivation);
+    enterButton.addEventListener(
+      'pointerup',
+      (event) => {
+        if (event.pointerType === 'touch') {
+          handleActivation(event);
+        }
+      },
+      { passive: false },
+    );
+    enterButton.addEventListener('touchend', handleActivation, { passive: false });
+    enterButton.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        confirmEntry();
+      }
     });
+    enterButton.focus();
   }
 }
 
