@@ -22,7 +22,7 @@
       {% if site.source %}<span>Source: {{ site.source | title }}</span>{% endif %}
     </div>
     <div class="site-actions">
-      <a class="btn btn-primary" href="{{ site.website }}" rel="noopener" target="_blank">Visit website</a>
+      <a class="btn btn-primary" href="{{ site.website | safe }}" rel="noopener" target="_blank">Visit website</a>
       <a class="btn btn-secondary" href="mailto:submit@aiporndirect.com?subject=Update {{ site.name }}">Suggest an edit</a>
     </div>
   </header>
@@ -93,7 +93,7 @@
           </ul>
           <div class="site-card__actions">
             <a class="btn btn-secondary" href="/site/{{ alt.slug }}/">Profile</a>
-            <a class="btn btn-primary" href="{{ alt.website }}" rel="noopener" target="_blank">Visit →</a>
+            <a class="btn btn-primary" href="{{ alt.website | safe }}" rel="noopener" target="_blank">Visit →</a>
           </div>
         </div>
       </article>

@@ -40,7 +40,7 @@
           </ul>
           <div class="site-card__actions">
             <a class="btn btn-secondary" href="/site/{{ site.slug }}/">Profile</a>
-            <a class="btn btn-primary" href="{{ site.website }}" rel="noopener" target="_blank">Visit →</a>
+            <a class="btn btn-primary" href="{{ site.website | safe }}" rel="noopener" target="_blank">Visit →</a>
           </div>
         </div>
       </article>
