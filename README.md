@@ -1,10 +1,10 @@
 # AiPornDirect
 
-AiPornDirect is a static directory for mature AI products. The project validates contributor data against a strict JSON Schema, renders Nunjucks templates to HTML, and ships SEO-friendly enhancements like structured data, sitemaps, and client-side search.
+AiPornDirect mirrors The Porn Dude's AI porn sites list, validating each listing against a schema, rendering Nunjucks templates to HTML, and shipping SEO-friendly enhancements like structured data, sitemaps, and client-side search.
 
 ## Features
 
-- **Structured data** – `tools.json` is validated with Ajv against `src/schema/tools.schema.json`.
+- **Structured data** – `sites.json` is validated with Ajv against `src/schema/sites.schema.json`.
 - **Static generation** – `scripts/build.mjs` renders templates into `/dist` using Nunjucks.
 - **Search** – FlexSearch-powered JSON index enables fast client-side filtering.
 - **SEO** – Automated sitemap, JSON-LD payloads, and age gate that preserves crawler access.
@@ -27,9 +27,20 @@ The watcher rebuilds `dist/` when templates, data, or public assets change. Prev
 
 ## Data model
 
-- `src/data/tools.json` – Directory entries that adhere to the schema and editorial guidelines.
+- `src/data/sites.json` – AI porn site listings mirrored from The Porn Dude, enriched with metadata.
 - `src/data/categories.json` – Canonical list of category IDs and descriptions.
-- `src/schema/tools.schema.json` – JSON Schema for validating tool entries.
+- `src/schema/sites.schema.json` – JSON Schema for validating site entries.
+
+### Updating the dataset
+
+Because this environment blocks direct requests to adult domains, populate `src/data/sites.json` manually:
+
+1. Copy the AI porn sites table from <https://theporndude.com/ai-porn-sites> in your own browser.
+2. Map each row to the schema fields (slug, website, pricing, rating, votes, summary, highlights, etc.).
+3. Save the entries in `src/data/sites.json`, keeping the object sorted by `rank`.
+4. Run `npm run validate` to ensure the JSON passes schema checks before rebuilding.
+
+The sample data shipped in this repo demonstrates the structure but is not exhaustive. Replace it with the full list before deploying.
 
 ## Contributing
 

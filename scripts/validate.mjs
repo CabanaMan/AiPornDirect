@@ -6,8 +6,8 @@ import addFormats from 'ajv-formats';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, '..');
-const schemaPath = path.join(rootDir, 'src', 'schema', 'tools.schema.json');
-const dataPath = path.join(rootDir, 'src', 'data', 'tools.json');
+const schemaPath = path.join(rootDir, 'src', 'schema', 'sites.schema.json');
+const dataPath = path.join(rootDir, 'src', 'data', 'sites.json');
 const categoriesPath = path.join(rootDir, 'src', 'data', 'categories.json');
 
 const schema = JSON.parse(fs.readFileSync(schemaPath, 'utf8'));
@@ -29,27 +29,27 @@ const slugs = new Set();
 const ids = new Set();
 let hasErrors = false;
 
-for (const tool of data.tools) {
-  if (slugs.has(tool.slug)) {
-    console.error(`Duplicate slug detected: ${tool.slug}`);
+for (const site of data.sites) {
+  if (slugs.has(site.slug)) {
+    console.error(`Duplicate slug detected: ${site.slug}`);
     hasErrors = true;
   }
-  slugs.add(tool.slug);
+  slugs.add(site.slug);
 
-  if (ids.has(tool.id)) {
-    console.error(`Duplicate id detected: ${tool.id}`);
+  if (ids.has(site.id)) {
+    console.error(`Duplicate id detected: ${site.id}`);
     hasErrors = true;
   }
-  ids.add(tool.id);
+  ids.add(site.id);
 
-  const missingCategories = (tool.categories || []).filter((category) => !categoryIds.has(category));
+  const missingCategories = (site.categories || []).filter((category) => !categoryIds.has(category));
   if (missingCategories.length) {
-    console.error(`Tool ${tool.slug} references unknown categories: ${missingCategories.join(', ')}`);
+    console.error(`Site ${site.slug} references unknown categories: ${missingCategories.join(', ')}`);
     hasErrors = true;
   }
 
-  if (!tool.description || tool.description.split(' ').length < 40) {
-    console.warn(`Description for ${tool.slug} could be longer to meet editorial guidelines.`);
+  if (!site.summary || site.summary.split(' ').length < 25) {
+    console.warn(`Summary for ${site.slug} could be longer to meet editorial guidelines.`);
   }
 }
 
@@ -57,4 +57,4 @@ if (hasErrors) {
   process.exit(1);
 }
 
-console.log(`OK: tools.json valid (${data.tools.length} tools).`);
+console.log(`OK: sites.json valid (${data.sites.length} sites).`);
