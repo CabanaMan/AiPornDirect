@@ -139,6 +139,7 @@ a:focus {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   border: none;
   cursor: pointer;
+  touch-action: manipulation;
 }
 
 .btn:hover {
