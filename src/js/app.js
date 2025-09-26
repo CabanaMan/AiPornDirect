@@ -16,7 +16,7 @@ function applyFilters({ cards, slugs, category }) {
 
 async function initDirectoryUI() {
   const searchInput = document.getElementById('search');
-  const cards = Array.from(document.querySelectorAll('.tool-card'));
+  const cards = Array.from(document.querySelectorAll('.site-card'));
   if (!cards.length) return;
   const categoryButtons = Array.from(document.querySelectorAll('#category-filter .filter-chip'));
   let currentCategory = 'all';
