@@ -3,35 +3,82 @@
 {% set description = 'Explore verified NSFW AI generators, marketplaces, compliance tools, and automation platforms for adult creators.' %}
 {% block content %}
 <section class="hero">
-  <h1>Build adult AI products without guesswork</h1>
-  <p>AiPornDirect curates mature AI software with transparent safety practices, compliance notes, and monetization data so you can ship faster.</p>
-  <div class="search-bar">
-    <label for="search" class="visually-hidden">Search tools</label>
-    <input id="search" type="search" placeholder="Search by name, category, or tag" autocomplete="off">
-  </div>
-  <div class="filter-group" id="category-filter" data-categories='{{ categories | dump }}'>
-    <button class="filter-chip is-active" data-category="all">All</button>
-    {% for category in categories %}
-    <button class="filter-chip" data-category="{{ category.id }}">{{ category.name }}</button>
-    {% endfor %}
+  <div class="container">
+    <div class="hero__surface">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Responsible launches for mature AI founders</p>
+        <h1>Build adult AI products without guesswork</h1>
+        <p class="hero__lead">AiPornDirect curates NSFW AI software with transparent guardrails, compliance notes, and monetization data so you can move from idea to launch with confidence.</p>
+
+        <ul class="hero__stats">
+          <li>
+            <span class="hero__stat-value">{{ tools | length }}</span>
+            <span class="hero__stat-label">Vetted tools</span>
+          </li>
+          <li>
+            <span class="hero__stat-value">{{ categories | length }}</span>
+            <span class="hero__stat-label">Niches covered</span>
+          </li>
+          <li>
+            <span class="hero__stat-value">24/7</span>
+            <span class="hero__stat-label">Human review</span>
+          </li>
+        </ul>
+
+        <div class="hero__controls">
+          <div class="search-bar">
+            <label for="search" class="visually-hidden">Search tools</label>
+            <input id="search" type="search" placeholder="Search by name, category, or tag" autocomplete="off">
+          </div>
+          <div class="filter-group" id="category-filter" data-categories='{{ categories | dump }}'>
+            <button class="filter-chip is-active" data-category="all">All</button>
+            {% for category in categories %}
+            <button class="filter-chip" data-category="{{ category.id }}">{{ category.name }}</button>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero__aside" aria-label="Why teams use AiPornDirect">
+        <span class="hero__badge">What we evaluate</span>
+        <ul class="hero__checklist">
+          <li>Safety and moderation playbooks</li>
+          <li>Revenue models &amp; payout transparency</li>
+          <li>International compliance coverage</li>
+          <li>Community reputation &amp; support</li>
+        </ul>
+        <p class="hero__aside-note">Curators review each listing manually before it ships to the directory.</p>
+      </aside>
+    </div>
   </div>
 </section>
 
-<section aria-live="polite">
-  <h2 class="section-title">Featured tools</h2>
-  <div id="tool-grid" class="tool-grid">
-    {% for tool in tools %}
-    <article class="tool-card" data-slug='{{ tool.slug }}' data-categories='{{ tool.categories | dump }}' data-tags='{{ tool.tags | dump }}' data-name='{{ tool.name | lower }}' data-vendor='{{ tool.vendor | lower }}'>
-      <h3><a href="/tool/{{ tool.slug }}/">{{ tool.name }}</a></h3>
-      <p class="tool-card__meta">By {{ tool.vendor }} &middot; {{ tool.categories | join(', ') }}</p>
-      <p class="tool-card__description">{{ tool.description | truncate(220, true, '…') }}</p>
-      <ul class="pill-list">
-        <li class="pill">{{ tool.pricing | capitalize }}</li>
-        <li class="pill">{{ tool.adultLevel }}</li>
-        <li class="pill">{{ tool.status | capitalize }}</li>
-      </ul>
-    </article>
-    {% endfor %}
+<section class="section" aria-live="polite">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <h2 class="section-title">Featured tools</h2>
+        <p class="section-subtitle">Discover trending launches and trusted operators from our community.</p>
+      </div>
+      <a class="section-link" href="mailto:submit@aiporndirect.com">Request a listing →</a>
+    </div>
+    <div id="tool-grid" class="tool-grid">
+      {% for tool in tools %}
+      <article class="tool-card" data-slug='{{ tool.slug }}' data-categories='{{ tool.categories | dump }}' data-tags='{{ tool.tags | dump }}' data-name='{{ tool.name | lower }}' data-vendor='{{ tool.vendor | lower }}'>
+        <div class="tool-card__heading">
+          <h3><a href="/tool/{{ tool.slug }}/">{{ tool.name }}</a></h3>
+          <span class="tool-card__category">{{ tool.categories | join(', ') }}</span>
+        </div>
+        <p class="tool-card__meta">By {{ tool.vendor }}</p>
+        <p class="tool-card__description">{{ tool.description | truncate(220, true, '…') }}</p>
+        <ul class="pill-list">
+          <li class="pill">{{ tool.pricing | capitalize }}</li>
+          <li class="pill">{{ tool.adultLevel }}</li>
+          <li class="pill">{{ tool.status | capitalize }}</li>
+        </ul>
+      </article>
+      {% endfor %}
+    </div>
   </div>
 </section>
 {% endblock %}

@@ -8,6 +8,8 @@ const rootDir = path.resolve(__dirname, '..');
 const srcDir = path.join(rootDir, 'src');
 const templateDir = path.join(srcDir, 'templates');
 const dataDir = path.join(srcDir, 'data');
+const cssDir = path.join(srcDir, 'css');
+const jsDir = path.join(srcDir, 'js');
 const distDir = path.join(rootDir, 'dist');
 const publicDir = path.join(rootDir, 'public');
 
@@ -38,6 +40,15 @@ function writeFile(targetPath, content) {
 function copyPublicAssets() {
   if (fs.existsSync(publicDir)) {
     fs.cpSync(publicDir, distDir, { recursive: true });
+  }
+}
+
+function copyStaticAssets() {
+  if (fs.existsSync(cssDir)) {
+    fs.cpSync(cssDir, path.join(distDir, 'css'), { recursive: true });
+  }
+  if (fs.existsSync(jsDir)) {
+    fs.cpSync(jsDir, path.join(distDir, 'js'), { recursive: true });
   }
 }
 
@@ -91,6 +102,7 @@ async function buildSite() {
   fs.rmSync(distDir, { recursive: true, force: true });
   fs.mkdirSync(distDir, { recursive: true });
   copyPublicAssets();
+  copyStaticAssets();
 
   const indexHtml = renderTemplate('index.njk', {
     categories,
