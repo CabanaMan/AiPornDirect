@@ -1,0 +1,105 @@
+{% extends "_layout.njk" %}
+{% block head %}
+<meta property="og:title" content="{{ site.name }} — AI porn site profile">
+<meta property="og:description" content="{{ site.summary | truncate(180, true, '…') }}">
+<script type="application/ld+json">
+{{ ldjson | dump(2) | safe }}
+</script>
+{% endblock %}
+{% block content %}
+<div class="container">
+  <nav class="breadcrumb"><a href="/">Home</a> /
+    {% if primaryCategory %}<a href="/category/{{ primaryCategory }}/">{{ primaryCategory | replace('-', ' ') | title }}</a> /{% endif %}
+    {{ site.name }}
+  </nav>
+  <header class="site-hero">
+    <div class="site-hero__badge">{{ site.pricing | capitalize }}{% if site.rating %} • {{ site.rating }}/100{% endif %}</div>
+    <h1>{{ site.name }}</h1>
+    <p class="site-hero__summary">{{ site.summary }}</p>
+    <div class="site-hero__meta">
+      {% if site.votes %}<span><strong>{{ site.votes }}</strong> community votes</span>{% endif %}
+      {% if site.lastChecked %}<span>Last verified {{ site.lastChecked }}</span>{% endif %}
+      {% if site.source %}<span>Source: {{ site.source | title }}</span>{% endif %}
+    </div>
+    <div class="site-actions">
+      <a class="btn btn-primary" href="{{ site.website }}" rel="noopener" target="_blank">Visit website</a>
+      <a class="btn btn-secondary" href="mailto:submit@aiporndirect.com?subject=Update {{ site.name }}">Suggest an edit</a>
+    </div>
+  </header>
+  <section class="site-details">
+    <div class="site-panel">
+      <h2>Snapshot</h2>
+      <dl class="site-meta">
+        <dt>Pricing</dt>
+        <dd>{{ site.pricing | capitalize }}</dd>
+        <dt>Categories</dt>
+        <dd>
+          {% for category in site.categories %}
+            {{ category | replace('-', ' ') | title }}{% if not loop.last %}, {% endif %}
+          {% endfor %}
+        </dd>
+        {% if site.tags %}
+        <dt>Tags</dt>
+        <dd>{{ site.tags | join(', ') }}</dd>
+        {% endif %}
+        {% if site.languages %}
+        <dt>Languages</dt>
+        <dd>{{ site.languages | join(', ') | upper }}</dd>
+        {% endif %}
+      </dl>
+    </div>
+    {% if site.highlights %}
+    <div class="site-panel">
+      <h2>Highlights</h2>
+      <ul>
+        {% for highlight in site.highlights %}
+        <li>{{ highlight }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+    {% if site.social %}
+    <div class="site-panel">
+      <h2>Social</h2>
+      <ul>
+        {% if site.social.twitter %}<li><a href="{{ site.social.twitter }}" rel="noopener" target="_blank">Twitter</a></li>{% endif %}
+        {% if site.social.discord %}<li><a href="{{ site.social.discord }}" rel="noopener" target="_blank">Discord</a></li>{% endif %}
+      </ul>
+    </div>
+    {% endif %}
+  </section>
+  {% if alternatives | length %}
+  <section class="alternatives">
+    <h2>Similar AI porn sites</h2>
+    <div class="site-grid">
+      {% for alt in alternatives %}
+      <article class="site-card site-card--compact">
+        <header class="site-card__header">
+          <div class="site-card__meta">
+            <span class="site-card__rank">#{{ alt.rank or loop.index }}</span>
+            <h3><a href="/site/{{ alt.slug }}/">{{ alt.name }}</a></h3>
+          </div>
+          <div class="site-card__rating">
+            {% if alt.rating %}<span class="site-card__score">{{ alt.rating }}<small>/100</small></span>{% endif %}
+          </div>
+        </header>
+        <p class="site-card__summary">{{ alt.summary | truncate(160, true, '…') }}</p>
+        <div class="site-card__footer">
+          <ul class="pill-list">
+            <li class="pill">{{ alt.pricing | capitalize }}</li>
+            {% for cat in alt.categories %}
+            <li class="pill pill--muted">{{ cat | title }}</li>
+            {% endfor %}
+          </ul>
+          <div class="site-card__actions">
+            <a class="btn btn-secondary" href="/site/{{ alt.slug }}/">Profile</a>
+            <a class="btn btn-primary" href="{{ alt.website }}" rel="noopener" target="_blank">Visit →</a>
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+</div>
+{% endblock %}

@@ -1,42 +1,27 @@
 [
   {
-    "id": "image",
-    "name": "Image Generators",
-    "description": "AI models that create or transform adult imagery including still renders, styles, and upscales."
+    "id": "generator",
+    "name": "AI Porn Generators",
+    "description": "Image and video generators that produce explicit renders, photoreal scenes, or stylized NSFW art."
   },
   {
-    "id": "video",
-    "name": "Video Tools",
-    "description": "Video-focused generators, enhancers, and deepfake studios designed for explicit productions."
+    "id": "chatbot",
+    "name": "AI Girlfriends & Chat",
+    "description": "Explicit chatbots, roleplay companions, and sexting assistants with memory or voice features."
   },
   {
-    "id": "text",
-    "name": "Text & Story",
-    "description": "Erotic chatbots, roleplay companions, and NSFW story writers for adult creators."
+    "id": "deepfake",
+    "name": "Deepfake & Face Swap",
+    "description": "Apps that map faces onto porn clips or create synthetic performers for custom productions."
   },
   {
-    "id": "moderation",
-    "name": "Safety & Moderation",
-    "description": "Tools that help adult teams enforce policies, verify age, and avoid prohibited content."
+    "id": "voice",
+    "name": "Voice & Audio",
+    "description": "Voice cloning, dirty talk generators, and audio enhancement services for adult creators."
   },
   {
-    "id": "automation",
-    "name": "Automation",
-    "description": "Workflow helpers that schedule, localize, or repurpose explicit creative assets."
-  },
-  {
-    "id": "marketplaces",
-    "name": "Marketplaces",
-    "description": "Directories and storefronts that connect NSFW AI creators with paying fans."
-  },
-  {
-    "id": "audio",
-    "name": "Audio & Voice",
-    "description": "Voice cloning and sound design services tuned for adult entertainment projects."
-  },
-  {
-    "id": "analytics",
-    "name": "Analytics",
-    "description": "Insight platforms that track campaigns, affiliate performance, and viewer behavior."
+    "id": "marketplace",
+    "name": "Marketplaces & Communities",
+    "description": "Prompt markets, LoRA hubs, and communities where adult AI creators share and sell content."
   }
 ]
