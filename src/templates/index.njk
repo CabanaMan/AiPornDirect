@@ -1,12 +1,20 @@
 {% extends "_layout.njk" %}
 
+{% block head %}
+{% if directoryLdjson %}
+<script type="application/ld+json">
+{{ directoryLdjson | dump(2) | safe }}
+</script>
+{% endif %}
+{% endblock %}
+
 {% block content %}
 <section class="hero hero--directory">
   <div class="container">
     <div class="hero__surface">
       <div class="hero__content">
-
-        </p>
+        <h1 class="hero__title">Best Adult AI Porn Sites Directory</h1>
+        <p class="hero__description">AiPornDirect ranks the leading adult AI porn generators, NSFW chatbots, erotic companions, and deepfake makers with safety notes and pricing updated {{ lastUpdated or 'regularly' }}.</p>
         <ul class="hero__stats">
           <li>
             <span class="hero__stat-value">{{ sites | length }}</span>
@@ -51,14 +59,26 @@
     <div class="section-heading">
       <div>
         <h2 class="section-title">All AI porn sites</h2>
-
+        <p class="section-subtitle">Browse verified NSFW AI tools, adult chatbots, and porn generators by ranking, rating, or freshness.</p>
       </div>
-      <a class="section-link" href="mailto:submit@aiporndirect.com">Request an update →</a>
+      <div class="section-actions">
+        <div class="sort-control">
+          <label class="sort-control__label" for="sort-order">Sort by</label>
+          <select id="sort-order" class="sort-control__select">
+            <option value="rank">Editor ranking</option>
+            <option value="rating">Highest rating</option>
+            <option value="votes">Most votes</option>
+            <option value="alphabetical">A–Z</option>
+            <option value="recent">Recently verified</option>
+          </select>
+        </div>
+        <a class="section-link" href="mailto:submit@aiporndirect.com">Request an update →</a>
+      </div>
     </div>
     {% if sites | length %}
     <div class="site-grid" id="site-grid">
       {% for site in sites %}
-      <article class="site-card" data-slug="{{ site.slug }}" data-categories='{{ site.categories | dump }}' data-tags='{{ site.tags | dump }}' data-pricing="{{ site.pricing }}">
+      <article class="site-card" data-slug="{{ site.slug }}" data-categories='{{ (site.categories or []) | dump }}' data-tags='{{ (site.tags or []) | dump }}' data-pricing="{{ site.pricing }}" data-rank="{{ site.rank or loop.index }}" data-rating="{{ site.rating if site.rating is not none else '' }}" data-votes="{{ site.votes if site.votes is not none else '' }}" data-name="{{ site.name }}" data-last-checked="{{ site.lastChecked or '' }}">
         <header class="site-card__header">
           <div class="site-card__meta">
             <span class="site-card__rank">#{{ site.rank or loop.index }}</span>
