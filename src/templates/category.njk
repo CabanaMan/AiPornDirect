@@ -1,22 +1,43 @@
 {% extends "_layout.njk" %}
 {% block head %}
-<meta property="og:title" content="{{ title }}">
-<meta property="og:description" content="{{ description }}">
+{% if categoryLdjson %}
+<script type="application/ld+json">
+{{ categoryLdjson | dump(2) | safe }}
+</script>
+{% endif %}
 {% endblock %}
 {% block content %}
 <div class="container">
   <header class="page-header">
     <p class="breadcrumb"><a href="/">Home</a> / {{ category.name }}</p>
     <h1>{{ category.name }}</h1>
-    <p>{{ category.description }}</p>
+    <p>{{ description }}</p>
     {% if lastUpdated %}
     <p class="page-header__meta">Last verified {{ lastUpdated }}</p>
     {% endif %}
   </header>
   <section class="section section--category">
-    <div class="site-grid">
+    <div class="section-heading">
+      <div>
+        <h2 class="section-title">{{ category.name }} AI porn sites</h2>
+        <p class="section-subtitle">Sort curated listings of {{ category.name | lower }} tools, apps, and services.</p>
+      </div>
+      <div class="section-actions">
+        <div class="sort-control">
+          <label class="sort-control__label" for="sort-order">Sort by</label>
+          <select id="sort-order" class="sort-control__select">
+            <option value="rank">Editor ranking</option>
+            <option value="rating">Highest rating</option>
+            <option value="votes">Most votes</option>
+            <option value="alphabetical">A–Z</option>
+            <option value="recent">Recently verified</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="site-grid" id="site-grid">
       {% for site in sites %}
-      <article class="site-card site-card--compact">
+      <article class="site-card site-card--compact" data-slug="{{ site.slug }}" data-categories='{{ (site.categories or []) | dump }}' data-tags='{{ (site.tags or []) | dump }}' data-pricing="{{ site.pricing }}" data-rank="{{ site.rank or loop.index }}" data-rating="{{ site.rating if site.rating is not none else '' }}" data-votes="{{ site.votes if site.votes is not none else '' }}" data-name="{{ site.name }}" data-last-checked="{{ site.lastChecked or '' }}">
         <header class="site-card__header">
           <div class="site-card__meta">
             <span class="site-card__rank">#{{ site.rank or loop.index }}</span>

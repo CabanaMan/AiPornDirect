@@ -4,15 +4,32 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index,follow">
-  <title>{{ title | default('AiPornDirect') }}</title>
-  <meta name="description" content="{{ description | default('Independent index of AI porn sites with filters, highlights, and safety context mirrored from The Porn Dude.') }}">
-
+  {% set pageTitle = title | default('Best Adult AI Porn Sites Directory | AiPornDirect') %}
+  {% set pageDescription = description | default('AiPornDirect curates the best adult AI porn sites, NSFW chatbots, erotic AI generators, and deepfake tools with reviews, pricing, and safety notes.') %}
+  {% set pageKeywords = keywords | default('AI porn, AI porn sites, adult AI tools, NSFW AI generators, AI girlfriends, deepfake AI directory, porn AI, erotic AI') %}
+  {% set pageCanonical = canonical | default('https://aiporndirect.com/') %}
+  {% set openGraphType = ogType | default('website') %}
+  <title>{{ pageTitle }}</title>
+  <meta name="description" content="{{ pageDescription }}">
+  <meta name="keywords" content="{{ pageKeywords }}">
+  <meta name="author" content="AiPornDirect">
+  <meta name="theme-color" content="#050518">
+  <meta property="og:site_name" content="AiPornDirect">
+  <meta property="og:type" content="{{ openGraphType }}">
+  <meta property="og:title" content="{{ pageTitle }}">
+  <meta property="og:description" content="{{ pageDescription }}">
+  {% if pageCanonical %}
+  <meta property="og:url" content="{{ pageCanonical }}">
+  <link rel="canonical" href="{{ pageCanonical }}">
+  {% endif %}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ pageTitle }}">
+  <meta name="twitter:description" content="{{ pageDescription }}">
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="icon" href="/icons/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  {% if canonical %}<link rel="canonical" href="{{ canonical }}">{% endif %}
   {% block head %}{% endblock %}
 </head>
 <body class="{{ bodyClass | default('') }}">

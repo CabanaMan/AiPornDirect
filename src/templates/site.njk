@@ -1,7 +1,5 @@
 {% extends "_layout.njk" %}
 {% block head %}
-<meta property="og:title" content="{{ site.name }} — AI porn site profile">
-<meta property="og:description" content="{{ site.summary | truncate(180, true, '…') }}">
 <script type="application/ld+json">
 {{ ldjson | dump(2) | safe }}
 </script>
@@ -73,7 +71,7 @@
     <h2>Similar AI porn sites</h2>
     <div class="site-grid">
       {% for alt in alternatives %}
-      <article class="site-card site-card--compact">
+      <article class="site-card site-card--compact" data-slug="{{ alt.slug }}" data-categories='{{ (alt.categories or []) | dump }}' data-tags='{{ (alt.tags or []) | dump }}' data-pricing="{{ alt.pricing }}" data-rank="{{ alt.rank or loop.index }}" data-rating="{{ alt.rating if alt.rating is not none else '' }}" data-votes="{{ alt.votes if alt.votes is not none else '' }}" data-name="{{ alt.name }}" data-last-checked="{{ alt.lastChecked or '' }}">
         <header class="site-card__header">
           <div class="site-card__meta">
             <span class="site-card__rank">#{{ alt.rank or loop.index }}</span>

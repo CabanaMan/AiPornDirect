@@ -69,6 +69,55 @@ function createLdJson(site) {
   };
 }
 
+function createDirectoryLdJson(sites, description) {
+  const topSites = sites.slice(0, 20);
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Best AI Porn Sites Directory',
+    description,
+    numberOfItems: topSites.length,
+    itemListOrder: 'https://schema.org/ItemListOrderAscending',
+    itemListElement: topSites.map((site, index) => ({
+      '@type': 'ListItem',
+      position: site.rank || index + 1,
+      url: `https://aiporndirect.com/site/${site.slug}/`,
+      name: site.name,
+      description: site.summary
+    }))
+  };
+}
+
+function createCategoryLdJson(category, sites) {
+  const topSites = sites.slice(0, 20);
+  const description = category.description || `${category.name} listings curated by AiPornDirect.`;
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: `${category.name} AI Porn Sites`,
+    description,
+    numberOfItems: topSites.length,
+    itemListOrder: 'https://schema.org/ItemListOrderAscending',
+    itemListElement: topSites.map((site, index) => ({
+      '@type': 'ListItem',
+      position: site.rank || index + 1,
+      url: `https://aiporndirect.com/site/${site.slug}/`,
+      name: site.name,
+      description: site.summary
+    }))
+  };
+}
+
+function createKeywordString(values = []) {
+  const unique = new Set(
+    values
+      .filter(Boolean)
+      .map((value) => value.toString().trim())
+      .filter((value) => value.length)
+  );
+  return Array.from(unique).join(', ');
+}
+
 function sortSites(sites) {
   return [...sites].sort((a, b) => {
     if (typeof a.rank === 'number' && typeof b.rank === 'number') {
@@ -116,23 +165,54 @@ async function buildSite() {
   }, null);
   const lastUpdated = latestCheck ? latestCheck.toISOString().slice(0, 10) : null;
 
+  const indexTitle = 'Best Adult AI Porn Sites Directory | AiPornDirect';
+  const indexDescription =
+    'Discover verified adult AI porn sites, NSFW chatbots, deepfake makers, and erotic AI generators ranked with pricing, safety context, and highlights curated by AiPornDirect.';
+  const indexKeywords = createKeywordString([
+    'AI porn',
+    'AI porn sites',
+    'adult AI tools',
+    'NSFW AI generators',
+    'AI girlfriends',
+    'deepfake AI directory',
+    'porn AI',
+    'erotic AI apps'
+  ]);
   const indexHtml = renderTemplate('index.njk', {
+    title: indexTitle,
+    description: indexDescription,
+    keywords: indexKeywords,
+    ogType: 'website',
     categories,
     sites,
     lastUpdated,
-    canonical: 'https://aiporndirect.com/'
+    canonical: 'https://aiporndirect.com/',
+    directoryLdjson: createDirectoryLdJson(sites, indexDescription)
   });
   writeFile(path.join(distDir, 'index.html'), indexHtml);
 
   categories.forEach((category) => {
     const categorySites = sites.filter((site) => site.categories?.includes(category.id));
+    const categoryTitle = `${category.name} AI Porn Sites & Tools | AiPornDirect`;
+    const categoryDescription =
+      category.description || `${category.name} listings curated by AiPornDirect.`;
+    const categoryKeywords = createKeywordString([
+      category.name,
+      `${category.name} AI`,
+      `${category.name} porn`,
+      'AI porn',
+      'adult AI'
+    ]);
     const html = renderTemplate('category.njk', {
-      title: `${category.name} — AiPornDirect`,
-      description: category.description,
+      title: categoryTitle,
+      description: categoryDescription,
+      keywords: categoryKeywords,
+      ogType: 'website',
       category,
       sites: categorySites,
       lastUpdated,
-      canonical: `https://aiporndirect.com/category/${category.id}/`
+      canonical: `https://aiporndirect.com/category/${category.id}/`,
+      categoryLdjson: createCategoryLdJson(category, categorySites)
     });
     writeFile(path.join(distDir, 'category', category.id, 'index.html'), html);
   });
@@ -141,7 +221,23 @@ async function buildSite() {
     const alternatives = sites
       .filter((candidate) => candidate.slug !== site.slug && candidate.categories?.some((cat) => site.categories.includes(cat)))
       .slice(0, 3);
+    const siteTitle = `${site.name} Review & Alternatives | AiPornDirect`;
+    const siteDescription = site.summary || `${site.name} profile on AiPornDirect.`;
+    const keywordParts = [
+      site.name,
+      'AI porn',
+      'adult AI',
+      'NSFW AI',
+      site.pricing && `${site.pricing} pricing`,
+      ...(site.categories || []).map((cat) => `${titleCase(cat.replace('-', ' '))} AI`),
+      ...(site.tags || [])
+    ];
+    const siteKeywords = createKeywordString(keywordParts);
     const html = renderTemplate('site.njk', {
+      title: siteTitle,
+      description: siteDescription,
+      keywords: siteKeywords,
+      ogType: 'article',
       site,
       primaryCategory: site.categories?.[0] || 'unknown',
       alternatives,
