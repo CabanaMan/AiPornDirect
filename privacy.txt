@@ -1,0 +1,37 @@
+AiPornDirect Privacy Notice
+===========================
+
+Effective date: 6 June 2024
+
+AiPornDirect is an informational directory for consenting adults. We do not host explicit media. This privacy notice explains what limited data we process when you visit https://aiporndirect.com/.
+
+1. Data we collect
+------------------
+* Server logs: IP address, user agent, and referrer collected by our hosting provider for security and abuse prevention. Logs roll off within 30 days.
+* Age verification: We store a non-identifying flag in your browser (localStorage key `aiporndirect-age-confirmed`) after you acknowledge you are 18+. No personal data is stored on our servers.
+* Affiliate tracking: When you click marked sponsored links we redirect you to partners who may set their own cookies. Review their policies before signing up.
+
+2. How we use data
+------------------
+* To secure the site, measure aggregate traffic, and prevent minors from entering.
+* To comply with legal requests related to fraud, consent violations, or abuse reports.
+
+3. Data sharing
+---------------
+* We do not sell personal data.
+* Hosting and analytics vendors process logs under strict confidentiality obligations.
+* Sponsored partners receive referral parameters only when you click a labelled affiliate button.
+
+4. International transfers
+---------------------------
+Our infrastructure may operate in the United States or European Union. By using the site you consent to data transfers necessary to deliver the service.
+
+5. Your rights
+--------------
+Email compliance@aiporndirect.com to request log deletion, report underage content, or question partner practices. We respond within 30 days.
+
+6. Updates
+----------
+We may update this notice as regulations evolve. Continued use of the site after changes constitutes acceptance.
+
+Adults only. If you are under 18 or the legal age in your jurisdiction, leave immediately.

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
+  <title id="title">PromptPalette illustration</title>
+  <desc id="desc">Palette wheel and cards representing PromptPalette marketplace.</desc>
+  <rect width="720" height="480" rx="40" fill="#17252a"/>
+  <circle cx="280" cy="240" r="120" fill="#3aafa9"/>
+  <circle cx="280" cy="240" r="70" fill="#def2f1"/>
+  <rect x="420" y="160" width="160" height="200" rx="24" fill="#feffff" opacity="0.8"/>
+  <line x1="420" y1="200" x2="580" y2="200" stroke="#2b7a78" stroke-width="12"/>
+  <line x1="420" y1="240" x2="560" y2="240" stroke="#2b7a78" stroke-width="12"/>
+</svg>

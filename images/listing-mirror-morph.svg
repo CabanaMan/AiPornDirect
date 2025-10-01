@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
+  <title id="title">MirrorMorph illustration</title>
+  <desc id="desc">Mirrored silhouettes conveying face swap technology.</desc>
+  <rect width="720" height="480" fill="#001f3f" rx="40"/>
+  <path d="M240 360 C220 260 220 220 260 160 C300 100 360 100 400 160 C440 220 440 260 420 360 Z" fill="#49beb7" opacity="0.7"/>
+  <path d="M320 360 C300 260 300 220 340 160 C380 100 440 100 480 160 C520 220 520 260 500 360 Z" fill="#7fdbff" opacity="0.6"/>
+</svg>

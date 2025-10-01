@@ -1,0 +1,220 @@
+{
+  "listings": [
+    {
+      "id": "candy-ai",
+      "name": "Candy AI",
+      "slug": "candy-ai",
+      "url": "https://t.mbsrv2.com/366307/6646?popUnder=true&aff_sub5=SF_006OG000004lmDN",
+      "affiliate": true,
+      "categories": ["ai-girlfriend-chat"],
+      "summary": "Candy AI keeps a memory of your dirtiest roleplay threads, adds optional audio replies, and guards your transcripts behind zero-retention encryption for maximum discretion.",
+      "image": {
+        "src": "images/listing-candy-ai.svg",
+        "width": 360,
+        "height": 240,
+        "alt": "Illustration of a neon-lit virtual companion avatar representing Candy AI."
+      },
+      "features": [
+        "Persistent persona memory with safe-word overrides",
+        "Encrypted chat storage wiped after sessions",
+        "Explicit audio replies voiced by adult performers"
+      ],
+      "pricing": "Freemium",
+      "disclosure": "Paid partner link. AiPornDirect earns a commission when you upgrade after trying Candy AI.",
+      "tags": ["chat", "audio", "mobile"],
+      "lastReviewed": "2024-06-01"
+    },
+    {
+      "id": "juicy-chat",
+      "name": "JuicyChat",
+      "slug": "juicy-chat",
+      "url": "https://juicychat.ai/",
+      "affiliate": false,
+      "categories": ["ai-girlfriend-chat"],
+      "summary": "JuicyChat focuses on kinky storytelling with adjustable intimacy levels, letting adults choreograph escalating dialogue without tripping compliance filters.",
+      "image": {
+        "src": "images/listing-juicy-chat.svg",
+        "width": 360,
+        "height": 240,
+        "alt": "Vector chat bubbles with moody lighting symbolising JuicyChat's erotic conversations."
+      },
+      "features": [
+        "Sliding consent scale to tune intensity",
+        "Multilingual chat with slang-aware replies",
+        "Private invite links for collaborative play"
+      ],
+      "pricing": "Paid",
+      "disclosure": "Editorial listing with no affiliate commission.",
+      "tags": ["chat", "multilingual"],
+      "lastReviewed": "2024-06-03"
+    },
+    {
+      "id": "taboo-studio",
+      "name": "Taboo Studio",
+      "slug": "taboo-studio",
+      "url": "https://taboostudio.ai/",
+      "affiliate": false,
+      "categories": ["ai-porn-generators", "deepfake-tools"],
+      "summary": "Taboo Studio handles cinematic lighting and composite renders while logging consent artifacts for every performer you model inside the workflow.",
+      "image": {
+        "src": "images/listing-taboo-studio.svg",
+        "width": 360,
+        "height": 240,
+        "alt": "Stylised director chair and spotlights illustrating Taboo Studio's production focus."
+      },
+      "features": [
+        "4K render pipeline with pose libraries",
+        "Signed consent vault with traceable hashes",
+        "Face swap safety net with watermarking"
+      ],
+      "pricing": "Subscription",
+      "disclosure": "Editorial review. Contact the studio for partnership opportunities.",
+      "tags": ["render", "face-swap", "studio"],
+      "lastReviewed": "2024-05-28"
+    },
+    {
+      "id": "mirror-morph",
+      "name": "MirrorMorph",
+      "slug": "mirror-morph",
+      "url": "https://mirrormorph.ai/",
+      "affiliate": false,
+      "categories": ["deepfake-tools"],
+      "summary": "MirrorMorph specialises in rapid face swaps for consenting performers, layering optical flow corrections to keep expressions lifelike in explicit motion.",
+      "image": {
+        "src": "images/listing-mirror-morph.svg",
+        "width": 360,
+        "height": 240,
+        "alt": "Two mirrored silhouettes with gradient masks representing MirrorMorph's swap engine."
+      },
+      "features": [
+        "GPU auto-scaling for overnight batches",
+        "Per-scene consent verification workflows",
+        "Automatic watermarking on every export"
+      ],
+      "pricing": "Usage-based",
+      "disclosure": "Editorial listing with compliance emphasis.",
+      "tags": ["deepfake", "watermarking"],
+      "lastReviewed": "2024-05-20"
+    },
+    {
+      "id": "dreamy-maker",
+      "name": "DreamyMaker",
+      "slug": "dreamy-maker",
+      "url": "https://dreamymaker.ai/",
+      "affiliate": false,
+      "categories": ["ai-porn-generators"],
+      "summary": "DreamyMaker turns spicy prompts into stylised loops and lets adults remix community-safe model checkpoints with one click installs.",
+      "image": {
+        "src": "images/listing-dreamy-maker.svg",
+        "width": 360,
+        "height": 240,
+        "alt": "Vivid gradient canvas and motion blur icon showing DreamyMaker's animation engine."
+      },
+      "features": [
+        "Library of community-vetted LoRA models",
+        "Batch render queue with safe GPU presets",
+        "Animated GIF and MP4 exports ready for socials"
+      ],
+      "pricing": "Freemium",
+      "disclosure": "Editorial listing; no commission is paid.",
+      "tags": ["animation", "lora", "community"],
+      "lastReviewed": "2024-05-17"
+    },
+    {
+      "id": "velvet-voice",
+      "name": "VelvetVoice",
+      "slug": "velvet-voice",
+      "url": "https://velvetvoice.ai/",
+      "affiliate": false,
+      "categories": ["voice-audio"],
+      "summary": "VelvetVoice trains sultry timbres from your own samples, layering breathy harmonics for immersive audio porn without risking identity leaks.",
+      "image": {
+        "src": "images/listing-velvet-voice.svg",
+        "width": 360,
+        "height": 240,
+        "alt": "Microphone surrounded by velvet waves capturing VelvetVoice's smooth narration."
+      },
+      "features": [
+        "Adaptive cloning with explicit consent forms",
+        "Soundboard triggers for live cam performances",
+        "Instant profanity redaction for safe previews"
+      ],
+      "pricing": "Subscription",
+      "disclosure": "Editorial listing; VelvetVoice does not currently run an affiliate program.",
+      "tags": ["voice", "cloning", "soundboard"],
+      "lastReviewed": "2024-05-30"
+    },
+    {
+      "id": "after-dark-companion",
+      "name": "AfterDark Companion",
+      "slug": "after-dark-companion",
+      "url": "https://afterdarkcompanion.ai/",
+      "affiliate": false,
+      "categories": ["ai-girlfriend-chat", "voice-audio"],
+      "summary": "AfterDark Companion blends text flirtation with voice notes and scripted games designed for consenting adults who crave bespoke intimacy exercises.",
+      "image": {
+        "src": "images/listing-after-dark.svg",
+        "width": 360,
+        "height": 240,
+        "alt": "A glowing moon over a tablet symbolising AfterDark Companion's bedtime erotica focus."
+      },
+      "features": [
+        "Erotic journaling prompts with mood tracking",
+        "Switchable voice actors with verified age",
+        "Calendar-based intimacy challenges"
+      ],
+      "pricing": "Freemium",
+      "disclosure": "Editorial listing developed with adult wellness coaches.",
+      "tags": ["wellness", "voice", "chat"],
+      "lastReviewed": "2024-05-19"
+    },
+    {
+      "id": "prompt-palette",
+      "name": "PromptPalette",
+      "slug": "prompt-palette",
+      "url": "https://promptpalette.ai/",
+      "affiliate": false,
+      "categories": ["marketplaces"],
+      "summary": "PromptPalette hosts a vetted exchange of explicit prompt packs, lighting rigs, and LoRA blends, all gated for verified adults only.",
+      "image": {
+        "src": "images/listing-prompt-palette.svg",
+        "width": 360,
+        "height": 240,
+        "alt": "Color palette wheel paired with prompt cards representing PromptPalette's market."
+      },
+      "features": [
+        "Creator royalties with instant payouts",
+        "Fraud-resistant preview watermarking",
+        "Community review board that bans minors"
+      ],
+      "pricing": "Revenue share",
+      "disclosure": "Editorial listing; PromptPalette operates independently from AiPornDirect.",
+      "tags": ["marketplace", "prompts", "lora"],
+      "lastReviewed": "2024-05-25"
+    },
+    {
+      "id": "sound-furnace",
+      "name": "SoundFurnace",
+      "slug": "sound-furnace",
+      "url": "https://soundfurnace.ai/",
+      "affiliate": false,
+      "categories": ["voice-audio", "marketplaces"],
+      "summary": "SoundFurnace is a closed marketplace for explicit sound packs, giving adult performers safe contracts and granular usage licensing.",
+      "image": {
+        "src": "images/listing-sound-furnace.svg",
+        "width": 360,
+        "height": 240,
+        "alt": "Stylised furnace icon emitting sound waves that signify SoundFurnace's audio packs."
+      },
+      "features": [
+        "Contract templates for explicit collaborations",
+        "AI mastering presets tuned for moans and whispers",
+        "Reviewer council verifying performer ages"
+      ],
+      "pricing": "Commission",
+      "disclosure": "Editorial listing with compliance notes from AiPornDirect's legal advisors.",
+      "tags": ["audio", "marketplace", "compliance"],
+      "lastReviewed": "2024-05-27"
+    }
+  ]
+}

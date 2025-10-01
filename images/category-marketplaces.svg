@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
+  <title id="title">Marketplace illustration</title>
+  <desc id="desc">Abstract storefront shelves for marketplaces and adult creator communities.</desc>
+  <defs>
+    <linearGradient id="marketGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06beb6"/>
+      <stop offset="100%" stop-color="#48b1bf"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="480" rx="40" fill="url(#marketGrad)"/>
+  <g fill="#ffffff" opacity="0.9">
+    <rect x="140" y="120" width="180" height="240" rx="28"/>
+    <rect x="320" y="160" width="120" height="200" rx="24" opacity="0.7"/>
+    <rect x="440" y="200" width="160" height="160" rx="22" opacity="0.6"/>
+  </g>
+</svg>
