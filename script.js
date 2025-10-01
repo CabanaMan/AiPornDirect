@@ -55,6 +55,21 @@ function createElement(tag, options = {}) {
   return el;
 }
 
+function injectItemListJSONLD(sectionName, urls){
+  if (!urls || !urls.length) return;
+  const el=document.createElement('script');
+  el.type='application/ld+json';
+  el.textContent=JSON.stringify({
+    "@context":"https://schema.org",
+    "@type":"ItemList",
+    "name":sectionName,
+    "itemListElement": urls.map((u,i)=>({
+      "@type":"ListItem","position":i+1,"url":u
+    }))
+  });
+  document.head.appendChild(el);
+}
+
 async function loadPartial(selector, url) {
   const container = document.querySelector(selector);
   if (!container) return;
@@ -100,6 +115,20 @@ function renderBreadcrumbs() {
 
   nav.appendChild(list);
   container.appendChild(nav);
+
+  const breadcrumbJson = document.getElementById('breadcrumb-jsonld');
+  if (breadcrumbJson) {
+    breadcrumbJson.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": items.map((item, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: item.name,
+        item: item.url.startsWith('http') ? item.url : `https://aiporndirect.com${item.url}`
+      }))
+    });
+  }
 }
 
 function buildListingCard(listing) {
@@ -115,11 +144,12 @@ function buildListingCard(listing) {
   const media = createElement('div', { className: 'listing-media' });
   const picture = document.createElement('picture');
   const img = createElement('img', {
+    className: 'card-thumb',
     attrs: {
-      src: listing.image.src,
-      alt: listing.image.alt,
-      width: listing.image.width,
-      height: listing.image.height,
+      src: listing.image?.src || '',
+      alt: `${listing.name} screenshot`,
+      width: 320,
+      height: 180,
       loading: 'lazy',
       decoding: 'async'
     }
@@ -155,7 +185,7 @@ function buildListingCard(listing) {
     attrs: {
       href: listing.url,
       target: '_blank',
-      rel: listing.affiliate ? 'sponsored nofollow noopener' : 'nofollow noopener'
+      rel: 'sponsored nofollow noopener'
     }
   });
   content.appendChild(link);
@@ -265,6 +295,11 @@ function renderCategories(categories, listings) {
     section.appendChild(grid);
     section.appendChild(buildRelatedBlock(category, categories, listingsMap));
     container.appendChild(section);
+
+    const canonicalUrls = categoryListings
+      .map((listing) => listing.canonical || `https://aiporndirect.com/vendor/${listing.slug}/`)
+      .filter(Boolean);
+    injectItemListJSONLD(`${category.name} AI tools`, canonicalUrls);
   });
 }
 
@@ -280,71 +315,6 @@ function initFilter() {
       const textMatch = `${name} ${tags}`;
       card.style.display = textMatch.includes(query) ? '' : 'none';
     });
-  });
-}
-
-function injectJsonLd(categories, listings) {
-  const head = document.head;
-  const breadcrumb = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    'itemListElement': [
-      {
-        '@type': 'ListItem',
-        position: 1,
-        name: 'Home',
-        item: 'https://aiporndirect.com/'
-      },
-      {
-        '@type': 'ListItem',
-        position: 2,
-        name: 'AI Porn Tools Directory',
-        item: 'https://aiporndirect.com/#main-content'
-      }
-    ]
-  };
-
-  const categoryList = {
-    '@context': 'https://schema.org',
-    '@type': 'ItemList',
-    name: 'AiPornDirect Categories',
-    itemListElement: categories.map((category, index) => ({
-      '@type': 'ListItem',
-      position: index + 1,
-      name: category.name,
-      item: `https://aiporndirect.com/${category.path.replace(/^\//, '')}`
-    }))
-  };
-
-  [breadcrumb, categoryList].forEach((data) => {
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.textContent = JSON.stringify(data);
-    head.appendChild(script);
-  });
-
-  listings.forEach((listing) => {
-    const data = {
-      '@context': 'https://schema.org',
-      '@type': 'WebPage',
-      '@id': `https://aiporndirect.com/#${listing.slug}`,
-      url: `https://aiporndirect.com/#${listing.slug}`,
-      name: `${listing.name} on AiPornDirect`,
-      isPartOf: {
-        '@type': 'WebSite',
-        name: 'AiPornDirect',
-        url: 'https://aiporndirect.com/'
-      },
-      mainEntity: {
-        '@type': 'Organization',
-        name: listing.name,
-        url: listing.url
-      }
-    };
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.textContent = JSON.stringify(data);
-    head.appendChild(script);
   });
 }
 
@@ -365,7 +335,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderBreadcrumbs();
     renderCategories(categoryData.categories, listingData.listings);
     initFilter();
-    injectJsonLd(categoryData.categories, listingData.listings);
   } catch (error) {
     console.error('Failed to initialise directory', error);
   }

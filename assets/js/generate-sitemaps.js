@@ -1,124 +1,48 @@
 #!/usr/bin/env node
-import { readFile, writeFile } from 'node:fs/promises';
-import { resolve } from 'node:path';
-
-const MAX_URLS_PER_MAP = 50000;
-
-function parseArgs(argv) {
-  return argv.slice(2).reduce((acc, arg, index, array) => {
-    if (arg.startsWith('--')) {
-      const key = arg.replace(/^--/, '');
-      const value = array[index + 1] && !array[index + 1].startsWith('--') ? array[index + 1] : true;
-      acc[key] = value;
-    }
-    return acc;
-  }, {});
-}
-
-function isoDate(value) {
-  const date = value ? new Date(value) : new Date();
-  return date.toISOString();
-}
-
-function chunkArray(array, size) {
-  const chunks = [];
-  for (let i = 0; i < array.length; i += size) {
-    chunks.push(array.slice(i, i + size));
+const fs=require('fs'),path=require('path');
+const args=process.argv; const base=(args[args.indexOf('--base')+1]||'https://aiporndirect.com').replace(/\/+$/,'');
+const outRoot=process.cwd();
+function iso(){return new Date().toISOString().slice(0,10);}
+function slugify(s){return String(s).toLowerCase().trim().replace(/[^a-z0-9]+/g,'-').replace(/-+/g,'-').replace(/^-|-$/g,'');}
+function collect(){
+  const urls=new Set([`${base}/`]);
+  const d=path.join(outRoot,'data');
+  if(fs.existsSync(d)){
+    for(const f of fs.readdirSync(d).filter(x=>x.endsWith('.json'))){
+      try{
+        const j=JSON.parse(fs.readFileSync(path.join(d,f),'utf8'));
+        const push=(p,v)=>{if(!v)return; urls.add(`${base}/${p}/${slugify(v)}/`);};
+        (j.categories||[]).forEach(x=>push('category',x.slug||x.name));
+        (j.tags||[]).forEach(x=>push('tag',x.slug||x.name));
+        (j.vendors||[]).forEach(x=>push('vendor',x.slug||x.name));
+        (j.guides||[]).forEach(x=>push('guide',x.slug||x.title));
+      }catch(_){}}
   }
-  return chunks;
+  return Array.from(urls);
 }
-
-function buildUrlEntry(base, path, lastmod) {
-  const url = new URL(path, base).toString();
-  return { loc: url, lastmod: isoDate(lastmod) };
+function writeSet(file,urls){
+  const today=iso();
+  const xml=['<?xml version="1.0" encoding="UTF-8"?>',
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    ...urls.map(u=>`  <url><loc>${u}</loc><lastmod>${today}</lastmod></url>`),
+    '</urlset>'].join('\n');
+  fs.writeFileSync(path.join(outRoot,file),xml,'utf8');
 }
-
-function buildXml(urls) {
-  const nodes = urls
-    .map((entry) => `  <url>\n    <loc>${entry.loc}</loc>\n    <lastmod>${entry.lastmod}</lastmod>\n  </url>`)
-    .join('\n');
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${nodes}\n</urlset>\n`;
-}
-
-function buildIndexXml(base, maps) {
-  const nodes = maps
-    .map(({ filename, lastmod }) => {
-      const loc = new URL(filename, base).toString();
-      return `  <sitemap>\n    <loc>${loc}</loc>\n    <lastmod>${lastmod}</lastmod>\n  </sitemap>`;
-    })
-    .join('\n');
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${nodes}\n</sitemapindex>\n`;
-}
-
-async function main() {
-  const args = parseArgs(process.argv);
-  const base = args.base || 'https://aiporndirect.com/';
-
-  if (!base.startsWith('http')) {
-    console.error('Base URL must include protocol, e.g. https://aiporndirect.com');
-    process.exit(1);
+(function main(){
+  const all=collect();
+  if(all.length>50000){
+    const parts=[]; while(all.length) parts.push(all.splice(0,49000));
+    const today=iso();
+    const idx=['<?xml version="1.0" encoding="UTF-8"?>','<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'];
+    parts.forEach((p,i)=>{
+      const fn=`sitemap-${i+1}.xml`; writeSet(fn,p);
+      idx.push(`  <sitemap><loc>${base}/${fn}</loc><lastmod>${today}</lastmod></sitemap>`);
+    });
+    idx.push('</sitemapindex>');
+    fs.writeFileSync(path.join(outRoot,'sitemap-index.xml'),idx.join('\n'),'utf8');
+    console.log('Wrote sitemap-index.xml + parts');
+  }else{
+    writeSet('sitemap.xml',all);
+    console.log('Wrote sitemap.xml with',all.length,'URLs');
   }
-
-  const rootLastmod = isoDate();
-  const categoriesPath = resolve('data/categories.json');
-  const listingsPath = resolve('data/listings.json');
-
-  const [categoriesRaw, listingsRaw] = await Promise.all([
-    readFile(categoriesPath, 'utf8'),
-    readFile(listingsPath, 'utf8')
-  ]);
-
-  const categories = JSON.parse(categoriesRaw).categories || [];
-  const listings = JSON.parse(listingsRaw).listings || [];
-
-  const urls = [buildUrlEntry(base, '/', rootLastmod)];
-
-  categories.forEach((category) => {
-    const categoryListings = listings.filter((listing) => listing.categories.includes(category.id));
-    const lastmod = categoryListings.reduce((latest, listing) => {
-      const reviewed = listing.lastReviewed ? new Date(listing.lastReviewed) : null;
-      if (!reviewed) return latest;
-      if (!latest || reviewed > latest) {
-        return reviewed;
-      }
-      return latest;
-    }, null);
-    urls.push(buildUrlEntry(base, category.path || `/#${category.slug}`, lastmod ? lastmod.toISOString() : rootLastmod));
-  });
-
-  listings.forEach((listing) => {
-    urls.push(buildUrlEntry(base, `/#${listing.slug}`, listing.lastReviewed || rootLastmod));
-  });
-
-  if (urls.length <= MAX_URLS_PER_MAP) {
-    const xml = buildXml(urls);
-    await writeFile(resolve('sitemap.xml'), xml, 'utf8');
-    await writeFile(resolve('sitemap-index.xml'), buildIndexXml(base, [
-      { filename: 'sitemap.xml', lastmod: isoDate() }
-    ]), 'utf8');
-    console.log(`Sitemap written with ${urls.length} URLs.`);
-    return;
-  }
-
-  const chunks = chunkArray(urls, MAX_URLS_PER_MAP);
-  const indexEntries = [];
-
-  await Promise.all(
-    chunks.map(async (chunk, chunkIndex) => {
-      const filename = chunkIndex === 0 ? 'sitemap.xml' : `sitemap-${chunkIndex + 1}.xml`;
-      const xml = buildXml(chunk);
-      await writeFile(resolve(filename), xml, 'utf8');
-      indexEntries.push({ filename, lastmod: isoDate() });
-    })
-  );
-
-  indexEntries.sort((a, b) => a.filename.localeCompare(b.filename));
-  const indexXml = buildIndexXml(base, indexEntries);
-  await writeFile(resolve('sitemap-index.xml'), indexXml, 'utf8');
-  console.log(`Generated sitemap index with ${chunks.length} files and ${urls.length} URLs.`);
-}
-
-main().catch((error) => {
-  console.error(error);
-  process.exit(1);
-});
+})();
