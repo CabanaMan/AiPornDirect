@@ -26,6 +26,22 @@ body {
   min-height: 100vh;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-thumb {
+  width: 320px;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.ad-slot {
+  min-height: 120px;
+}
+
 .skip-link {
   position: absolute;
   top: -40px;
