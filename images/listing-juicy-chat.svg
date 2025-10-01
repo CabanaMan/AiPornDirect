@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
+  <title id="title">JuicyChat illustration</title>
+  <desc id="desc">Moody chat bubbles implying erotic AI conversation.</desc>
+  <rect width="720" height="480" fill="#1c2238" rx="40"/>
+  <rect x="200" y="140" width="200" height="120" rx="28" fill="#ff6f61" opacity="0.85"/>
+  <rect x="360" y="220" width="200" height="120" rx="28" fill="#845ec2" opacity="0.8"/>
+  <circle cx="260" cy="200" r="14" fill="#fff"/>
+  <circle cx="300" cy="200" r="14" fill="#fff"/>
+  <circle cx="340" cy="200" r="14" fill="#fff"/>
+</svg>

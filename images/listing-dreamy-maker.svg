@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
+  <title id="title">DreamyMaker illustration</title>
+  <desc id="desc">Gradient canvas with flowing streak for DreamyMaker animations.</desc>
+  <defs>
+    <linearGradient id="dreamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6cab"/>
+      <stop offset="50%" stop-color="#7367f0"/>
+      <stop offset="100%" stop-color="#32ccbc"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="480" rx="40" fill="#06012a"/>
+  <path d="M80 300 Q200 200 360 260 T640 220" stroke="url(#dreamGrad)" stroke-width="40" stroke-linecap="round" fill="none"/>
+  <circle cx="520" cy="180" r="40" fill="#32ccbc" opacity="0.7"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
+  <title id="title">SoundFurnace illustration</title>
+  <desc id="desc">Furnace icon with audio waves symbolising SoundFurnace marketplace.</desc>
+  <rect width="720" height="480" rx="40" fill="#2f1b0c"/>
+  <rect x="240" y="160" width="240" height="200" rx="32" fill="#f25c05"/>
+  <polygon points="260,200 460,200 420,320 300,320" fill="#ff9248"/>
+  <path d="M520 180 Q560 240 520 300" stroke="#ffd7ba" stroke-width="20" fill="none" stroke-linecap="round"/>
+  <path d="M560 160 Q600 240 560 320" stroke="#ffd7ba" stroke-width="20" fill="none" stroke-linecap="round" opacity="0.6"/>
+</svg>

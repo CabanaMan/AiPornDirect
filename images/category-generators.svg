@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
+  <title id="title">Abstract AI generator illustration</title>
+  <desc id="desc">Gradient background with geometric shapes symbolising AI porn generators.</desc>
+  <defs>
+    <linearGradient id="grad" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff4f8b"/>
+      <stop offset="100%" stop-color="#6123ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="480" fill="url(#grad)" rx="40"/>
+  <g fill="rgba(255,255,255,0.7)">
+    <circle cx="200" cy="180" r="70"/>
+    <rect x="340" y="120" width="220" height="140" rx="24"/>
+    <path d="M120 360 L300 300 L420 360 L300 420 Z"/>
+  </g>
+</svg>

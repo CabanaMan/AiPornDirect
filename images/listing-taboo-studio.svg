@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
+  <title id="title">Taboo Studio illustration</title>
+  <desc id="desc">Director chair and spotlights representing Taboo Studio.</desc>
+  <rect width="720" height="480" fill="#141414" rx="40"/>
+  <polygon points="220,360 280,160 440,160 500,360" fill="#ffb347" opacity="0.8"/>
+  <rect x="280" y="200" width="160" height="120" fill="#fff" opacity="0.2"/>
+  <circle cx="260" cy="160" r="28" fill="#ffd166"/>
+  <circle cx="480" cy="160" r="28" fill="#ffd166"/>
+</svg>

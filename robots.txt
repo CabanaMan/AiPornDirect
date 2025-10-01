@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /login
+Disallow: /search
+Disallow: /admin
+Disallow: /*?*
+Allow: /
+Sitemap: https://aiporndirect.com/sitemap.xml

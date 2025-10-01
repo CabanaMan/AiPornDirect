@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
+  <title id="title">Candy AI illustration</title>
+  <desc id="desc">Neon avatar silhouette with heart accents representing Candy AI.</desc>
+  <rect width="720" height="480" fill="#2b0036" rx="40"/>
+  <circle cx="360" cy="220" r="120" fill="#ff5fad" opacity="0.7"/>
+  <path d="M300 340 C320 380 400 380 420 340" stroke="#ff85d8" stroke-width="20" fill="none" stroke-linecap="round"/>
+  <circle cx="320" cy="200" r="16" fill="#fff"/>
+  <circle cx="400" cy="200" r="16" fill="#fff"/>
+</svg>

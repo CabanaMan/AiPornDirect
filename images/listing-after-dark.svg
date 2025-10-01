@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
+  <title id="title">AfterDark Companion illustration</title>
+  <desc id="desc">Night scene with moon over a tablet showing AfterDark Companion.</desc>
+  <rect width="720" height="480" rx="40" fill="#0b1026"/>
+  <circle cx="500" cy="150" r="60" fill="#ffe66d"/>
+  <rect x="200" y="200" width="320" height="200" rx="28" fill="#1b264f"/>
+  <rect x="240" y="240" width="240" height="120" rx="20" fill="#4a6fa5"/>
+</svg>

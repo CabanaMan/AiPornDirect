@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
+  <title id="title">VelvetVoice illustration</title>
+  <desc id="desc">Microphone with velvet sound waves for VelvetVoice audio services.</desc>
+  <rect width="720" height="480" rx="40" fill="#2d0f4a"/>
+  <rect x="320" y="120" width="80" height="180" rx="28" fill="#a56eff"/>
+  <rect x="300" y="300" width="120" height="80" rx="24" fill="#a56eff" opacity="0.8"/>
+  <path d="M120 200 Q240 120 360 220 T600 240" stroke="#f7e9ff" stroke-width="24" fill="none" opacity="0.6"/>
+</svg>
