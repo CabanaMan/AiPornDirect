@@ -4,10 +4,10 @@
       "id": "candy-ai",
       "name": "Candy AI",
       "slug": "candy-ai",
-      "url": "https://t.mbsrv2.com/366307/6646?popUnder=true&aff_sub5=SF_006OG000004lmDN",
-      "affiliate": true,
+      "url": "https://candy.ai/",
+      "affiliate": false,
       "categories": ["ai-girlfriend-chat"],
-      "summary": "Candy AI keeps a memory of your dirtiest roleplay threads, adds optional audio replies, and guards your transcripts behind zero-retention encryption for maximum discretion.",
+      "summary": "Candy AI keeps a detailed memory of consensual roleplay threads, adds optional audio replies, and guards transcripts behind zero-retention encryption for maximum discretion.",
       "image": {
         "src": "images/listing-candy-ai.svg",
         "width": 360,
@@ -20,9 +20,9 @@
         "Explicit audio replies voiced by adult performers"
       ],
       "pricing": "Freemium",
-      "disclosure": "Paid partner link. AiPornDirect earns a commission when you upgrade after trying Candy AI.",
+      "disclosure": "Editorial listing with a direct link to the official Candy AI homepage.",
       "tags": ["chat", "audio", "mobile"],
-      "lastReviewed": "2024-06-01"
+      "lastReviewed": "2024-06-05"
     },
     {
       "id": "juicy-chat",
@@ -49,172 +49,172 @@
       "lastReviewed": "2024-06-03"
     },
     {
-      "id": "taboo-studio",
-      "name": "Taboo Studio",
-      "slug": "taboo-studio",
-      "url": "https://taboostudio.ai/",
+      "id": "janitor-ai",
+      "name": "Janitor AI",
+      "slug": "janitor-ai",
+      "url": "https://janitorai.com/",
+      "affiliate": false,
+      "categories": ["ai-girlfriend-chat"],
+      "summary": "Janitor AI hosts thousands of community-built bots with optional NSFW toggles, granular character controls, and private sandbox chats for adults.",
+      "image": {
+        "src": "images/listing-janitor-ai.svg",
+        "width": 360,
+        "height": 240,
+        "alt": "Playful janitor robot sweeping neon hearts to represent Janitor AI's chat cleanup tools."
+      },
+      "features": [
+        "Roleplay bots tagged with clear consent boundaries",
+        "Local client option for privacy-focused conversations",
+        "Shareable chat logs that automatically redact names"
+      ],
+      "pricing": "Freemium",
+      "disclosure": "Editorial listing with direct access to Janitor AI's official portal.",
+      "tags": ["chat", "community", "privacy"],
+      "lastReviewed": "2024-06-05"
+    },
+    {
+      "id": "crushon-ai",
+      "name": "CrushOn.AI",
+      "slug": "crushon-ai",
+      "url": "https://crushon.ai/",
+      "affiliate": false,
+      "categories": ["ai-girlfriend-chat"],
+      "summary": "CrushOn.AI delivers unfiltered erotic roleplay with custom kinks, image drops, and character cards built by consenting adults.",
+      "image": {
+        "src": "images/listing-crushon-ai.svg",
+        "width": 360,
+        "height": 240,
+        "alt": "Two stylised avatars sharing a heart-shaped holo screen symbolising CrushOn.AI's flirty focus."
+      },
+      "features": [
+        "Unlimited NSFW toggles with granular content filters",
+        "Image attachment support for scene inspiration",
+        "Creator marketplace for premium fantasy personalities"
+      ],
+      "pricing": "Subscription",
+      "disclosure": "Editorial listing that links straight to CrushOn.AI's secure signup.",
+      "tags": ["chat", "marketplace", "images"],
+      "lastReviewed": "2024-06-05"
+    },
+    {
+      "id": "unstable-diffusion",
+      "name": "Unstable Diffusion",
+      "slug": "unstable-diffusion",
+      "url": "https://unstable-diffusion.com/",
       "affiliate": false,
       "categories": ["ai-porn-generators", "deepfake-tools"],
-      "summary": "Taboo Studio handles cinematic lighting and composite renders while logging consent artifacts for every performer you model inside the workflow.",
+      "summary": "Unstable Diffusion offers explicit-ready Stable Diffusion models with adult safety guidelines, legal resources, and pro-grade lighting presets.",
       "image": {
-        "src": "images/listing-taboo-studio.svg",
+        "src": "images/listing-unstable-diffusion.svg",
         "width": 360,
         "height": 240,
-        "alt": "Stylised director chair and spotlights illustrating Taboo Studio's production focus."
+        "alt": "Abstract diffusion waves with neon sparks illustrating Unstable Diffusion's creative engine."
       },
       "features": [
-        "4K render pipeline with pose libraries",
-        "Signed consent vault with traceable hashes",
-        "Face swap safety net with watermarking"
+        "Checkpoint library curated for consenting adult content",
+        "Lighting and camera prompt guides tuned for erotica",
+        "Legal handbook that outlines compliant usage"
       ],
-      "pricing": "Subscription",
-      "disclosure": "Editorial review. Contact the studio for partnership opportunities.",
-      "tags": ["render", "face-swap", "studio"],
-      "lastReviewed": "2024-05-28"
+      "pricing": "Community-supported",
+      "disclosure": "Editorial listing linking to the official Unstable Diffusion collective.",
+      "tags": ["models", "guides", "community"],
+      "lastReviewed": "2024-06-05"
     },
     {
-      "id": "mirror-morph",
-      "name": "MirrorMorph",
-      "slug": "mirror-morph",
-      "url": "https://mirrormorph.ai/",
+      "id": "pornlab-ai",
+      "name": "PornLab AI",
+      "slug": "pornlab-ai",
+      "url": "https://pornlab.ai/",
       "affiliate": false,
-      "categories": ["deepfake-tools"],
-      "summary": "MirrorMorph specialises in rapid face swaps for consenting performers, layering optical flow corrections to keep expressions lifelike in explicit motion.",
+      "categories": ["ai-porn-generators", "marketplaces"],
+      "summary": "PornLab AI runs a cloud render farm for explicit scenes, complete with consent paperwork templates and pay-as-you-go credits.",
       "image": {
-        "src": "images/listing-mirror-morph.svg",
+        "src": "images/listing-pornlab-ai.svg",
         "width": 360,
         "height": 240,
-        "alt": "Two mirrored silhouettes with gradient masks representing MirrorMorph's swap engine."
+        "alt": "Futuristic lab console with pink highlights illustrating PornLab AI's production tools."
       },
       "features": [
-        "GPU auto-scaling for overnight batches",
-        "Per-scene consent verification workflows",
-        "Automatic watermarking on every export"
+        "GPU render queue with auto-sanitised storage",
+        "Performer consent vault and release reminders",
+        "Marketplace for trading custom LoRA packs"
       ],
       "pricing": "Usage-based",
-      "disclosure": "Editorial listing with compliance emphasis.",
-      "tags": ["deepfake", "watermarking"],
-      "lastReviewed": "2024-05-20"
+      "disclosure": "Editorial listing that points to PornLab AI's official dashboard.",
+      "tags": ["render", "lora", "marketplace"],
+      "lastReviewed": "2024-06-05"
     },
     {
-      "id": "dreamy-maker",
-      "name": "DreamyMaker",
-      "slug": "dreamy-maker",
-      "url": "https://dreamymaker.ai/",
+      "id": "deepswap-ai",
+      "name": "DeepSwap",
+      "slug": "deepswap-ai",
+      "url": "https://www.deepswap.ai/",
       "affiliate": false,
-      "categories": ["ai-porn-generators"],
-      "summary": "DreamyMaker turns spicy prompts into stylised loops and lets adults remix community-safe model checkpoints with one click installs.",
+      "categories": ["deepfake-tools"],
+      "summary": "DeepSwap generates high-fidelity face swaps and enforces strict content policies that require proof of consent for adult scenes.",
       "image": {
-        "src": "images/listing-dreamy-maker.svg",
+        "src": "images/listing-deepswap-ai.svg",
         "width": 360,
         "height": 240,
-        "alt": "Vivid gradient canvas and motion blur icon showing DreamyMaker's animation engine."
+        "alt": "Dual masks blending together to represent DeepSwap's face replacement workflow."
       },
       "features": [
-        "Library of community-vetted LoRA models",
-        "Batch render queue with safe GPU presets",
-        "Animated GIF and MP4 exports ready for socials"
-      ],
-      "pricing": "Freemium",
-      "disclosure": "Editorial listing; no commission is paid.",
-      "tags": ["animation", "lora", "community"],
-      "lastReviewed": "2024-05-17"
-    },
-    {
-      "id": "velvet-voice",
-      "name": "VelvetVoice",
-      "slug": "velvet-voice",
-      "url": "https://velvetvoice.ai/",
-      "affiliate": false,
-      "categories": ["voice-audio"],
-      "summary": "VelvetVoice trains sultry timbres from your own samples, layering breathy harmonics for immersive audio porn without risking identity leaks.",
-      "image": {
-        "src": "images/listing-velvet-voice.svg",
-        "width": 360,
-        "height": 240,
-        "alt": "Microphone surrounded by velvet waves capturing VelvetVoice's smooth narration."
-      },
-      "features": [
-        "Adaptive cloning with explicit consent forms",
-        "Soundboard triggers for live cam performances",
-        "Instant profanity redaction for safe previews"
+        "Instant face alignment with motion smoothing",
+        "Consent verification and takedown automation",
+        "Browser-based editor with watermarking tools"
       ],
       "pricing": "Subscription",
-      "disclosure": "Editorial listing; VelvetVoice does not currently run an affiliate program.",
-      "tags": ["voice", "cloning", "soundboard"],
-      "lastReviewed": "2024-05-30"
+      "disclosure": "Editorial listing with a direct link to the DeepSwap platform.",
+      "tags": ["deepfake", "compliance", "watermark"],
+      "lastReviewed": "2024-06-05"
     },
     {
-      "id": "after-dark-companion",
-      "name": "AfterDark Companion",
-      "slug": "after-dark-companion",
-      "url": "https://afterdarkcompanion.ai/",
+      "id": "civitai",
+      "name": "Civitai",
+      "slug": "civitai",
+      "url": "https://civitai.com/",
       "affiliate": false,
-      "categories": ["ai-girlfriend-chat", "voice-audio"],
-      "summary": "AfterDark Companion blends text flirtation with voice notes and scripted games designed for consenting adults who crave bespoke intimacy exercises.",
+      "categories": ["marketplaces", "ai-porn-generators"],
+      "summary": "Civitai is the go-to marketplace for Stable Diffusion models and NSFW LoRA packs, backed by moderation tools that filter out illegal content.",
       "image": {
-        "src": "images/listing-after-dark.svg",
+        "src": "images/listing-civitai.svg",
         "width": 360,
         "height": 240,
-        "alt": "A glowing moon over a tablet symbolising AfterDark Companion's bedtime erotica focus."
+        "alt": "Stylised gallery wall of AI model cards symbolising the Civitai marketplace."
       },
       "features": [
-        "Erotic journaling prompts with mood tracking",
-        "Switchable voice actors with verified age",
-        "Calendar-based intimacy challenges"
+        "Creator tipping and subscription support",
+        "Model cards with clear licensing and usage tags",
+        "Community moderation that enforces consent rules"
       ],
       "pricing": "Freemium",
-      "disclosure": "Editorial listing developed with adult wellness coaches.",
-      "tags": ["wellness", "voice", "chat"],
-      "lastReviewed": "2024-05-19"
+      "disclosure": "Editorial listing linking straight to Civitai's marketplace.",
+      "tags": ["models", "marketplace", "community"],
+      "lastReviewed": "2024-06-05"
     },
     {
-      "id": "prompt-palette",
-      "name": "PromptPalette",
-      "slug": "prompt-palette",
-      "url": "https://promptpalette.ai/",
+      "id": "uberduck-ai",
+      "name": "Uberduck",
+      "slug": "uberduck-ai",
+      "url": "https://uberduck.ai/",
       "affiliate": false,
-      "categories": ["marketplaces"],
-      "summary": "PromptPalette hosts a vetted exchange of explicit prompt packs, lighting rigs, and LoRA blends, all gated for verified adults only.",
+      "categories": ["voice-audio"],
+      "summary": "Uberduck lets adult creators craft explicit voiceovers with expressive TTS models, custom cloning, and instant mastering presets.",
       "image": {
-        "src": "images/listing-prompt-palette.svg",
+        "src": "images/listing-uberduck-ai.svg",
         "width": 360,
         "height": 240,
-        "alt": "Color palette wheel paired with prompt cards representing PromptPalette's market."
+        "alt": "Retro microphone floating over waveforms capturing Uberduck's voice engine."
       },
       "features": [
-        "Creator royalties with instant payouts",
-        "Fraud-resistant preview watermarking",
-        "Community review board that bans minors"
+        "Custom voice clones gated behind consent approvals",
+        "API access for syncing dialogue with chatbots",
+        "Mastering chain tuned for intimate ASMR mixes"
       ],
-      "pricing": "Revenue share",
-      "disclosure": "Editorial listing; PromptPalette operates independently from AiPornDirect.",
-      "tags": ["marketplace", "prompts", "lora"],
-      "lastReviewed": "2024-05-25"
-    },
-    {
-      "id": "sound-furnace",
-      "name": "SoundFurnace",
-      "slug": "sound-furnace",
-      "url": "https://soundfurnace.ai/",
-      "affiliate": false,
-      "categories": ["voice-audio", "marketplaces"],
-      "summary": "SoundFurnace is a closed marketplace for explicit sound packs, giving adult performers safe contracts and granular usage licensing.",
-      "image": {
-        "src": "images/listing-sound-furnace.svg",
-        "width": 360,
-        "height": 240,
-        "alt": "Stylised furnace icon emitting sound waves that signify SoundFurnace's audio packs."
-      },
-      "features": [
-        "Contract templates for explicit collaborations",
-        "AI mastering presets tuned for moans and whispers",
-        "Reviewer council verifying performer ages"
-      ],
-      "pricing": "Commission",
-      "disclosure": "Editorial listing with compliance notes from AiPornDirect's legal advisors.",
-      "tags": ["audio", "marketplace", "compliance"],
-      "lastReviewed": "2024-05-27"
+      "pricing": "Subscription",
+      "disclosure": "Editorial listing that links to Uberduck's official studio app.",
+      "tags": ["voice", "api", "cloning"],
+      "lastReviewed": "2024-06-05"
     }
   ]
 }

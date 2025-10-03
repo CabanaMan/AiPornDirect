@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
+  <title id="title">DeepSwap illustration</title>
+  <desc id="desc">Two masks transitioning into each other.</desc>
+  <rect width="720" height="480" fill="#0f1a24" rx="40"/>
+  <path d="M220 330 C200 260 200 200 240 160 C300 100 380 120 420 200 C450 260 430 320 360 360 C300 390 240 380 220 330 Z" fill="#1e2f5e" stroke="#4ad8ff" stroke-width="8"/>
+  <path d="M500 150 C560 200 560 280 520 330 C460 400 370 380 330 310 C300 260 320 200 380 160 C430 130 470 130 500 150 Z" fill="#2f0f45" stroke="#ff77e9" stroke-width="8" opacity="0.9"/>
+  <circle cx="300" cy="230" r="18" fill="#ffffff"/>
+  <circle cx="420" cy="230" r="18" fill="#ffffff" opacity="0.7"/>
+  <path d="M290 280 Q320 300 350 280" stroke="#ff77e9" stroke-width="10" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <path d="M430 280 Q460 300 490 280" stroke="#4ad8ff" stroke-width="10" fill="none" stroke-linecap="round" opacity="0.7"/>
+</svg>

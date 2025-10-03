@@ -8,7 +8,7 @@
       "description": "AI porn generators transform written prompts into explicit visual stories without requiring a traditional production crew. The best services in this space now include safety guardrails, consent policies, and creator dashboards that let adults control how their likeness is used. Because models continue to evolve quickly, we highlight tools with transparent training data disclosures, opt-out mechanisms, and community moderation. Our directory focuses on platforms that honour lawful boundaries while still giving consenting adults granular control over styles, lighting, and multi-character scenes. You will also find guidance on rendering times, privacy controls, and export formats so you can deliver HD sets or GIF loops without blowing through your credit balance.",
       "heroImage": "images/category-generators.svg",
       "relatedCategories": ["ai-girlfriend-chat", "deepfake-tools", "voice-audio"],
-      "relatedTools": ["candy-ai", "taboo-studio", "dreamy-maker", "prompt-palette"]
+      "relatedTools": ["unstable-diffusion", "pornlab-ai", "civitai", "deepswap-ai"]
     },
     {
       "id": "ai-girlfriend-chat",
@@ -18,7 +18,7 @@
       "description": "Explicit AI companions are now capable of maintaining conversations that feel personal, caring, and delightfully dirty while respecting the boundaries you configure. We track platforms that give adults full control over persona settings, memory retention, and safe-word logic so you can roleplay with confidence. Each listing clarifies whether you receive audio replies, custom imagery, or multimodal scenes in addition to text-based chat. We also review data retention policies, anonymisation options, and payment structures to help you pick a chatbot that aligns with your privacy expectations. Whether you prefer flirty banter, detailed storytelling, or interactive games, these AI girlfriends provide NSFW entertainment while keeping minors and non-consenting likenesses completely out of bounds.",
       "heroImage": "images/category-chat.svg",
       "relatedCategories": ["ai-porn-generators", "voice-audio", "marketplaces"],
-      "relatedTools": ["candy-ai", "juicy-chat", "after-dark-companion", "velvet-voice"]
+      "relatedTools": ["candy-ai", "juicy-chat", "janitor-ai", "crushon-ai"]
     },
     {
       "id": "deepfake-tools",
@@ -28,7 +28,7 @@
       "description": "Face swapping technology has matured dramatically, and that makes compliance more important than ever. We only feature studios that require uploaded consent forms, reject celebrity likeness abuse, and include watermarking to prevent misuse. Each provider listed here delivers pro-level controls for lighting, alignment, and multi-angle output while maintaining auditable logs in case you need to prove proper licensing. The guide explains GPU requirements, render queues, and how to maintain safe storage for sensitive source footage. For adult creators and performers who want to build consensual deepfake scenes or synthetic doubles, these tools combine cinematic realism with privacy-first workflows and clear takedown channels.",
       "heroImage": "images/category-deepfake.svg",
       "relatedCategories": ["ai-porn-generators", "marketplaces", "voice-audio"],
-      "relatedTools": ["mirror-morph", "taboo-studio", "studio-alibi", "prompt-palette"]
+      "relatedTools": ["deepswap-ai", "unstable-diffusion", "pornlab-ai", "civitai"]
     },
     {
       "id": "voice-audio",
@@ -38,7 +38,7 @@
       "description": "Seductive narration is still a huge driver of subscriber retention, so we curate voice solutions that give you expressive range without complicated editing. These audio engines specialise in sultry dirty talk, explicit ASMR, and immersive spatial sound that layers moans, environmental cues, and whisper tracks. Each listing details whether you can clone your own voice, generate multilingual erotica, or integrate with live chatbots. We pay special attention to consent policies, including safeguards that prevent uploads of voices belonging to minors or unverified performers. The result is a directory of compliant vendors who help you create explicit soundscapes, looped moans, and subscriber-only voice packs while safeguarding the identities of everyone involved.",
       "heroImage": "images/category-voice.svg",
       "relatedCategories": ["ai-girlfriend-chat", "ai-porn-generators", "deepfake-tools"],
-      "relatedTools": ["velvet-voice", "after-dark-companion", "sound-furnace", "studio-alibi"]
+      "relatedTools": ["uberduck-ai", "candy-ai", "juicy-chat", "crushon-ai"]
     },
     {
       "id": "marketplaces",
@@ -48,7 +48,7 @@
       "description": "The adult AI ecosystem thrives when creators can safely trade prompts, LoRA packs, and finished animations, so this section showcases community hubs that moderate content responsibly. We look for transparent user guidelines, proactive moderation of illegal material, and easy to use reporting tools that help adults stay compliant. Listings outline whether the marketplace offers escrow, subscription bundles, or instant downloads so you can decide how to monetise your explicit work. We also spotlight educational hubs that teach prompt engineering, lighting techniques, and privacy best practices. By focusing on communities that value consent and fair payment splits, this marketplace roundup points you toward spaces where experienced adults can collaborate without exposing sensitive personal data.",
       "heroImage": "images/category-marketplaces.svg",
       "relatedCategories": ["ai-porn-generators", "deepfake-tools", "voice-audio"],
-      "relatedTools": ["prompt-palette", "sound-furnace", "studio-alibi", "dreamy-maker"]
+      "relatedTools": ["civitai", "pornlab-ai", "unstable-diffusion", "deepswap-ai"]
     }
   ]
 }
