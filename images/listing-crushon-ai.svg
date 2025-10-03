@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
+  <title id="title">CrushOn.AI illustration</title>
+  <desc id="desc">Two avatars sharing a holographic heart screen.</desc>
+  <rect width="720" height="480" fill="#2a0a2f" rx="40"/>
+  <circle cx="260" cy="230" r="90" fill="#ff4f9a" opacity="0.65"/>
+  <circle cx="460" cy="230" r="90" fill="#7b4dff" opacity="0.65"/>
+  <path d="M240 180 Q260 160 280 180" stroke="#fff" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <path d="M440 180 Q460 160 480 180" stroke="#fff" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <path d="M210 260 Q260 300 310 260" stroke="#ffe6f7" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <path d="M410 260 Q460 300 510 260" stroke="#e8e0ff" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <rect x="300" y="170" width="120" height="100" rx="18" fill="#1f102a" stroke="#ff9be7" stroke-width="6"/>
+  <path d="M320 205 Q360 160 400 205 Q360 250 320 205" fill="#ff6fce" stroke="#ffd4f5" stroke-width="4"/>
+  <circle cx="360" cy="235" r="10" fill="#ffd4f5"/>
+  <path d="M280 330 C320 360 400 360 440 330" stroke="#ff9be7" stroke-width="16" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
+  <title id="title">PornLab AI illustration</title>
+  <desc id="desc">Futuristic control console with glowing panels.</desc>
+  <rect width="720" height="480" fill="#1b0f2a" rx="40"/>
+  <rect x="160" y="180" width="400" height="200" rx="24" fill="#2f1f46" stroke="#ff6bd6" stroke-width="8"/>
+  <rect x="190" y="210" width="140" height="60" rx="12" fill="#ff6bd6" opacity="0.6"/>
+  <rect x="370" y="210" width="140" height="60" rx="12" fill="#7d74ff" opacity="0.6"/>
+  <rect x="190" y="290" width="320" height="60" rx="12" fill="#3be1ff" opacity="0.4"/>
+  <path d="M120 340 Q200 380 280 360 T520 360" stroke="#ff9ee5" stroke-width="14" fill="none" stroke-linecap="round" opacity="0.5"/>
+  <circle cx="230" cy="150" r="18" fill="#ff6bd6"/>
+  <circle cx="360" cy="140" r="22" fill="#7d74ff"/>
+  <circle cx="490" cy="150" r="18" fill="#3be1ff"/>
+</svg>
