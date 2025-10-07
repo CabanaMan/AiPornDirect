@@ -215,6 +215,414 @@
       "disclosure": "Editorial listing that links to Uberduck's official studio app.",
       "tags": ["voice", "api", "cloning"],
       "lastReviewed": "2024-06-05"
+    },
+    {
+      "id": "dreamgf",
+      "name": "DreamGF",
+      "slug": "dreamgf",
+      "url": "https://dreamgf.ai/",
+      "affiliate": false,
+      "categories": ["ai-girlfriend-chat"],
+      "summary": "DreamGF blends realistic AI girlfriends with custom poses, explicit chats, and scene generation that responds to your kink prompts.",
+      "image": {
+        "src": "images/listing-ai-companion.svg",
+        "width": 360,
+        "height": 240,
+        "alt": "Abstract neon silhouettes representing DreamGF's virtual companions."
+      },
+      "features": [
+        "Photo-real AI partners with adjustable intimacy settings",
+        "Explicit text and voice chat that remembers boundaries",
+        "Scene studio for creating custom image drops"
+      ],
+      "pricing": "Subscription",
+      "disclosure": "Editorial listing linking to DreamGF's official homepage.",
+      "tags": ["chat", "images", "memory"],
+      "lastReviewed": "2024-10-07"
+    },
+    {
+      "id": "hentai-ai",
+      "name": "Hentai.ai",
+      "slug": "hentai-ai",
+      "url": "https://hentai.ai/",
+      "affiliate": false,
+      "categories": ["ai-girlfriend-chat", "ai-porn-generators"],
+      "summary": "Hentai.ai specialises in anime-inspired companions and art packs, letting adults script explicit adventures with illustrated avatars.",
+      "image": {
+        "src": "images/listing-ai-companion.svg",
+        "width": 360,
+        "height": 240,
+        "alt": "Stylised anime silhouettes nodding to Hentai.ai's art focus."
+      },
+      "features": [
+        "Anime persona library covering dozens of kinks",
+        "Prompt-based image sets synced to each storyline",
+        "Secure locker for storing explicit roleplay logs"
+      ],
+      "pricing": "Subscription",
+      "disclosure": "Editorial listing that goes straight to Hentai.ai's official portal.",
+      "tags": ["anime", "chat", "images"],
+      "lastReviewed": "2024-10-07"
+    },
+    {
+      "id": "fanfinity",
+      "name": "Fanfinity",
+      "slug": "fanfinity",
+      "url": "https://fanfinity.com/",
+      "affiliate": false,
+      "categories": ["ai-girlfriend-chat"],
+      "summary": "Fanfinity packages creator-style AI muses into swipeable storylines, blending sext-friendly chat with premium unlocks.",
+      "image": {
+        "src": "images/listing-ai-companion.svg",
+        "width": 360,
+        "height": 240,
+        "alt": "Gradient chat bubbles signifying Fanfinity's interactive feed."
+      },
+      "features": [
+        "Swipe feed of persona updates and custom fantasies",
+        "Premium unlocks for spicy audio and photo sets",
+        "Detailed performance stats for tracking favourite bots"
+      ],
+      "pricing": "Freemium",
+      "disclosure": "Editorial listing connecting to Fanfinity's official experience.",
+      "tags": ["chat", "stories", "premium"],
+      "lastReviewed": "2024-10-07"
+    },
+    {
+      "id": "fantasy-ai",
+      "name": "Fantasy.ai",
+      "slug": "fantasy-ai",
+      "url": "https://fantasy.ai/",
+      "affiliate": false,
+      "categories": ["ai-girlfriend-chat"],
+      "summary": "Fantasy.ai mixes NSFW chat, spicy phone roleplay, and collaborative scripts so you can co-author explicit scenes with AI performers.",
+      "image": {
+        "src": "images/listing-ai-companion.svg",
+        "width": 360,
+        "height": 240,
+        "alt": "Two glowing characters sharing a script to reflect Fantasy.ai's co-writing tools."
+      },
+      "features": [
+        "Roleplay templates that adapt to voice or text",
+        "Custom persona creator with kink-specific sliders",
+        "Optional live-call simulators for JOI scenarios"
+      ],
+      "pricing": "Subscription",
+      "disclosure": "Editorial listing leading to Fantasy.ai's official signup page.",
+      "tags": ["chat", "voice", "roleplay"],
+      "lastReviewed": "2024-10-07"
+    },
+    {
+      "id": "golove-ai",
+      "name": "GoLove.ai",
+      "slug": "golove-ai",
+      "url": "https://golove.ai/",
+      "affiliate": false,
+      "categories": ["ai-girlfriend-chat"],
+      "summary": "GoLove.ai delivers playful AI girlfriends with spicy galleries, sext texting, and scheduling tools for ongoing dates.",
+      "image": {
+        "src": "images/listing-ai-companion.svg",
+        "width": 360,
+        "height": 240,
+        "alt": "Heart and rocket illustration representing GoLove.ai's flirty tone."
+      },
+      "features": [
+        "Daily chat missions that build long-term chemistry",
+        "Unlockable photosets and teasing audio clips",
+        "Calendar reminders for roleplay sessions and drops"
+      ],
+      "pricing": "Subscription",
+      "disclosure": "Editorial listing pointing to GoLove.ai's official landing page.",
+      "tags": ["chat", "images", "audio"],
+      "lastReviewed": "2024-10-07"
+    },
+    {
+      "id": "herahaven",
+      "name": "HeraHaven",
+      "slug": "herahaven",
+      "url": "https://herahaven.com/",
+      "affiliate": false,
+      "categories": ["ai-girlfriend-chat"],
+      "summary": "HeraHaven curates goddess-inspired AI companions who deliver explicit encouragement, rituals, and aftercare check-ins.",
+      "image": {
+        "src": "images/listing-ai-companion.svg",
+        "width": 360,
+        "height": 240,
+        "alt": "Ethereal crest symbolising HeraHaven's divine personas."
+      },
+      "features": [
+        "Empathic chatflows tuned for worship and devotion play",
+        "Aftercare reminders with gentle check-ins",
+        "Scene library inspired by mythic goddess archetypes"
+      ],
+      "pricing": "Subscription",
+      "disclosure": "Editorial listing routed to HeraHaven's verified portal.",
+      "tags": ["chat", "femdom", "aftercare"],
+      "lastReviewed": "2024-10-07"
+    },
+    {
+      "id": "kupid-ai",
+      "name": "Kupid.AI",
+      "slug": "kupid-ai",
+      "url": "https://kupid.ai/",
+      "affiliate": false,
+      "categories": ["ai-girlfriend-chat"],
+      "summary": "Kupid.AI gamifies sexting with unlockable challenges, collaborative fantasies, and adaptive intimacy levels for each couple.",
+      "image": {
+        "src": "images/listing-ai-companion.svg",
+        "width": 360,
+        "height": 240,
+        "alt": "Outlined heart icon showcasing Kupid.AI's romantic themes."
+      },
+      "features": [
+        "Challenge cards that escalate dirty talk at your pace",
+        "Co-op scenes where both partners control the AI",
+        "Mood dial to keep content consensual and safe"
+      ],
+      "pricing": "Freemium",
+      "disclosure": "Editorial listing linking to Kupid.AI's official experience.",
+      "tags": ["chat", "games", "couples"],
+      "lastReviewed": "2024-10-07"
+    },
+    {
+      "id": "ohchat",
+      "name": "OhChat",
+      "slug": "ohchat",
+      "url": "https://ohchat.ai/",
+      "affiliate": false,
+      "categories": ["ai-girlfriend-chat"],
+      "summary": "OhChat offers explicit AI texting with ready-made personas, custom voice notes, and NSFW media sharing for adults.",
+      "image": {
+        "src": "images/listing-ai-companion.svg",
+        "width": 360,
+        "height": 240,
+        "alt": "Stacked chat bubbles illustrating OhChat's conversation focus."
+      },
+      "features": [
+        "Library of curated erotic characters",
+        "Voice-note replies powered by expressive TTS",
+        "Secure vault for storing explicit photos and transcripts"
+      ],
+      "pricing": "Freemium",
+      "disclosure": "Editorial listing going to OhChat's official homepage.",
+      "tags": ["chat", "audio", "vault"],
+      "lastReviewed": "2024-10-07"
+    },
+    {
+      "id": "pleasurai",
+      "name": "PleasurAI",
+      "slug": "pleasurai",
+      "url": "https://pleasur.ai/",
+      "affiliate": false,
+      "categories": ["ai-girlfriend-chat", "voice-audio"],
+      "summary": "PleasurAI doubles as a sultry voice assistant, blending erotic dirty talk, background soundscapes, and responsive sexting scripts.",
+      "image": {
+        "src": "images/listing-ai-companion.svg",
+        "width": 360,
+        "height": 240,
+        "alt": "Audio wave motif capturing PleasurAI's vocal focus."
+      },
+      "features": [
+        "Interactive JOI routines with adjustable pacing",
+        "Layered audio scenes with moans and ambient loops",
+        "Text prompts that branch into custom voice replies"
+      ],
+      "pricing": "Subscription",
+      "disclosure": "Editorial listing referencing PleasurAI's official site.",
+      "tags": ["audio", "chat", "joi"],
+      "lastReviewed": "2024-10-07"
+    },
+    {
+      "id": "porn-ai",
+      "name": "Porn.ai",
+      "slug": "porn-ai",
+      "url": "https://porn.ai/",
+      "affiliate": false,
+      "categories": ["ai-porn-generators"],
+      "summary": "Porn.ai delivers explicit AI renders with studio lighting presets, nude-safe prompts, and explicit animation loops for consenting adults.",
+      "image": {
+        "src": "images/listing-ai-companion.svg",
+        "width": 360,
+        "height": 240,
+        "alt": "Neon reel icon for Porn.ai's adult imagery tools."
+      },
+      "features": [
+        "Pre-built prompt recipes for a variety of kinks",
+        "Batch rendering for HD galleries and GIF loops",
+        "Consent compliance guide with takedown workflows"
+      ],
+      "pricing": "Credits",
+      "disclosure": "Editorial listing linking to Porn.ai's official render studio.",
+      "tags": ["generator", "animation", "compliance"],
+      "lastReviewed": "2024-10-07"
+    },
+    {
+      "id": "ourdream-ai",
+      "name": "OurDream.ai",
+      "slug": "ourdream-ai",
+      "url": "https://ourdream.ai/",
+      "affiliate": false,
+      "categories": ["ai-porn-generators"],
+      "summary": "OurDream.ai lets creators train custom Stable Diffusion styles for erotic sets, manage LoRA packs, and host collaborative boards.",
+      "image": {
+        "src": "images/listing-ai-companion.svg",
+        "width": 360,
+        "height": 240,
+        "alt": "Starry gradient badge referencing OurDream.ai's creative hub."
+      },
+      "features": [
+        "Training pipeline for personal diffusion checkpoints",
+        "Shared workspaces for co-producing explicit shoots",
+        "Asset marketplace with opt-in creator royalties"
+      ],
+      "pricing": "Freemium",
+      "disclosure": "Editorial listing routing to OurDream.ai's official platform.",
+      "tags": ["models", "lora", "collaboration"],
+      "lastReviewed": "2024-10-07"
+    },
+    {
+      "id": "lovescape",
+      "name": "Lovescape",
+      "slug": "lovescape",
+      "url": "https://lovescape.ai/",
+      "affiliate": false,
+      "categories": ["ai-girlfriend-chat"],
+      "summary": "Lovescape focuses on romantic AI companions who can escalate into explicit sexting, photo drops, and aftercare therapy.",
+      "image": {
+        "src": "images/listing-ai-companion.svg",
+        "width": 360,
+        "height": 240,
+        "alt": "Ribbon heart emblem hinting at Lovescape's romantic edge."
+      },
+      "features": [
+        "Mood-based responses that adapt from tender to explicit",
+        "Guided date-night scripts with optional JOI prompts",
+        "Check-ins that reinforce boundaries and safe words"
+      ],
+      "pricing": "Subscription",
+      "disclosure": "Editorial listing that links to Lovescape's official home.",
+      "tags": ["chat", "romance", "aftercare"],
+      "lastReviewed": "2024-10-07"
+    },
+    {
+      "id": "joi",
+      "name": "JOI",
+      "slug": "joi",
+      "url": "https://joi.ai/",
+      "affiliate": false,
+      "categories": ["ai-girlfriend-chat", "voice-audio"],
+      "summary": "JOI is built for command-style erotica, delivering explicit instructions, countdowns, and audio cues that adapt to your obedience level.",
+      "image": {
+        "src": "images/listing-ai-companion.svg",
+        "width": 360,
+        "height": 240,
+        "alt": "Crown badge capturing JOI's domme-focused persona."
+      },
+      "features": [
+        "Fetish-specific JOI scenarios with variable pacing",
+        "Interactive countdown timers to match edging goals",
+        "Voice performers lending sultry command tracks"
+      ],
+      "pricing": "Subscription",
+      "disclosure": "Editorial listing leading to the official JOI experience.",
+      "tags": ["joi", "voice", "fetish"],
+      "lastReviewed": "2024-10-07"
+    },
+    {
+      "id": "girlfriend-gpt",
+      "name": "Girlfriend GPT",
+      "slug": "girlfriend-gpt",
+      "url": "https://girlfriendgpt.ai/",
+      "affiliate": false,
+      "categories": ["ai-girlfriend-chat"],
+      "summary": "Girlfriend GPT lets you sculpt personalities with custom memories, NSFW filters, and multimedia replies for long-term fantasy partners.",
+      "image": {
+        "src": "images/listing-ai-companion.svg",
+        "width": 360,
+        "height": 240,
+        "alt": "Gradient chat orb reflecting Girlfriend GPT's persona builder."
+      },
+      "features": [
+        "Memory editor that stores favourite triggers and limits",
+        "Image and voice attachments to deepen immersion",
+        "Scenario cards for quick-start erotic adventures"
+      ],
+      "pricing": "Freemium",
+      "disclosure": "Editorial listing that links to Girlfriend GPT's official site.",
+      "tags": ["chat", "memory", "multimedia"],
+      "lastReviewed": "2024-10-07"
+    },
+    {
+      "id": "swipey",
+      "name": "Swipey",
+      "slug": "swipey",
+      "url": "https://swipey.ai/",
+      "affiliate": false,
+      "categories": ["ai-girlfriend-chat"],
+      "summary": "Swipey merges dating-style swipes with explicit AI texting so you can build a roster of dirty-talking partners quickly.",
+      "image": {
+        "src": "images/listing-ai-companion.svg",
+        "width": 360,
+        "height": 240,
+        "alt": "Swipe card illustration symbolising Swipey's fast matchmaking."
+      },
+      "features": [
+        "Swipe interface that curates compatible AI muses",
+        "Reward loops for daily logins and steamy milestones",
+        "Cross-device sync between mobile and desktop chats"
+      ],
+      "pricing": "Freemium",
+      "disclosure": "Editorial listing pointing to Swipey's official homepage.",
+      "tags": ["chat", "dating", "mobile"],
+      "lastReviewed": "2024-10-07"
+    },
+    {
+      "id": "cuties-ai",
+      "name": "Cuties.AI",
+      "slug": "cuties-ai",
+      "url": "https://cuties.ai/",
+      "affiliate": false,
+      "categories": ["ai-girlfriend-chat"],
+      "summary": "Cuties.AI serves kawaii companions with explicit texting, cosplay photo packs, and voice notes tailored to anime lovers.",
+      "image": {
+        "src": "images/listing-ai-companion.svg",
+        "width": 360,
+        "height": 240,
+        "alt": "Sparkling badge echoing Cuties.AI's kawaii aesthetic."
+      },
+      "features": [
+        "Cosplay-inspired photo drops and pin-up sets",
+        "Anime voice filters for dirty talk and ASMR",
+        "Event calendar covering conventions and fandom themes"
+      ],
+      "pricing": "Subscription",
+      "disclosure": "Editorial listing routing to Cuties.AI's official site.",
+      "tags": ["anime", "chat", "audio"],
+      "lastReviewed": "2024-10-07"
+    },
+    {
+      "id": "ai-smartlink",
+      "name": "AI Smartlink",
+      "slug": "ai-smartlink",
+      "url": "https://affiliates.crakrevenue.com/offers/ai-smartlink",
+      "affiliate": false,
+      "categories": ["marketplaces"],
+      "summary": "CrakRevenue's AI Smartlink automatically rotates the best-converting adult AI offers so you can test traffic without swapping creatives manually.",
+      "image": {
+        "src": "images/listing-ai-companion.svg",
+        "width": 360,
+        "height": 240,
+        "alt": "Network hub illustration highlighting the AI Smartlink router."
+      },
+      "features": [
+        "Auto-optimised routing between PPS, CPL, and revshare deals",
+        "Geo and device rules you can override for custom funnels",
+        "Real-time reporting with sub-ID level conversion data"
+      ],
+      "pricing": "Performance-based",
+      "disclosure": "Editorial listing pointing to CrakRevenue's official AI Smartlink offer.",
+      "tags": ["smartlink", "optimization", "traffic"],
+      "lastReviewed": "2024-10-07"
     }
   ]
 }
